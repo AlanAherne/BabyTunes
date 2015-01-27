@@ -14,6 +14,14 @@
 		588073ED1A754A9B0006A6C8 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 588073EB1A754A9B0006A6C8 /* LaunchScreen.xib */; };
 		588073F91A754A9C0006A6C8 /* BabyTunesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 588073F81A754A9C0006A6C8 /* BabyTunesTests.swift */; };
 		588074031A7550480006A6C8 /* PagingNavController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 588074021A7550480006A6C8 /* PagingNavController.swift */; };
+		5880740D1A7835CD0006A6C8 /* MausDE.png in Resources */ = {isa = PBXBuildFile; fileRef = 588074051A7835CD0006A6C8 /* MausDE.png */; };
+		5880740E1A7835CD0006A6C8 /* MausDE@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 588074061A7835CD0006A6C8 /* MausDE@2x.png */; };
+		5880740F1A7835CD0006A6C8 /* MausEN.png in Resources */ = {isa = PBXBuildFile; fileRef = 588074071A7835CD0006A6C8 /* MausEN.png */; };
+		588074101A7835CD0006A6C8 /* MausEN@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 588074081A7835CD0006A6C8 /* MausEN@2x.png */; };
+		588074111A7835CD0006A6C8 /* MausFR.png in Resources */ = {isa = PBXBuildFile; fileRef = 588074091A7835CD0006A6C8 /* MausFR.png */; };
+		588074121A7835CD0006A6C8 /* MausFR@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5880740A1A7835CD0006A6C8 /* MausFR@2x.png */; };
+		588074131A7835CD0006A6C8 /* MausSP.png in Resources */ = {isa = PBXBuildFile; fileRef = 5880740B1A7835CD0006A6C8 /* MausSP.png */; };
+		588074141A7835CD0006A6C8 /* MausSP@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5880740C1A7835CD0006A6C8 /* MausSP@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +46,14 @@
 		588073F71A754A9C0006A6C8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		588073F81A754A9C0006A6C8 /* BabyTunesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BabyTunesTests.swift; sourceTree = "<group>"; };
 		588074021A7550480006A6C8 /* PagingNavController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PagingNavController.swift; sourceTree = "<group>"; };
+		588074051A7835CD0006A6C8 /* MausDE.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = MausDE.png; sourceTree = "<group>"; };
+		588074061A7835CD0006A6C8 /* MausDE@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "MausDE@2x.png"; sourceTree = "<group>"; };
+		588074071A7835CD0006A6C8 /* MausEN.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = MausEN.png; sourceTree = "<group>"; };
+		588074081A7835CD0006A6C8 /* MausEN@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "MausEN@2x.png"; sourceTree = "<group>"; };
+		588074091A7835CD0006A6C8 /* MausFR.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = MausFR.png; sourceTree = "<group>"; };
+		5880740A1A7835CD0006A6C8 /* MausFR@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "MausFR@2x.png"; sourceTree = "<group>"; };
+		5880740B1A7835CD0006A6C8 /* MausSP.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = MausSP.png; sourceTree = "<group>"; };
+		5880740C1A7835CD0006A6C8 /* MausSP@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "MausSP@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +95,7 @@
 		588073DC1A754A9A0006A6C8 /* BabyTunes */ = {
 			isa = PBXGroup;
 			children = (
+				588074041A7835CD0006A6C8 /* Resources */,
 				588074021A7550480006A6C8 /* PagingNavController.swift */,
 				588073DF1A754A9A0006A6C8 /* AppDelegate.swift */,
 				588073E61A754A9B0006A6C8 /* Main.storyboard */,
@@ -113,6 +130,21 @@
 				588073F71A754A9C0006A6C8 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		588074041A7835CD0006A6C8 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				588074051A7835CD0006A6C8 /* MausDE.png */,
+				588074061A7835CD0006A6C8 /* MausDE@2x.png */,
+				588074071A7835CD0006A6C8 /* MausEN.png */,
+				588074081A7835CD0006A6C8 /* MausEN@2x.png */,
+				588074091A7835CD0006A6C8 /* MausFR.png */,
+				5880740A1A7835CD0006A6C8 /* MausFR@2x.png */,
+				5880740B1A7835CD0006A6C8 /* MausSP.png */,
+				5880740C1A7835CD0006A6C8 /* MausSP@2x.png */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -195,9 +227,17 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				588074101A7835CD0006A6C8 /* MausEN@2x.png in Resources */,
+				5880740F1A7835CD0006A6C8 /* MausEN.png in Resources */,
+				588074141A7835CD0006A6C8 /* MausSP@2x.png in Resources */,
+				5880740D1A7835CD0006A6C8 /* MausDE.png in Resources */,
+				588074111A7835CD0006A6C8 /* MausFR.png in Resources */,
+				588074131A7835CD0006A6C8 /* MausSP.png in Resources */,
+				5880740E1A7835CD0006A6C8 /* MausDE@2x.png in Resources */,
 				588073E81A754A9B0006A6C8 /* Main.storyboard in Resources */,
 				588073ED1A754A9B0006A6C8 /* LaunchScreen.xib in Resources */,
 				588073EA1A754A9B0006A6C8 /* Images.xcassets in Resources */,
+				588074121A7835CD0006A6C8 /* MausFR@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
