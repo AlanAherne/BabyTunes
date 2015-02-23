@@ -40,7 +40,7 @@ enum Language : Int {
     }
 }
 
-let songsDict = ["England": ["Baa Baa Black Sheep", "Hush Little Baby", "Mary Had A Little Lamb", "The Animals Went In Two By Two", "Im A Little Teapot", "Old Mac Donald Had A Farm", "The Grand Old Duke Of York", "Hickory Dickory Dock", "Incy Wincy Spider", "Oranges And Lemons", "Three Bl,ind Mice", "Humpty Dumpty", "London Bridge Is Falling Down", "Sing A Song Of Sixpence"],
+let songsDict = ["England": ["Baa Baa Black Sheep", "Hush Little Baby", "Mary Had A Little Lamb", "The Animals Went In Two By Two", "Im A Little Teapot", "Old Mac Donald Had A Farm", "The Grand Old Duke Of York", "Hickory Dickory Dock", "Incy Wincy Spider", "Oranges And Lemons", "Three Blind Mice", "Humpty Dumpty", "London Bridge Is Falling Down", "Sing A Song Of Sixpence"],
     "Germany": ["Alle Voegel sind schon da", "Ein Vogel wollte Hochzeit machen", "Kommt ein Vogel geflogen", "Auf einem Baum ein Kuckuck", "Der Mond ist aufgegangen", "Es klappert die Muehle", "Oh du lieber Augustin", "Backe backe Kuchen", "Die Gedanken sind frei", "Es tanzt ein Bi-Ba-Butzemann", "Spannenlanger Hansel", "Bruederchen komm tanz mit mir", "Ein Maennlein steht im Walde", "Haensel und Gretel", "Weisst du wieviel Sternlein stehen"],
     "Spain": ["A mi burro", "El cocherito,lere", "La Tarara", "Anton Pirulero", "El patio de mi casa", "La reina Berenguela", "Tanto vestido blanco", "Cu-Cu, cantaba la rana", "Estando el senor don gato", "Los pollitos", "Tengo una muneca", "Debajo de un boton", "Jugando al escondite", "Quisiera ser tan alta",	"Tres hojitas, Madre"],
     "France" : ["A la claire fontaine", "Cadet Rouselle", "Gentil coqulicot", "Le grand cerf", "Alouette, gentille alouette", "Cest Gugusse", "Il etait un petit navire", "Lempreur et le petit prince", "Arlequin danse sa boutique", "Compere Guilleri", "Jean de la Lune", "Maman, les ptits bateau", "Au claire de la lune", "Jean petit qui danse", "Savez - vous planter les choux"]]
@@ -112,7 +112,7 @@ class BTViewController: UIViewController, SphereMenuDelegate, UITableViewDelegat
         
         // Create a white border with defined width
         cell.cellImage!.layer.borderColor = UIColor.brownColor().CGColor
-        cell.cellImage!.layer.borderWidth = 1.5
+        cell.cellImage!.layer.borderWidth = 2.5
         
         // Set image corner radius
         cell.cellImage!.layer.cornerRadius = 5.0;
@@ -142,7 +142,16 @@ class BTViewController: UIViewController, SphereMenuDelegate, UITableViewDelegat
     {
         if let languageIndex = Language(rawValue : index)
         {
-            self.languageMouseImageView.image = languageIndex.languageMouseCharacterImage()
+            //AA    self.languageMouseImageView.image = languageIndex.languageMouseCharacterImage()
+            tableCellsArray = songsDict[languageIndex.languageName()]
+            self.tableView.reloadData()
+            
+            
+            let opts : UIViewAnimationOptions = .TransitionFlipFromLeft
+            UIView.transitionWithView(self.languageMouseImageView, duration: 0.8, options: opts,
+                animations: {
+                    self.languageMouseImageView.image = languageIndex.languageMouseCharacterImage()
+                }, completion: nil)
         }
     }
 
