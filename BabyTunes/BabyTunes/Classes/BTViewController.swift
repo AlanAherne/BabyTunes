@@ -60,8 +60,10 @@ class BTViewController: UIViewController, SphereMenuDelegate, UITableViewDelegat
     {
         super.viewDidLoad()
 
-        self.tableView!.delegate = self;
-        self.tableView!.dataSource = self;
+        if (self.tableView != nil){
+            self.tableView!.delegate = self;
+            self.tableView!.dataSource = self;
+        }
     }
     
     override func viewDidAppear(animated: Bool)
@@ -154,10 +156,5 @@ class BTViewController: UIViewController, SphereMenuDelegate, UITableViewDelegat
                 }, completion: nil)
         }
     }
-
-    //    func listArray(index: Int) -> NSMutableArray
-    //{
-    //    return NSArray
-    //}
 }
 

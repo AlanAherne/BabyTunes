@@ -12,3 +12,9 @@
 #define COCOAPODS_VERSION_MINOR_FBSnapshotTestCase 5
 #define COCOAPODS_VERSION_PATCH_FBSnapshotTestCase 0
 
+// SwiftHamcrest
+#define COCOAPODS_POD_AVAILABLE_SwiftHamcrest
+#define COCOAPODS_VERSION_MAJOR_SwiftHamcrest 0
+#define COCOAPODS_VERSION_MINOR_SwiftHamcrest 1
+#define COCOAPODS_VERSION_PATCH_SwiftHamcrest 0
+

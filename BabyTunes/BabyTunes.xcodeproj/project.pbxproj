@@ -8,7 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		0B9399F8E2FB571FDA68FED2 /* Pods_BabyTunes.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E9E6751206C237A5FD87766 /* Pods_BabyTunes.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
-		4AC5942CB4C8B02187E27B36 /* libPods-BabyTunesTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 201DC9F6F87239807D13E231 /* libPods-BabyTunesTests.a */; };
+		58243DB81A9BCD9C00EF9A7D /* BTViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5859D51D1A7CEE61002F2CC6 /* BTViewController.swift */; };
+		58243DB91A9BCDBB00EF9A7D /* SphereMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5859D51C1A7CEE61002F2CC6 /* SphereMenu.swift */; };
+		58243DBA1A9BCDBF00EF9A7D /* SlideInCellAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58C60F041A863CEF0008315F /* SlideInCellAnimator.swift */; };
+		58243DBC1A9BCEF500EF9A7D /* BTCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58B7B78B1A82B8D000843589 /* BTCell.swift */; };
 		5859D51E1A7CEE61002F2CC6 /* SphereMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5859D51C1A7CEE61002F2CC6 /* SphereMenu.swift */; };
 		5859D51F1A7CEE61002F2CC6 /* BTViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5859D51D1A7CEE61002F2CC6 /* BTViewController.swift */; };
 		586713CB1A876A7400B5A6AF /* A mi burro.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5867134A1A876A7400B5A6AF /* A mi burro.jpg */; };
@@ -150,6 +153,7 @@
 		58B744AA1A79907E0090EBBF /* MainWallpaper.png in Resources */ = {isa = PBXBuildFile; fileRef = 58B744A01A79907E0090EBBF /* MainWallpaper.png */; };
 		58B7B78C1A82B8D000843589 /* BTCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58B7B78B1A82B8D000843589 /* BTCell.swift */; };
 		58C60F051A863CEF0008315F /* SlideInCellAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58C60F041A863CEF0008315F /* SlideInCellAnimator.swift */; };
+		6DADB4F34FCAAC3B36132579 /* Pods_BabyTunesTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DEAC314D5330A1DB26E5CF3F /* Pods_BabyTunesTests.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -164,7 +168,6 @@
 
 /* Begin PBXFileReference section */
 		0BB07ACF3442CC2FC3177474 /* Pods-BabyTunesTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BabyTunesTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BabyTunesTests/Pods-BabyTunesTests.debug.xcconfig"; sourceTree = "<group>"; };
-		201DC9F6F87239807D13E231 /* libPods-BabyTunesTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-BabyTunesTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		582B179A1A9A0B8D008B0620 /* BabyTunesTests-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "BabyTunesTests-Bridging-Header.h"; path = "../BabyTunes/Classes/BabyTunesTests-Bridging-Header.h"; sourceTree = "<group>"; };
 		5859D51C1A7CEE61002F2CC6 /* SphereMenu.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SphereMenu.swift; sourceTree = "<group>"; };
 		5859D51D1A7CEE61002F2CC6 /* BTViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BTViewController.swift; sourceTree = "<group>"; };
@@ -315,6 +318,7 @@
 		65925B733448619FBE9CD844 /* Pods-BabyTunes.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BabyTunes.release.xcconfig"; path = "Pods/Target Support Files/Pods-BabyTunes/Pods-BabyTunes.release.xcconfig"; sourceTree = "<group>"; };
 		6B0369E8BE11F30954AC487A /* Pods-BabyTunesTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BabyTunesTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-BabyTunesTests/Pods-BabyTunesTests.release.xcconfig"; sourceTree = "<group>"; };
 		7549C85BE2FD2EEA18A39788 /* Pods-BabyTunes.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BabyTunes.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BabyTunes/Pods-BabyTunes.debug.xcconfig"; sourceTree = "<group>"; };
+		DEAC314D5330A1DB26E5CF3F /* Pods_BabyTunesTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BabyTunesTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -330,7 +334,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4AC5942CB4C8B02187E27B36 /* libPods-BabyTunesTests.a in Frameworks */,
+				6DADB4F34FCAAC3B36132579 /* Pods_BabyTunesTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -352,7 +356,7 @@
 			isa = PBXGroup;
 			children = (
 				5E9E6751206C237A5FD87766 /* Pods_BabyTunes.framework */,
-				201DC9F6F87239807D13E231 /* libPods-BabyTunesTests.a */,
+				DEAC314D5330A1DB26E5CF3F /* Pods_BabyTunesTests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -699,6 +703,7 @@
 				588073EF1A754A9C0006A6C8 /* Frameworks */,
 				588073F01A754A9C0006A6C8 /* Resources */,
 				9573717FC6A415778D7E5873 /* Copy Pods Resources */,
+				F19E2D3BF95C5E23286C247E /* Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -974,6 +979,21 @@
 			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
+		F19E2D3BF95C5E23286C247E /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BabyTunesTests/Pods-BabyTunesTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -994,7 +1014,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				58243DBC1A9BCEF500EF9A7D /* BTCell.swift in Sources */,
+				58243DB81A9BCD9C00EF9A7D /* BTViewController.swift in Sources */,
 				588073F91A754A9C0006A6C8 /* BabyTunesTests.swift in Sources */,
+				58243DB91A9BCDBB00EF9A7D /* SphereMenu.swift in Sources */,
+				58243DBA1A9BCDBF00EF9A7D /* SlideInCellAnimator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1150,7 +1174,8 @@
 				INFOPLIST_FILE = BabyTunesTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				"SWIFT_OBJC_BRIDGING_HEADER[arch=*]" = "BabyTunes/Classes/BabyTunes-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "BabyTunes/Classes/BabyTunesTests-Bridging-Header.h";
+				"SWIFT_OBJC_BRIDGING_HEADER[arch=*]" = "BabyTunes/Classes/BabyTunesTests-Bridging-Header.h";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BabyTunes.app/BabyTunes";
 			};
 			name = Debug;
@@ -1167,7 +1192,8 @@
 				INFOPLIST_FILE = BabyTunesTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				"SWIFT_OBJC_BRIDGING_HEADER[arch=*]" = "BabyTunes/Classes/BabyTunes-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "BabyTunes/Classes/BabyTunesTests-Bridging-Header.h";
+				"SWIFT_OBJC_BRIDGING_HEADER[arch=*]" = "BabyTunes/Classes/BabyTunesTests-Bridging-Header.h";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BabyTunes.app/BabyTunes";
 			};
 			name = Release;

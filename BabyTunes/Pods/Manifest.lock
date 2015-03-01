@@ -1,11 +1,13 @@
 PODS:
   - Alamofire (1.1.3)
   - FBSnapshotTestCase (1.5)
+  - SwiftHamcrest (0.1)
   - SwiftyJSON (2.1.1)
 
 DEPENDENCIES:
   - Alamofire (from `https://github.com/mrackwitz/Alamofire.git`, branch `podspec`)
   - FBSnapshotTestCase (from `https://github.com/delannoyk/ios-snapshot-test-case`)
+  - SwiftHamcrest
   - SwiftyJSON (from `https://github.com/orta/SwiftyJSON`, branch `podspec`)
 
 EXTERNAL SOURCES:
@@ -32,6 +34,7 @@ CHECKOUT OPTIONS:
 SPEC CHECKSUMS:
   Alamofire: 82bd273df6adffbda9740509993f29b2fa5a6d10
   FBSnapshotTestCase: 07fe8883d469ec3ac2c5ce9559eccfb95adfbad5
+  SwiftHamcrest: 0458dc87349043a54168dded12220cbc8cfe0327
   SwiftyJSON: 626bbe0ede796bf69e849b7aa7473778b03fe44c
 
 COCOAPODS: 0.36.0.beta.2

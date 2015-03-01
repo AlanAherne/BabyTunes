@@ -1,0 +1,6 @@
+framework module Hamcrest {
+  umbrella header "Pods-BabyTunesTests-SwiftHamcrest-umbrella.h"
+
+  export *
+  module * { export * }
+}
