@@ -8,6 +8,7 @@
 //
 
 import UIKit
+import Parse
 
 enum Language : Int {
     case ENGLAND, GERMANY, FRANCE, SPAIN
@@ -61,8 +62,39 @@ class BTViewController: UIViewController, SphereMenuDelegate, UITableViewDelegat
         super.viewDidLoad()
 
         if (self.tableView != nil){
-            self.tableView!.delegate = self;
-            self.tableView!.dataSource = self;
+            self.tableView!.delegate = self
+            self.tableView!.dataSource = self
+        }
+        
+        var query = PFQuery(className: "Song")
+        query.whereKey("language", equalTo: "english")
+        
+        var numObjects : Int = 0 // the num return objects from query
+        
+
+        query.findObjectsInBackgroundWithBlock{
+            (objects: [AnyObject]?, error: NSError?) -> Void in
+
+            if error == nil {
+                println(objects)
+                //println(objects.count)
+                
+                //var temp: NSArray = objects as! NSArray
+                println(numObjects) // at this point the value = 1
+                
+                //                if let songs = results as? [Song] {
+                //    for song in songs {
+                //        println(song.objectId)
+                        
+                        //let lastSuccessfulLevel = object["lastSuccessfulLevel"]
+                        //let score = object["score"]
+                        
+                        //println("lastSuccessfulLevel = " + (lastSuccessfulLevel as String))// + ", Score = " + score)
+                //    }
+            }
+            else {
+                println("%@", error)
+            }
         }
     }
     
@@ -86,6 +118,10 @@ class BTViewController: UIViewController, SphereMenuDelegate, UITableViewDelegat
         self.view.addSubview(menu)
     }
 
+    override func supportedInterfaceOrientations() -> Int {
+        return Int(UIInterfaceOrientationMask.Portrait.rawValue) | Int(UIInterfaceOrientationMask.LandscapeLeft.rawValue)
+    }
+    
     override func didReceiveMemoryWarning()
     {
         super.didReceiveMemoryWarning()
@@ -106,7 +142,7 @@ class BTViewController: UIViewController, SphereMenuDelegate, UITableViewDelegat
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         
-        let cell = tableView.dequeueReusableCellWithIdentifier("BTCell", forIndexPath: indexPath) as BTCell
+        let cell = tableView.dequeueReusableCellWithIdentifier("BTCell", forIndexPath: indexPath) as! BTCell
         
         cell.titleLabel.text = tableCellsArray![indexPath.row]
         cell.titleLabel.textColor = UIColor.whiteColor();
