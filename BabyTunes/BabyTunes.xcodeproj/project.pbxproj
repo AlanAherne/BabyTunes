@@ -157,10 +157,6 @@
 		586714421A876A7400B5A6AF /* Oh du lieber Augustin.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 586713C81A876A7400B5A6AF /* Oh du lieber Augustin.jpg */; };
 		586714431A876A7400B5A6AF /* Spannenlanger Hansel.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 586713C91A876A7400B5A6AF /* Spannenlanger Hansel.jpg */; };
 		586714441A876A7400B5A6AF /* Weisst du wieviel Sternlein stehen.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 586713CA1A876A7400B5A6AF /* Weisst du wieviel Sternlein stehen.jpg */; };
-		587D3D891A840D3C006EA864 /* five.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 587D3D851A840D3C006EA864 /* five.jpg */; };
-		587D3D8A1A840D3C006EA864 /* one.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 587D3D861A840D3C006EA864 /* one.jpg */; };
-		587D3D8B1A840D3C006EA864 /* three.png in Resources */ = {isa = PBXBuildFile; fileRef = 587D3D871A840D3C006EA864 /* three.png */; };
-		587D3D8C1A840D3C006EA864 /* two.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 587D3D881A840D3C006EA864 /* two.jpg */; };
 		588073E01A754A9A0006A6C8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 588073DF1A754A9A0006A6C8 /* AppDelegate.swift */; };
 		588073E31A754A9A0006A6C8 /* BabyTunes.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 588073E11A754A9A0006A6C8 /* BabyTunes.xcdatamodeld */; };
 		588073E81A754A9B0006A6C8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 588073E61A754A9B0006A6C8 /* Main.storyboard */; };
@@ -343,10 +339,6 @@
 		58799ED21AA4FED0008100F1 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
 		58799ED41AA4FEE4008100F1 /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
 		58799ED61AA4FFAF008100F1 /* BabyTunes-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "BabyTunes-Bridging-Header.h"; sourceTree = "<group>"; };
-		587D3D851A840D3C006EA864 /* five.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = five.jpg; sourceTree = "<group>"; };
-		587D3D861A840D3C006EA864 /* one.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = one.jpg; sourceTree = "<group>"; };
-		587D3D871A840D3C006EA864 /* three.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = three.png; sourceTree = "<group>"; };
-		587D3D881A840D3C006EA864 /* two.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = two.jpg; sourceTree = "<group>"; };
 		588073DA1A754A9A0006A6C8 /* BabyTunes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BabyTunes.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		588073DE1A754A9A0006A6C8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		588073DF1A754A9A0006A6C8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -473,6 +465,7 @@
 		5859D51B1A7CEE61002F2CC6 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				58B61C911B714E01009D7475 /* Models */,
 				58C60F061A863D160008315F /* InitialViewController */,
 			);
 			path = Classes;
@@ -664,17 +657,6 @@
 			path = "DE thumbnails";
 			sourceTree = "<group>";
 		};
-		587D3D841A840D3C006EA864 /* Testing */ = {
-			isa = PBXGroup;
-			children = (
-				587D3D851A840D3C006EA864 /* five.jpg */,
-				587D3D861A840D3C006EA864 /* one.jpg */,
-				587D3D871A840D3C006EA864 /* three.png */,
-				587D3D881A840D3C006EA864 /* two.jpg */,
-			);
-			path = Testing;
-			sourceTree = "<group>";
-		};
 		588073D11A754A9A0006A6C8 = {
 			isa = PBXGroup;
 			children = (
@@ -744,7 +726,6 @@
 				586713691A876A7400B5A6AF /* French */,
 				586713891A876A7400B5A6AF /* English */,
 				586713AB1A876A7400B5A6AF /* Deutsche */,
-				587D3D841A840D3C006EA864 /* Testing */,
 				58B7449F1A79907E0090EBBF /* Backgrounds */,
 			);
 			path = Resources;
@@ -759,6 +740,13 @@
 				588D47C31A87B47900898313 /* MausSpain.png */,
 			);
 			path = MausCharacters;
+			sourceTree = "<group>";
+		};
+		58B61C911B714E01009D7475 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Models;
 			sourceTree = "<group>";
 		};
 		58B7449F1A79907E0090EBBF /* Backgrounds */ = {
@@ -872,7 +860,6 @@
 				5867143B1A876A7400B5A6AF /* Die Gedanken sind frei.jpg in Resources */,
 				586713F41A876A7400B5A6AF /* Cadet Rouselle_THM.png in Resources */,
 				5867140A1A876A7400B5A6AF /* Humpty Dumpty_THM.png in Resources */,
-				587D3D8C1A840D3C006EA864 /* two.jpg in Resources */,
 				586714401A876A7400B5A6AF /* Haensel und Gretel.jpg in Resources */,
 				586713D51A876A7400B5A6AF /* Los pollitos.jpg in Resources */,
 				586713E81A876A7400B5A6AF /* Tres hojitas, Madre.jpg in Resources */,
@@ -887,7 +874,6 @@
 				586713F21A876A7400B5A6AF /* Arlequin danse sa boutique_THM.png in Resources */,
 				586713CC1A876A7400B5A6AF /* Anton Pirulero.jpg in Resources */,
 				586714331A876A7400B5A6AF /* Es klappert die Muehle_THM.png in Resources */,
-				587D3D8A1A840D3C006EA864 /* one.jpg in Resources */,
 				586714091A876A7400B5A6AF /* Hickory Dickory Dock_THM.png in Resources */,
 				586713D41A876A7400B5A6AF /* La Tarara.jpg in Resources */,
 				586714201A876A7400B5A6AF /* Old Mac Donald Had A Farm.jpg in Resources */,
@@ -908,7 +894,6 @@
 				586713E11A876A7400B5A6AF /* Los pollitos_THM.png in Resources */,
 				588D47C41A87B47900898313 /* MausEngland.png in Resources */,
 				586714051A876A7400B5A6AF /* Maman, les ptits bateau.jpg in Resources */,
-				587D3D8B1A840D3C006EA864 /* three.png in Resources */,
 				5867142C1A876A7400B5A6AF /* Auf einem Baum ein Kuckuck_THM.png in Resources */,
 				5867143A1A876A7400B5A6AF /* Der Mond ist aufgegangen.jpg in Resources */,
 				586714101A876A7400B5A6AF /* Old Mac Donald Had A Farm_THM.png in Resources */,
@@ -919,7 +904,6 @@
 				586714181A876A7400B5A6AF /* Twinkle Twinkle Little Star_THM.png in Resources */,
 				586714361A876A7400B5A6AF /* Kommt ein Vogel geflogen_THM.png in Resources */,
 				5867140C1A876A7400B5A6AF /* Im A Little Teapot_THM.png in Resources */,
-				587D3D891A840D3C006EA864 /* five.jpg in Resources */,
 				586713DE1A876A7400B5A6AF /* Jugando al escondite_THM.png in Resources */,
 				586713F51A876A7400B5A6AF /* Cest Gugusse_THM.png in Resources */,
 				586714291A876A7400B5A6AF /* Backe backe Kuchen.jpg in Resources */,
