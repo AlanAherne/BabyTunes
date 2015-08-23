@@ -7,15 +7,15 @@
 //
 
 import UIKit
-import XCTest
+import Hamcrest
+import FBSnapshotTestCase
 
 class BabyTunesTests: FBSnapshotTestCase {
     
     override func setUp() {
         super.setUp()
         
-        self.recordMode = false;
-        
+        self.recordMode = true;
     }
     
     override func tearDown() {
@@ -35,4 +35,22 @@ class BabyTunesTests: FBSnapshotTestCase {
         }
     }
     
+    func testMainViewControllerLanguageButton() {
+        let sut = BTViewController()
+        assertThat( sut.menu, nilValue())
+    }
+    
+    func testMainViewController() {
+        let v = BTViewController()
+        
+        var error : NSError? = nil
+        let success = self.compareSnapshotOfView(v.view, referenceImagesDirectory : FB_REFERENCE_IMAGE_DIR, identifier: nil, error: &error)
+        if success{
+            if let theError = error
+            {
+                let reason : String? = theError.localizedDescription
+                println("Error BabyTunes : \(reason)")
+            }
+        }
+    }
 }

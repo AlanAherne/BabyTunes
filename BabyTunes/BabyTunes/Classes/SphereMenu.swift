@@ -39,8 +39,8 @@ class SphereMenu:UIView, UICollisionBehaviorDelegate{
     var bumper:UIDynamicItem?
     var expanded:Bool?
     
-    required init(startPoint:CGPoint, startImage:UIImage, submenuImages:Array<UIImage>){
-        super.init()
+    required convenience init(startPoint:CGPoint, startImage:UIImage, submenuImages:Array<UIImage>){
+        self.init()
         self.images = submenuImages;
         self.count = self.images!.count;
         self.start = UIImageView(image: startImage, highlightedImage: nil)
@@ -52,11 +52,11 @@ class SphereMenu:UIView, UICollisionBehaviorDelegate{
         self.center = startPoint;
     }
     
-    required init(coder aDecoder: NSCoder) {
+    required convenience init(coder aDecoder: NSCoder) {
+        self.init()
         self.count = 0;
         self.start = UIImageView()
         self.images = Array()
-        super.init()
     }
     
     required override init(frame: CGRect) {
