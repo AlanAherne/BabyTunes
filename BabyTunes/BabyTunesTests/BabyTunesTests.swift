@@ -28,29 +28,22 @@ class BabyTunesTests: FBSnapshotTestCase {
         XCTAssert(true, "Pass")
     }
     
-    func testPerformanceExample() {
-        // This is an example of a performance test case.
-        self.measureBlock() {
-            // Put the code you want to measure the time of here.
-        }
+    func testViewExample() {
+        let view = UIView(frame: CGRect(x: 0, y: 0, width: 64, height: 64))
+        view.backgroundColor = UIColor.blueColor()
+        FBSnapshotVerifyView(view)
+        FBSnapshotVerifyLayer(view.layer)
     }
-    
+
     func testMainViewControllerLanguageButton() {
         let sut = BTViewController()
         assertThat( sut.menu, nilValue())
     }
     
     func testMainViewController() {
-        let v = BTViewController()
-        
-        var error : NSError? = nil
-        let success = self.compareSnapshotOfView(v.view, referenceImagesDirectory : FB_REFERENCE_IMAGE_DIR, identifier: nil, error: &error)
-        if success{
-            if let theError = error
-            {
-                let reason : String? = theError.localizedDescription
-                println("Error BabyTunes : \(reason)")
-            }
-        }
+        let viewController = BTViewController()
+        let frame = CGRectMake(0, 0, 300, 500)
+        viewController.view.frame = frame
+        FBSnapshotVerifyView(viewController.view)
     }
 }

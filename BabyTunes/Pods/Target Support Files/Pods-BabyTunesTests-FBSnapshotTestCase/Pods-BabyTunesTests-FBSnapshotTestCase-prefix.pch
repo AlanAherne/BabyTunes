@@ -3,7 +3,3 @@
 #endif
 
 #import "Pods-BabyTunesTests-environment.h"
-
-#ifndef FB_REFERENCE_IMAGE_DIR
-  #define FB_REFERENCE_IMAGE_DIR "$(SOURCE_ROOT)/$(PROJECT_NAME)Tests/ReferenceImages"
-#endif

@@ -10,7 +10,7 @@ end
 
 target 'BabyTunesTests' do
 
-pod 'FBSnapshotTestCase', :git => 'https://github.com/delannoyk/ios-snapshot-test-case'
+pod 'FBSnapshotTestCase'
 pod 'SwiftHamcrest'
 
 end

@@ -31,8 +31,7 @@ func equalToWithoutDescription<T: Equatable>(expectedValue: T) -> Matcher<T> {
 }
 
 func isPlayground() -> Bool {
-    // This is explicitly typed to be compatible with both Xcode 6.0 and 6.1.
-    let infoDictionary: [NSObject:AnyObject]? = NSBundle.mainBundle().infoDictionary
+    let infoDictionary = NSBundle.mainBundle().infoDictionary
     let bundleIdentifier: AnyObject? = infoDictionary?["CFBundleIdentifier"]
     return (bundleIdentifier as? String)?.hasPrefix("com.apple.dt.playground.stub") ?? false
 }
@@ -62,6 +61,6 @@ func reportResult(possibleResult: String?, file: String = __FILE__, line: UInt =
         return result
     } else {
         // The return value is just intended for Playgrounds.
-        return "👍"
+        return "✓"
     }
 }
