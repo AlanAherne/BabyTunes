@@ -2,7 +2,7 @@ public func equalTo<T: Equatable>(expectedValue: T) -> Matcher<T> {
     return Matcher("equal to \(expectedValue)") {$0 == expectedValue}
 }
 
-public func closeTo(expectedValue: Double, delta: Double) -> Matcher<Double> {
+public func closeTo(expectedValue: Double, _ delta: Double) -> Matcher<Double> {
     return Matcher("within \(delta) of \(expectedValue)") {
         (value: Double) -> MatchResult in
         let actual = abs(value - expectedValue)
@@ -10,8 +10,8 @@ public func closeTo(expectedValue: Double, delta: Double) -> Matcher<Double> {
     }
 }
 
-public func closeTo(expectedValue: Float, delta: Double) -> Matcher<Float> {
-    let matcher = closeTo(Double(expectedValue), Double(delta))
+public func closeTo(expectedValue: Float, _ delta: Double) -> Matcher<Float> {
+    let matcher = closeTo(Double(expectedValue), delta)
     return Matcher(matcher.description) {matcher.matches(Double($0))}
 }
 

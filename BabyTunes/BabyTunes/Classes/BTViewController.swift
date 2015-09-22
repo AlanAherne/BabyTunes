@@ -10,79 +10,84 @@
 import UIKit
 import Parse
 
-enum Language : Int {
+enum Language : Int
+{
     case ENGLAND, GERMANY, FRANCE, SPAIN
 
     static let languageNames = [ENGLAND : "english", GERMANY : "german", FRANCE : "french", SPAIN : "spanish"]
     static let languageMouseNames = [ENGLAND : "MouseDE", GERMANY : "MouseEN", FRANCE : "MouseFR", SPAIN : "MouseSP"]
     
-    func languageName() -> String {
-        if let languageName = Language.languageNames[self] {
+    func languageName() -> String
+    {
+        if let languageName = Language.languageNames[self]
+        {
             return languageName
-        } else {
+        }
+        else
+        {
             return "language"
         }
     }
     
-    func languageMouseName() -> String {
-        if let languageMouseName = Language.languageMouseNames[self] {
+    func languageMouseName() -> String
+    {
+        if let languageMouseName = Language.languageMouseNames[self]
+        {
             return languageMouseName
-        } else {
+        }
+        else
+        {
             return "languageMouseName"
         }
     }
     
-    func languageMouseCharacterIconImage() -> UIImage? {
-        return UIImage(named: "\(languageMouseName())")!
+    func languageMouseCharacterIconImage() -> UIImage!
+    {
+        return UIImage(named: "\(languageMouseName())")
     }
     
-    func languageMouseCharacterImage() -> UIImage? {
-        return UIImage(named: "Maus\(languageName())")!
+    func languageMouseCharacterImage() -> UIImage!
+    {
+        return UIImage(named: "Mouse\(languageName())")
     }
 }
-
-let songsDict = ["english": ["Baa Baa Black Sheep", "Hush Little Baby", "Mary Had A Little Lamb", "The Animals Went In Two By Two", "Im A Little Teapot", "Old Mac Donald Had A Farm", "The Grand Old Duke Of York", "Hickory Dickory Dock", "Incy Wincy Spider", "Oranges And Lemons", "Three Blind Mice", "Humpty Dumpty", "London Bridge Is Falling Down", "Sing A Song Of Sixpence"],
-    "german": ["Alle Voegel sind schon da", "Ein Vogel wollte Hochzeit machen", "Kommt ein Vogel geflogen", "Auf einem Baum ein Kuckuck", "Der Mond ist aufgegangen", "Es klappert die Muehle", "Oh du lieber Augustin", "Backe backe Kuchen", "Die Gedanken sind frei", "Es tanzt ein Bi-Ba-Butzemann", "Spannenlanger Hansel", "Bruederchen komm tanz mit mir", "Ein Maennlein steht im Walde", "Haensel und Gretel", "Weisst du wieviel Sternlein stehen"],
-    "spanish": ["A mi burro", "El cocherito,lere", "La Tarara", "Anton Pirulero", "El patio de mi casa", "La reina Berenguela", "Tanto vestido blanco", "Cu-Cu, cantaba la rana", "Estando el senor don gato", "Los pollitos", "Tengo una muneca", "Debajo de un boton", "Jugando al escondite", "Quisiera ser tan alta",	"Tres hojitas, Madre"],
-    "french" : ["A la claire fontaine", "Cadet Rouselle", "Gentil coqulicot", "Le grand cerf", "Alouette, gentille alouette", "Cest Gugusse", "Il etait un petit navire", "Lempreur et le petit prince", "Arlequin danse sa boutique", "Compere Guilleri", "Jean de la Lune", "Maman, les ptits bateau", "Au claire de la lune", "Jean petit qui danse", "Savez - vous planter les choux"]]
-
-
-
 
 class BTViewController: UIViewController, SphereMenuDelegate, UITableViewDelegate, UITableViewDataSource, UIScrollViewDelegate
 {
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var languageMouseImageView: UIImageView!
     
-    var tableCellsArray: [AnyObject] = []
+    var tableCellsArray: [Song] = []
     var menu : SphereMenu!
     
     override func viewDidLoad()
     {
         super.viewDidLoad()
 
-        if (self.tableView != nil){
+        if (self.tableView != nil)
+        {
             self.tableView!.delegate = self
             self.tableView!.dataSource = self
         }
         
-        var query = PFQuery(className: "Song")
+        let query = PFQuery(className: "Song")
         query.whereKey("language", equalTo: Language.GERMANY.languageName())
         
-        var numOfQueryObjects : Int = 0
-
         query.findObjectsInBackgroundWithBlock{
             (objects: [AnyObject]?, error: NSError?) -> Void in
 
-            if error == nil {
-                
-                if let myObjects = objects {
-                    self.tableCellsArray = myObjects
-                    self.tableView.reloadData()
+            if error == nil
+            {
+                if let objects = objects as? [Song] {
+                    for (index, object) in objects.enumerate() {
+                        self.tableCellsArray.append(object)
+                    }
                 }
+                self.tableView.reloadData()
             }
-            else {
-                println("%@", error)
+            else
+            {
+                print("%@", error)
             }
         }
     }
@@ -90,25 +95,28 @@ class BTViewController: UIViewController, SphereMenuDelegate, UITableViewDelegat
     override func viewDidAppear(animated: Bool)
     {
         super.viewDidAppear(animated)
+        
         self.view.backgroundColor = UIColor(red:0.2, green:0.38, blue:0.8, alpha:1)
         let start = UIImage(named: "MouseStart")
         let image1 = Language.GERMANY.languageMouseCharacterIconImage()
         let image2 = Language.ENGLAND.languageMouseCharacterIconImage()
         let image3 = Language.FRANCE.languageMouseCharacterIconImage()
         let image4 = Language.SPAIN.languageMouseCharacterIconImage()
-        var images:[UIImage] = [image1!,image2!,image3!,image4!]
+        let images:[UIImage] = [image1!,image2!,image3!,image4!]
         
-        var bounds: CGRect = UIScreen.mainScreen().bounds
-        var width:CGFloat = bounds.size.width
-        var height:CGFloat = bounds.size.height
+        let bounds: CGRect = UIScreen.mainScreen().bounds
+        let width:CGFloat = bounds.size.width
+        let height:CGFloat = bounds.size.height
         
         menu = SphereMenu(startPoint: CGPointMake(width * 0.5, height - 50), startImage: start!, submenuImages:images)
         menu.delegate = self
         self.view.addSubview(menu)
     }
 
-    override func supportedInterfaceOrientations() -> Int {
-        return Int(UIInterfaceOrientationMask.Portrait.rawValue) | Int(UIInterfaceOrientationMask.LandscapeLeft.rawValue)
+    override func supportedInterfaceOrientations() -> UIInterfaceOrientationMask
+    {
+        let orientation: UIInterfaceOrientationMask = [UIInterfaceOrientationMask.Portrait, UIInterfaceOrientationMask.PortraitUpsideDown]
+        return orientation
     }
     
     override func didReceiveMemoryWarning()
@@ -117,25 +125,28 @@ class BTViewController: UIViewController, SphereMenuDelegate, UITableViewDelegat
         // Dispose of any resources that can be recreated.
     }
 
-    func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+    func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int
+    {
         return tableCellsArray.count;
     }
     
-    func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
+    func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat
+    {
         return 120
     }
     
-    func numberOfSectionsInTableView(tableView: UITableView) -> Int {
+    func numberOfSectionsInTableView(tableView: UITableView) -> Int
+    {
         return 1
     }
     
-    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        
+    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell
+    {
         let cell = tableView.dequeueReusableCellWithIdentifier("BTCell", forIndexPath: indexPath) as! BTCell
         
         let song = tableCellsArray[indexPath.row]
         
-        cell.titleLabel.text = "XX" //song["title]
+        cell.titleLabel.text = song.title
         cell.titleLabel.textColor = UIColor.whiteColor();
         cell.titleLabel.font = UIFont(name: "AmericanTypewriter-Bold", size: 18)
         
@@ -148,12 +159,29 @@ class BTViewController: UIViewController, SphereMenuDelegate, UITableViewDelegat
         
         cell.cellImage!.clipsToBounds = true
         
-        cell.cellImage!.image = UIImage(named: "\(tableCellsArray[indexPath.row])_THM.png")
+        song.imageFile.getDataInBackgroundWithBlock { (imageData: NSData?, error: NSError?) -> Void in
+            
+            if let imageData = imageData where error == nil
+            {
+                cell.cellImage!.image = UIImage(data: imageData)
+            }
+        }
+        
+//        cell.cellImage!.image = UIImage(data: song.imageFile)
+//        
+//        let userImageFile = song.imageFile as PFFile
+//        userImageFile.getDataInBackgroundWithBlock {
+//            (imageData: NSData!, error: NSError!) -> Void in
+//            if !error {
+//                let image = UIImage(data:imageData)
+//            }
+//        }
 
         return cell
     }
 
-    func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+    func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath)
+    {
         
     }
     

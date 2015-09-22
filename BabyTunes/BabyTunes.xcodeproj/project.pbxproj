@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		0B9399F8E2FB571FDA68FED2 /* Pods_BabyTunes.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E9E6751206C237A5FD87766 /* Pods_BabyTunes.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		581946261B9E36A200C40073 /* Song.swift in Sources */ = {isa = PBXBuildFile; fileRef = 585982E11B9E25E1009F3B38 /* Song.swift */; };
 		581A661C1B41D30F00F888E1 /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 581A661A1B41D30F00F888E1 /* Bolts.framework */; };
 		581A661D1B41D30F00F888E1 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 581A661B1B41D30F00F888E1 /* Parse.framework */; settings = {ATTRIBUTES = (Required, ); }; };
 		581A66211B41D9A800F888E1 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 58799ED21AA4FED0008100F1 /* libz.dylib */; };
@@ -33,6 +34,7 @@
 		581A66371B41DD9D00F888E1 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 58799EC41AA4FE4C008100F1 /* CoreGraphics.framework */; };
 		581A66381B41DD9D00F888E1 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 58799EC21AA4FE3E008100F1 /* CFNetwork.framework */; };
 		581A66391B41DD9D00F888E1 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 58799EC01AA4FE2C008100F1 /* AudioToolbox.framework */; };
+		585982E21B9E25E1009F3B38 /* Song.swift in Sources */ = {isa = PBXBuildFile; fileRef = 585982E11B9E25E1009F3B38 /* Song.swift */; };
 		5859D51E1A7CEE61002F2CC6 /* SphereMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5859D51C1A7CEE61002F2CC6 /* SphereMenu.swift */; };
 		5859D51F1A7CEE61002F2CC6 /* BTViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5859D51D1A7CEE61002F2CC6 /* BTViewController.swift */; };
 		586713CB1A876A7400B5A6AF /* A mi burro.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5867134A1A876A7400B5A6AF /* A mi burro.jpg */; };
@@ -163,10 +165,10 @@
 		588073EA1A754A9B0006A6C8 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 588073E91A754A9B0006A6C8 /* Images.xcassets */; };
 		588073ED1A754A9B0006A6C8 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 588073EB1A754A9B0006A6C8 /* LaunchScreen.xib */; };
 		588073F91A754A9C0006A6C8 /* BabyTunesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 588073F81A754A9C0006A6C8 /* BabyTunesTests.swift */; };
-		588D47C41A87B47900898313 /* MausEngland.png in Resources */ = {isa = PBXBuildFile; fileRef = 588D47C01A87B47900898313 /* MausEngland.png */; };
-		588D47C51A87B47900898313 /* MausFrance.png in Resources */ = {isa = PBXBuildFile; fileRef = 588D47C11A87B47900898313 /* MausFrance.png */; };
-		588D47C61A87B47900898313 /* MausGermany.png in Resources */ = {isa = PBXBuildFile; fileRef = 588D47C21A87B47900898313 /* MausGermany.png */; };
-		588D47C71A87B47900898313 /* MausSpain.png in Resources */ = {isa = PBXBuildFile; fileRef = 588D47C31A87B47900898313 /* MausSpain.png */; };
+		588D47C41A87B47900898313 /* MouseEngland.png in Resources */ = {isa = PBXBuildFile; fileRef = 588D47C01A87B47900898313 /* MouseEngland.png */; };
+		588D47C51A87B47900898313 /* MouseFrance.png in Resources */ = {isa = PBXBuildFile; fileRef = 588D47C11A87B47900898313 /* MouseFrance.png */; };
+		588D47C61A87B47900898313 /* MouseGermany.png in Resources */ = {isa = PBXBuildFile; fileRef = 588D47C21A87B47900898313 /* MouseGermany.png */; };
+		588D47C71A87B47900898313 /* MouseSpain.png in Resources */ = {isa = PBXBuildFile; fileRef = 588D47C31A87B47900898313 /* MouseSpain.png */; };
 		588D4DA31AC88CD400B3B14B /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 588D4DA21AC88CD400B3B14B /* Social.framework */; };
 		588D4DA51AC88CEC00B3B14B /* Accounts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 588D4DA41AC88CEC00B3B14B /* Accounts.framework */; };
 		588D4DA61AC88F4F00B3B14B /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 58799EC61AA4FE5A008100F1 /* CoreLocation.framework */; };
@@ -203,6 +205,7 @@
 		581A661A1B41D30F00F888E1 /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Bolts.framework; sourceTree = "<group>"; };
 		581A661B1B41D30F00F888E1 /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
 		582B179A1A9A0B8D008B0620 /* BabyTunesTests-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "BabyTunesTests-Bridging-Header.h"; path = "../BabyTunes/Classes/BabyTunesTests-Bridging-Header.h"; sourceTree = "<group>"; };
+		585982E11B9E25E1009F3B38 /* Song.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Song.swift; sourceTree = "<group>"; };
 		5859D51C1A7CEE61002F2CC6 /* SphereMenu.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SphereMenu.swift; sourceTree = "<group>"; };
 		5859D51D1A7CEE61002F2CC6 /* BTViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BTViewController.swift; sourceTree = "<group>"; };
 		5867134A1A876A7400B5A6AF /* A mi burro.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "A mi burro.jpg"; sourceTree = "<group>"; };
@@ -349,10 +352,10 @@
 		588073F21A754A9C0006A6C8 /* BabyTunesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BabyTunesTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		588073F71A754A9C0006A6C8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		588073F81A754A9C0006A6C8 /* BabyTunesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BabyTunesTests.swift; sourceTree = "<group>"; };
-		588D47C01A87B47900898313 /* MausEngland.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = MausEngland.png; sourceTree = "<group>"; };
-		588D47C11A87B47900898313 /* MausFrance.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = MausFrance.png; sourceTree = "<group>"; };
-		588D47C21A87B47900898313 /* MausGermany.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = MausGermany.png; sourceTree = "<group>"; };
-		588D47C31A87B47900898313 /* MausSpain.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = MausSpain.png; sourceTree = "<group>"; };
+		588D47C01A87B47900898313 /* MouseEngland.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = MouseEngland.png; sourceTree = "<group>"; };
+		588D47C11A87B47900898313 /* MouseFrance.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = MouseFrance.png; sourceTree = "<group>"; };
+		588D47C21A87B47900898313 /* MouseGermany.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = MouseGermany.png; sourceTree = "<group>"; };
+		588D47C31A87B47900898313 /* MouseSpain.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = MouseSpain.png; sourceTree = "<group>"; };
 		588D4DA21AC88CD400B3B14B /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
 		588D4DA41AC88CEC00B3B14B /* Accounts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accounts.framework; path = System/Library/Frameworks/Accounts.framework; sourceTree = SDKROOT; };
 		58B744A01A79907E0090EBBF /* MainWallpaper.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = MainWallpaper.png; sourceTree = "<group>"; };
@@ -734,10 +737,10 @@
 		588D47BF1A87B47900898313 /* MausCharacters */ = {
 			isa = PBXGroup;
 			children = (
-				588D47C01A87B47900898313 /* MausEngland.png */,
-				588D47C11A87B47900898313 /* MausFrance.png */,
-				588D47C21A87B47900898313 /* MausGermany.png */,
-				588D47C31A87B47900898313 /* MausSpain.png */,
+				588D47C01A87B47900898313 /* MouseEngland.png */,
+				588D47C11A87B47900898313 /* MouseFrance.png */,
+				588D47C21A87B47900898313 /* MouseGermany.png */,
+				588D47C31A87B47900898313 /* MouseSpain.png */,
 			);
 			path = MausCharacters;
 			sourceTree = "<group>";
@@ -745,6 +748,7 @@
 		58B61C911B714E01009D7475 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				585982E11B9E25E1009F3B38 /* Song.swift */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -819,6 +823,8 @@
 		588073D21A754A9A0006A6C8 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftMigration = 0700;
+				LastSwiftUpdateCheck = 0700;
 				LastUpgradeCheck = 0610;
 				ORGANIZATIONNAME = CCDimensions;
 				TargetAttributes = {
@@ -890,9 +896,9 @@
 				586713D11A876A7400B5A6AF /* Estando el senor don gato.jpg in Resources */,
 				5867141A1A876A7400B5A6AF /* Humpty Dumpty.jpg in Resources */,
 				586713EB1A876A7400B5A6AF /* Arlequin danse sa boutique.jpg in Resources */,
-				588D47C71A87B47900898313 /* MausSpain.png in Resources */,
+				588D47C71A87B47900898313 /* MouseSpain.png in Resources */,
 				586713E11A876A7400B5A6AF /* Los pollitos_THM.png in Resources */,
-				588D47C41A87B47900898313 /* MausEngland.png in Resources */,
+				588D47C41A87B47900898313 /* MouseEngland.png in Resources */,
 				586714051A876A7400B5A6AF /* Maman, les ptits bateau.jpg in Resources */,
 				5867142C1A876A7400B5A6AF /* Auf einem Baum ein Kuckuck_THM.png in Resources */,
 				5867143A1A876A7400B5A6AF /* Der Mond ist aufgegangen.jpg in Resources */,
@@ -946,7 +952,7 @@
 				5867143D1A876A7400B5A6AF /* Ein Vogel wollte Hochzeit machen.jpg in Resources */,
 				586714251A876A7400B5A6AF /* Three Blind Mice.jpg in Resources */,
 				586714001A876A7400B5A6AF /* Il etait un petit navire.jpg in Resources */,
-				588D47C51A87B47900898313 /* MausFrance.png in Resources */,
+				588D47C51A87B47900898313 /* MouseFrance.png in Resources */,
 				586713D01A876A7400B5A6AF /* El patio de mi casa.jpg in Resources */,
 				586713E31A876A7400B5A6AF /* Tanto vestido blanco_THM.png in Resources */,
 				586714221A876A7400B5A6AF /* Sing A Song Of Sixpence.jpg in Resources */,
@@ -960,7 +966,7 @@
 				586713D71A876A7400B5A6AF /* A mi burro_THM.png in Resources */,
 				586713FA1A876A7400B5A6AF /* Jean petit qui danse_THM.png in Resources */,
 				586714231A876A7400B5A6AF /* The Animals Went In Two By Two.jpg in Resources */,
-				588D47C61A87B47900898313 /* MausGermany.png in Resources */,
+				588D47C61A87B47900898313 /* MouseGermany.png in Resources */,
 				5867141C1A876A7400B5A6AF /* Im A Little Teapot.jpg in Resources */,
 				586713D81A876A7400B5A6AF /* Anton Pirulero_THM.png in Resources */,
 				586714191A876A7400B5A6AF /* Hickory Dickory Dock.jpg in Resources */,
@@ -1095,6 +1101,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				585982E21B9E25E1009F3B38 /* Song.swift in Sources */,
 				58B7B78C1A82B8D000843589 /* BTCell.swift in Sources */,
 				588073E01A754A9A0006A6C8 /* AppDelegate.swift in Sources */,
 				588073E31A754A9A0006A6C8 /* BabyTunes.xcdatamodeld in Sources */,
@@ -1108,6 +1115,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				581946261B9E36A200C40073 /* Song.swift in Sources */,
 				581A66221B41DA2300F888E1 /* BTViewController.swift in Sources */,
 				581A66241B41DA4D00F888E1 /* BTCell.swift in Sources */,
 				588073F91A754A9C0006A6C8 /* BabyTunesTests.swift in Sources */,

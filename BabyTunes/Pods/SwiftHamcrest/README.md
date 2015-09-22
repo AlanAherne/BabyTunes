@@ -5,16 +5,13 @@ Hamcrest gives you advanced matchers with better error messages for your Swift u
 
 Hamcrest was originally written in Java and is available for many [languages](http://hamcrest.org).
 
-Integration
------------
+![Swift 2.0](https://img.shields.io/badge/Swift-2.0-lightgrey.svg)
+![OS X ≥ 10.9](https://img.shields.io/badge/OS%20X-≥%2010.9-lightgrey.svg)
+![iOS ≥ 7.0](https://img.shields.io/badge/iOS%20-≥%207.0-lightgrey.svg)
+[![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage)
+![CocoaPods compatible](https://img.shields.io/cocoapods/v/SwiftHamcrest.svg)
 
-Using CocoaPods 0.36, it is possible to integrate SwiftHamcrest using a Podfile similar to this:
-
-```ruby
-target 'HamcrestDemoTests' do
-  pod 'SwiftHamcrest'
-end
-```
+[![Build Status](https://travis-ci.org/nschum/SwiftHamcrest.svg?branch=master)](https://travis-ci.org/nschum/SwiftHamcrest)
 
 Tutorial
 --------
@@ -306,3 +303,53 @@ assertThat(342783, isDivisibleByThree()) // ✓
 assertThat(489359, isDivisibleByThree())
 // GOT: 489359 (remainder: 2), EXPECTED: divisible by three
 ```
+
+### Errors ###
+
+If the function you're testing can throw errors, Hamcrest will report those errors.
+
+```swift
+private enum SampleError: ErrorType {
+    case Error1
+    case Error2
+}
+
+private func throwingFunc() throws -> Int {
+    throw SampleError.Error1
+}
+
+assertThat(try throwingFunc(), equalTo(1)) // ERROR: SampleError.Error1
+```
+
+If you want to verify an error is being thrown, use `assertThrows`.
+
+```swift
+private func notThrowingFunc() throws {
+}
+
+assertThrows(try notThrowingFunc()) // EXPECTED ERROR
+assertThrows(try notThrowingFunc(), SampleError.Error2)
+// EXPECTED ERROR: SampleError.Error2
+
+assertThrows(try throwingFunc(), SampleError.Error2)
+// GOT ERROR: SampleError.Error1, EXPECTED ERROR: SampleError.Error2
+```
+
+Integration
+-----------
+
+### CocoaPods ###
+
+Integrate SwiftHamcrest using a Podfile similar to this:
+
+```ruby
+target 'HamcrestDemoTests' do
+  pod 'SwiftHamcrest'
+end
+```
+
+### Carthage ###
+
+Add the following to your Cartfile:
+
+    github "nschum/SwiftHamcrest"

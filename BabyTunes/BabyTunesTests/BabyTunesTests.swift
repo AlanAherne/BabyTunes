@@ -42,8 +42,13 @@ class BabyTunesTests: FBSnapshotTestCase {
     
     func testMainViewController() {
         let viewController = BTViewController()
-        let frame = CGRectMake(0, 0, 300, 500)
-        viewController.view.frame = frame
+        viewController.view.frame = UIScreen.mainScreen().bounds
+        
+        //  viewController.view()
+        viewController.viewWillAppear(false)
+        viewController.viewDidAppear(false)
+        
         FBSnapshotVerifyView(viewController.view)
+        FBSnapshotVerifyLayer(viewController.view.layer)
     }
 }

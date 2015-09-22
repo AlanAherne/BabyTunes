@@ -1,2 +1,0 @@
-PODS_BABYTUNESTESTS_SWIFTHAMCREST_FRAMEWORK_SEARCH_PATHS = $(inherited) "$(SDKROOT)/Developer/Library/Frameworks" "$(PLATFORM_DIR)/Developer/Library/Frameworks"
-PODS_BABYTUNESTESTS_SWIFTHAMCREST_OTHER_LDFLAGS = -framework "Foundation" -framework "XCTest"

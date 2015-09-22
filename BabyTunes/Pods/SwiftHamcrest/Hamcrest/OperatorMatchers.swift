@@ -9,7 +9,7 @@ public struct MatchResultDescription {
     init(result: String?) {
         self.result = result
     }
-    init<T>(value: T, matcher: Matcher<T>) {
+    init<T>(@autoclosure value: () -> T, matcher: Matcher<T>) {
         self.result = applyMatcher(matcher, toValue: value)
     }
 }
@@ -42,13 +42,13 @@ public func && (lhs: MatchResultDescription, rhs: MatchResultDescription)
     -> MatchResultDescription {
 
     switch (lhs.result, rhs.result) {
-    case (.None, .None):
+    case (nil, nil):
         return MatchResultDescription(result: .None)
-    case let (.Some(result), .None):
+    case let (result?, nil):
         return MatchResultDescription(result: result)
-    case let (.None, .Some(result)):
+    case let (nil, result?):
         return MatchResultDescription(result: result)
-    case let (.Some(lhsResult), .Some(rhsResult)):
+    case let (lhsResult?, rhsResult?):
         let result = "\(lhsResult) and \(rhsResult)"
         return MatchResultDescription(result: result)
     }

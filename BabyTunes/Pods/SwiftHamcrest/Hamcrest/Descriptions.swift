@@ -7,18 +7,34 @@ func describe<T>(value: T) -> String {
     if let string = value as? String {
         return "\"\(string)\""
     }
-    return toString(value)
+    return String(value)
 }
 
 func describeAddress<T: AnyObject>(object: T) -> String {
     return NSString(format: "%p", unsafeBitCast(object, Int.self)) as String
 }
 
-func describeMismatch<T>(value: T, description: String, mismatchDescription: String?) -> String {
+func describeError(error: ErrorType) -> String {
+    return "ERROR: \(error)"
+}
+
+func describeExpectedError() -> String {
+    return "EXPECTED ERROR"
+}
+
+func describeExpectedError(description: String) -> String {
+    return "EXPECTED ERROR: \(description)"
+}
+
+func describeErrorMismatch<T>(error: T, _ description: String, _ mismatchDescription: String?) -> String {
+    return "GOT ERROR: " + describeActualValue(error, mismatchDescription) + ", EXPECTED ERROR: \(description)"
+}
+
+func describeMismatch<T>(value: T, _ description: String, _ mismatchDescription: String?) -> String {
     return "GOT: " + describeActualValue(value, mismatchDescription) + ", EXPECTED: \(description)"
 }
 
-func describeActualValue<T>(value: T, mismatchDescription: String?) -> String {
+func describeActualValue<T>(value: T, _ mismatchDescription: String?) -> String {
     return describe(value) + (mismatchDescription.map{" (\($0))"} ?? "")
 }
 
@@ -31,9 +47,10 @@ func joinDescriptions(descriptions: [String?]) -> String? {
     return notNil.isEmpty ? nil : joinStrings(notNil)
 }
 
-func joinMatcherDescriptions<T>(matchers: [Matcher<T>], prefix: String = "all of") -> String {
-    if matchers.count == 1 {
-        return matchers[0].description
+func joinMatcherDescriptions<S: SequenceType, T where S.Generator.Element == Matcher<T>>(matchers: S, prefix: String = "all of") -> String {
+    var generator = matchers.generate()
+    if let first = generator.next() where generator.next() == nil {
+        return first.description
     } else {
         return prefix + " " + joinDescriptions(matchers.map({$0.description}))
     }
@@ -41,11 +58,9 @@ func joinMatcherDescriptions<T>(matchers: [Matcher<T>], prefix: String = "all of
 
 private func joinStrings(strings: [String]) -> String {
     switch (strings.count) {
-    case 0:
-        return "none"
     case 1:
         return strings[0]
     default:
-        return "[" + join(", ", strings) + "]"
+        return "[" + strings.joinWithSeparator(", ") + "]"
     }
 }
