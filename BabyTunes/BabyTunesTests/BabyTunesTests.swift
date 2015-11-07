@@ -2,20 +2,18 @@
 //  BabyTunesTests.swift
 //  BabyTunesTests
 //
-//  Created by Alan Aherne Restore on 25.01.15.
-//  Copyright (c) 2015 CCDimensions. All rights reserved.
+//  Created by Alan Aherne Restore on 27.10.15.
+//  Copyright © 2015 CCDimensions. All rights reserved.
 //
 
-import UIKit
-import Hamcrest
-import FBSnapshotTestCase
+import XCTest
+@testable import BabyTunes
 
-class BabyTunesTests: FBSnapshotTestCase {
+class BabyTunesTests: XCTestCase {
     
     override func setUp() {
         super.setUp()
-        
-        self.recordMode = true;
+        // Put setup code here. This method is called before the invocation of each test method in the class.
     }
     
     override func tearDown() {
@@ -25,30 +23,14 @@ class BabyTunesTests: FBSnapshotTestCase {
     
     func testExample() {
         // This is an example of a functional test case.
-        XCTAssert(true, "Pass")
+        // Use XCTAssert and related functions to verify your tests produce the correct results.
     }
     
-    func testViewExample() {
-        let view = UIView(frame: CGRect(x: 0, y: 0, width: 64, height: 64))
-        view.backgroundColor = UIColor.blueColor()
-        FBSnapshotVerifyView(view)
-        FBSnapshotVerifyLayer(view.layer)
-    }
-
-    func testMainViewControllerLanguageButton() {
-        let sut = BTViewController()
-        assertThat( sut.menu, nilValue())
+    func testPerformanceExample() {
+        // This is an example of a performance test case.
+        self.measureBlock {
+            // Put the code you want to measure the time of here.
+        }
     }
     
-    func testMainViewController() {
-        let viewController = BTViewController()
-        viewController.view.frame = UIScreen.mainScreen().bounds
-        
-        //  viewController.view()
-        viewController.viewWillAppear(false)
-        viewController.viewDidAppear(false)
-        
-        FBSnapshotVerifyView(viewController.view)
-        FBSnapshotVerifyLayer(viewController.view.layer)
-    }
 }

@@ -23,6 +23,7 @@ public class Song: PFObject, PFSubclassing {
     @NSManaged public var language: String!
     @NSManaged public var length: Int
     @NSManaged public var imageFile: PFFile!
+    @NSManaged public var imageThumbNailFile: PFFile!
     @NSManaged public var songData: PFFile!
     @NSManaged public var Lyrics: PFFile!
 }

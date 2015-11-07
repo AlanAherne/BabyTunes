@@ -1,23 +1,29 @@
 PODS:
-  - Alamofire (2.0.1)
-  - FBSnapshotTestCase (2.0.4):
-    - FBSnapshotTestCase/SwiftSupport (= 2.0.4)
-  - FBSnapshotTestCase/Core (2.0.4)
-  - FBSnapshotTestCase/SwiftSupport (2.0.4):
+  - Alamofire (3.1.2)
+  - FBSnapshotTestCase (2.0.7):
+    - FBSnapshotTestCase/SwiftSupport (= 2.0.7)
+  - FBSnapshotTestCase/Core (2.0.7)
+  - FBSnapshotTestCase/SwiftSupport (2.0.7):
     - FBSnapshotTestCase/Core
-  - SwiftHamcrest (0.3)
-  - SwiftyJSON (2.2.1)
+  - SwiftyJSON (2.3.1)
 
 DEPENDENCIES:
-  - Alamofire (~> 2.0)
+  - Alamofire (~> 3.0)
   - FBSnapshotTestCase
-  - SwiftHamcrest
-  - SwiftyJSON (~> 2.2.0)
+  - SwiftyJSON (from `https://github.com/SwiftyJSON/SwiftyJSON.git`)
+
+EXTERNAL SOURCES:
+  SwiftyJSON:
+    :git: https://github.com/SwiftyJSON/SwiftyJSON.git
+
+CHECKOUT OPTIONS:
+  SwiftyJSON:
+    :commit: ece271ab33839d11c2153d71fb59c53545132cf9
+    :git: https://github.com/SwiftyJSON/SwiftyJSON.git
 
 SPEC CHECKSUMS:
-  Alamofire: 1d8e208d616fbbfd2391b15eae766d07c96cdc49
-  FBSnapshotTestCase: d94cf34841c9e77390e29009e8e2713479d48753
-  SwiftHamcrest: 652d2e197df0957b532f1c66a9112bc809030965
-  SwiftyJSON: ae2d0a3d68025d136602a33c4ee215091ced3e33
+  Alamofire: 7c16ca65f3c7e681fd925fd7f2dec7747ff96855
+  FBSnapshotTestCase: 7e85180d0d141a0cf472352edda7e80d7eaeb547
+  SwiftyJSON: 592b53bee5ef3dd9b3bebc6b9cb7ee35426ae8c3
 
-COCOAPODS: 0.39.0.beta.4
+COCOAPODS: 0.39.0

@@ -74,12 +74,12 @@ class BTViewController: UIViewController, SphereMenuDelegate, UITableViewDelegat
         query.whereKey("language", equalTo: Language.GERMANY.languageName())
         
         query.findObjectsInBackgroundWithBlock{
-            (objects: [AnyObject]?, error: NSError?) -> Void in
+            (objects: [PFObject]?, error: NSError?) -> Void in
 
             if error == nil
             {
                 if let objects = objects as? [Song] {
-                    for (index, object) in objects.enumerate() {
+                    for (_, object) in objects.enumerate() {
                         self.tableCellsArray.append(object)
                     }
                 }
@@ -166,8 +166,7 @@ class BTViewController: UIViewController, SphereMenuDelegate, UITableViewDelegat
                 cell.cellImage!.image = UIImage(data: imageData)
             }
         }
-        
-//        cell.cellImage!.image = UIImage(data: song.imageFile)
+
 //        
 //        let userImageFile = song.imageFile as PFFile
 //        userImageFile.getDataInBackgroundWithBlock {
