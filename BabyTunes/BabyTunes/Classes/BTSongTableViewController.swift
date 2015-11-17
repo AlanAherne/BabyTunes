@@ -1,21 +1,23 @@
 
 //
-//  BTViewController.swift
-//  Sphere Menu
+//  BTSongTableViewController.swift
+//  BabyTunes
 //
 //  Created by Alan Aherne on 30/01/15.
-//  Copyright (c) 2014 Camilo Morales. All rights reserved.
+//  Copyright (c) 2014 Alan Aherne. All rights reserved.
 //
 
 import UIKit
 import Parse
+
+// MARK: - enums
 
 enum Language : Int
 {
     case ENGLAND, GERMANY, FRANCE, SPAIN
 
     static let languageNames = [ENGLAND : "english", GERMANY : "german", FRANCE : "french", SPAIN : "spanish"]
-    static let languageMouseNames = [ENGLAND : "MouseDE", GERMANY : "MouseEN", FRANCE : "MouseFR", SPAIN : "MouseSP"]
+    static let languageMouseNames = [ENGLAND : "MouseEN", GERMANY : "MouseDE", FRANCE : "MouseFR", SPAIN : "MouseSP"]
     
     func languageName() -> String
     {
@@ -48,17 +50,21 @@ enum Language : Int
     
     func languageMouseCharacterImage() -> UIImage!
     {
-        return UIImage(named: "Mouse\(languageName())")
+        return UIImage(named: "Big\(languageMouseName())")
     }
 }
 
-class BTViewController: UIViewController, SphereMenuDelegate, UITableViewDelegate, UITableViewDataSource, UIScrollViewDelegate
+// MARK: - BTSongTableViewController
+
+class BTSongTableViewController: UIViewController, SphereMenuDelegate, UIScrollViewDelegate
 {
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var languageMouseImageView: UIImageView!
+    var dataSource : BTSongTableViewDataSource?
     
-    var tableCellsArray: [Song] = []
     var menu : SphereMenu!
+    
+    // MARK: - View Management
     
     override func viewDidLoad()
     {
@@ -66,30 +72,12 @@ class BTViewController: UIViewController, SphereMenuDelegate, UITableViewDelegat
 
         if (self.tableView != nil)
         {
-            self.tableView!.delegate = self
-            self.tableView!.dataSource = self
+            self.tableView!.delegate = BTSongTableViewDelegate()
+            self.dataSource = BTSongTableViewDataSource()
+            self.tableView!.dataSource = dataSource
         }
         
-        let query = PFQuery(className: "Song")
-        query.whereKey("language", equalTo: Language.GERMANY.languageName())
-        
-        query.findObjectsInBackgroundWithBlock{
-            (objects: [PFObject]?, error: NSError?) -> Void in
-
-            if error == nil
-            {
-                if let objects = objects as? [Song] {
-                    for (_, object) in objects.enumerate() {
-                        self.tableCellsArray.append(object)
-                    }
-                }
-                self.tableView.reloadData()
-            }
-            else
-            {
-                print("%@", error)
-            }
-        }
+        self.dataSource!.loadSongsForLanguage(self.tableView, language: Language.GERMANY.languageName())
     }
     
     override func viewDidAppear(animated: Bool)
@@ -125,6 +113,52 @@ class BTViewController: UIViewController, SphereMenuDelegate, UITableViewDelegat
         // Dispose of any resources that can be recreated.
     }
 
+    // MARK: - UIScrollviewViewDelegate
+    
+    func scrollViewWillBeginDragging(scrollView: UIScrollView)
+    {
+        menu.shrinkSubmenu()
+    }
+    
+    // MARK: - SphereMenuDelegate
+    
+    func sphereDidSelected(index: Int)
+    {
+        if let languageIndex = Language(rawValue : index)
+        {
+            self.dataSource!.loadSongsForLanguage(self.tableView, language: languageIndex.languageName())
+            
+            let opts : UIViewAnimationOptions = .TransitionFlipFromLeft
+            UIView.transitionWithView(self.languageMouseImageView, duration: 0.8, options: opts,
+                animations: {
+                    self.languageMouseImageView.image = languageIndex.languageMouseCharacterImage()
+                }, completion: nil)
+        }
+    }
+}
+
+// MARK: - BTSongTableViewDelegate
+
+class BTSongTableViewDelegate: NSObject, UITableViewDelegate
+{
+    func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath)
+    {
+        
+    }
+    
+    func tableView(tableView: UITableView, willDisplayCell cell: UITableViewCell, forRowAtIndexPath indexPath: NSIndexPath)
+    {
+        SlideInCellAnimator.animate(cell)
+    }
+}
+
+// MARK: - BTSongTableViewDataSource
+
+class BTSongTableViewDataSource: NSObject, UITableViewDataSource
+{
+    var tableCellsArray: [Song] = []
+    
+    
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int
     {
         return tableCellsArray.count;
@@ -159,55 +193,42 @@ class BTViewController: UIViewController, SphereMenuDelegate, UITableViewDelegat
         
         cell.cellImage!.clipsToBounds = true
         
-        song.imageFile.getDataInBackgroundWithBlock { (imageData: NSData?, error: NSError?) -> Void in
+        song.imageThumbNailFile.getDataInBackgroundWithBlock { (imageData: NSData?, error: NSError?) -> Void in
             
             if let imageData = imageData where error == nil
             {
                 cell.cellImage!.image = UIImage(data: imageData)
             }
         }
-
-//        
-//        let userImageFile = song.imageFile as PFFile
-//        userImageFile.getDataInBackgroundWithBlock {
-//            (imageData: NSData!, error: NSError!) -> Void in
-//            if !error {
-//                let image = UIImage(data:imageData)
-//            }
-//        }
-
         return cell
     }
-
-    func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath)
+    
+    // MARK: - BTSongTableViewDataSource Helpers
+    
+    func loadSongsForLanguage(tableView: UITableView, language: String )
     {
+        self.tableCellsArray.removeAll()
         
-    }
-    
-    func tableView(tableView: UITableView, willDisplayCell cell: UITableViewCell, forRowAtIndexPath indexPath: NSIndexPath)
-    {
-        SlideInCellAnimator.animate(cell)
-    }
-    
-    func scrollViewWillBeginDragging(scrollView: UIScrollView)
-    {
-        menu.shrinkSubmenu()
-    }
-
-    func sphereDidSelected(index: Int)
-    {
-        if let languageIndex = Language(rawValue : index)
-        {
-            //AA    self.languageMouseImageView.image = languageIndex.languageMouseCharacterImage()
-            //AA    tableCellsArray = songsDict[languageIndex.languageName()]
-            self.tableView.reloadData()
+        let query = PFQuery(className: "Song")
+        query.whereKey("language", equalTo: language)
+        
+        query.findObjectsInBackgroundWithBlock{
+            (objects: [PFObject]?, error: NSError?) -> Void in
             
-            let opts : UIViewAnimationOptions = .TransitionFlipFromLeft
-            UIView.transitionWithView(self.languageMouseImageView, duration: 0.8, options: opts,
-                animations: {
-                    self.languageMouseImageView.image = languageIndex.languageMouseCharacterImage()
-                }, completion: nil)
+            if error == nil
+            {
+                if let objects = objects as? [Song] {
+                    for (_, object) in objects.enumerate() {
+                        self.tableCellsArray.append(object)
+                    }
+                }
+                tableView.reloadData()
+            }
+            else
+            {
+                print("%@", error)
+            }
         }
     }
+    
 }
-
