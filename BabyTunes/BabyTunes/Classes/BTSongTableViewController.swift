@@ -176,30 +176,8 @@ class BTSongTableViewDataSource: NSObject, UITableViewDataSource
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell
     {
-        let cell = tableView.dequeueReusableCellWithIdentifier("BTCell", forIndexPath: indexPath) as! BTCell
-        
-        let song = tableCellsArray[indexPath.row]
-        
-        cell.titleLabel.text = song.title
-        cell.titleLabel.textColor = UIColor.whiteColor();
-        cell.titleLabel.font = UIFont(name: "AmericanTypewriter-Bold", size: 18)
-        
-        // Create a white border with defined width
-        cell.cellImage!.layer.borderColor = UIColor.brownColor().CGColor
-        cell.cellImage!.layer.borderWidth = 2.5
-        
-        // Set image corner radius
-        cell.cellImage!.layer.cornerRadius = 5.0;
-        
-        cell.cellImage!.clipsToBounds = true
-        
-        song.imageThumbNailFile.getDataInBackgroundWithBlock { (imageData: NSData?, error: NSError?) -> Void in
-            
-            if let imageData = imageData where error == nil
-            {
-                cell.cellImage!.image = UIImage(data: imageData)
-            }
-        }
+        let cell = tableView.dequeueReusableCellWithIdentifier("BTSongTableCell", forIndexPath: indexPath) as! BTSongTableCell
+        cell.configure(tableCellsArray[indexPath.row])
         return cell
     }
     

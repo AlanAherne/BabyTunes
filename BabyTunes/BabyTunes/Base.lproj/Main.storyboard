@@ -36,7 +36,7 @@
                                 <inset key="separatorInset" minX="15" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 <color key="sectionIndexBackgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="BTCell" rowHeight="120" id="PRp-hq-Koa" customClass="BTCell" customModule="BabyTunes" customModuleProvider="target">
+                                    <tableViewCell opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="BTSongTableCell" rowHeight="120" id="PRp-hq-Koa" userLabel="BTSongTableCell" customClass="BTSongTableCell" customModule="BabyTunes" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="22" width="414" height="120"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="PRp-hq-Koa" id="tRu-ZH-iJF">
