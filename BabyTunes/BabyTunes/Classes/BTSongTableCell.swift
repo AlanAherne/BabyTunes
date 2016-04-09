@@ -5,7 +5,7 @@
 //  Created by Alan Aherne Restore on 04.02.15.
 //  Copyright (c) 2015 CCDimensions. All rights reserved.
 //
-
+import BabyTunes
 import UIKit
 
 public class BTSongTableCell: UITableViewCell {
@@ -13,8 +13,11 @@ public class BTSongTableCell: UITableViewCell {
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var cellImage: UIImageView!
     
-    public func configure(song: Song)
+   //AA http://stackoverflow.com/questions/25541786/custom-uitableviewcell-from-nib-in-swift
+    
+    public func configure(song: BabyTunes.Song)
     {
+        debugPrint("Title", song.title)
         self.titleLabel.text = song.title
         self.titleLabel.textColor = UIColor.whiteColor();
         self.titleLabel.font = UIFont(name: "AmericanTypewriter-Bold", size: 18)

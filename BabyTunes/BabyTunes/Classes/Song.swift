@@ -5,7 +5,6 @@
 //  Created by Alan Aherne Restore on 07.09.15.
 //  Copyright (c) 2015 CCDimensions. All rights reserved.
 //
-
 import UIKit
 import Parse
 

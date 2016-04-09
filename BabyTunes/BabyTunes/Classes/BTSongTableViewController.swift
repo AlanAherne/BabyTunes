@@ -6,7 +6,7 @@
 //  Created by Alan Aherne on 30/01/15.
 //  Copyright (c) 2014 Alan Aherne. All rights reserved.
 //
-
+import BabyTunes
 import UIKit
 import Parse
 
@@ -59,7 +59,6 @@ enum Language : Int
 class BTSongTableViewController: UIViewController, SphereMenuDelegate, UIScrollViewDelegate
 {
     @IBOutlet weak var tableView: UITableView!
-    @IBOutlet weak var languageMouseImageView: UIImageView!
     var dataSource : BTSongTableViewDataSource?
     
     var menu : SphereMenu!
@@ -78,27 +77,31 @@ class BTSongTableViewController: UIViewController, SphereMenuDelegate, UIScrollV
         }
         
         self.dataSource!.loadSongsForLanguage(self.tableView, language: Language.GERMANY.languageName())
-    }
-    
-    override func viewDidAppear(animated: Bool)
-    {
-        super.viewDidAppear(animated)
         
         self.view.backgroundColor = UIColor(red:0.2, green:0.38, blue:0.8, alpha:1)
-        let start = UIImage(named: "MouseStart")
-        let image1 = Language.GERMANY.languageMouseCharacterIconImage()
-        let image2 = Language.ENGLAND.languageMouseCharacterIconImage()
-        let image3 = Language.FRANCE.languageMouseCharacterIconImage()
-        let image4 = Language.SPAIN.languageMouseCharacterIconImage()
-        let images:[UIImage] = [image1!,image2!,image3!,image4!]
+        
+        var j: Int = 0
+        var images:[UIImage] = []
+        while let language = Language(rawValue: j) {
+            
+            let image = language.languageMouseCharacterIconImage()
+            images.append(image)
+            j += 1
+            if (j > 6) {break}
+        }
         
         let bounds: CGRect = UIScreen.mainScreen().bounds
         let width:CGFloat = bounds.size.width
         let height:CGFloat = bounds.size.height
         
-        menu = SphereMenu(startPoint: CGPointMake(width * 0.5, height - 50), startImage: start!, submenuImages:images)
+        menu = SphereMenu(startPoint: CGPointMake(width * 0.5, height - 50), startImage: Language.GERMANY.languageMouseCharacterIconImage(), submenuImages:images)
         menu.delegate = self
         self.view.addSubview(menu)
+    }
+    
+    override func viewDidAppear(animated: Bool)
+    {
+        super.viewDidAppear(animated)
     }
 
     override func supportedInterfaceOrientations() -> UIInterfaceOrientationMask
@@ -127,12 +130,13 @@ class BTSongTableViewController: UIViewController, SphereMenuDelegate, UIScrollV
         if let languageIndex = Language(rawValue : index)
         {
             self.dataSource!.loadSongsForLanguage(self.tableView, language: languageIndex.languageName())
+        
+//            let opts : UIViewAnimationOptions = .TransitionFlipFromLeft
+//            UIView.transitionWithView(self.languageMouseImageView, duration: 0.8, options: opts,
+//                animations: {
+//                    self.languageMouseImageView.image = languageIndex.languageMouseCharacterImage()
+//                }, completion: nil)
             
-            let opts : UIViewAnimationOptions = .TransitionFlipFromLeft
-            UIView.transitionWithView(self.languageMouseImageView, duration: 0.8, options: opts,
-                animations: {
-                    self.languageMouseImageView.image = languageIndex.languageMouseCharacterImage()
-                }, completion: nil)
         }
     }
 }
@@ -156,7 +160,7 @@ class BTSongTableViewDelegate: NSObject, UITableViewDelegate
 
 class BTSongTableViewDataSource: NSObject, UITableViewDataSource
 {
-    var tableCellsArray: [Song] = []
+    var tableCellsArray: [BabyTunes.Song] = []
     
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int
@@ -181,7 +185,7 @@ class BTSongTableViewDataSource: NSObject, UITableViewDataSource
         return cell
     }
     
-    // MARK: - BTSongTableViewDataSource Helpers
+    // MARK: - Helpers
     
     func loadSongsForLanguage(tableView: UITableView, language: String )
     {
@@ -195,12 +199,12 @@ class BTSongTableViewDataSource: NSObject, UITableViewDataSource
             
             if error == nil
             {
-                if let objects = objects as? [Song] {
+                if let objects = objects as? [BabyTunes.Song] {
                     for (_, object) in objects.enumerate() {
                         self.tableCellsArray.append(object)
                     }
                 }
-                tableView.reloadData()
+                tableView.reloadSections(NSIndexSet(indexesInRange: NSMakeRange(0, tableView.numberOfSections)), withRowAnimation: .Automatic)
             }
             else
             {

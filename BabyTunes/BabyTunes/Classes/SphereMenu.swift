@@ -148,6 +148,8 @@ class SphereMenu:UIView, UICollisionBehaviorDelegate{
         var tag = gesture.view?.tag
         tag? -= Int(kItemInitTag)
         self.delegate?.sphereDidSelected(tag!)
+        
+        self.start?.image = self.images![tag!]
         self.shrinkSubmenu()
     }
 
