@@ -56,7 +56,7 @@ enum Language : Int
 
 // MARK: - BTSongTableViewController
 
-class BTSongTableViewController: UIViewController, SphereMenuDelegate, UIScrollViewDelegate
+class BTSongTableViewController: UIViewController, SphereMenuDelegate, UIScrollViewDelegate, UITableViewDelegate
 {
     @IBOutlet weak var tableView: UITableView!
     var dataSource : BTSongTableViewDataSource?
@@ -71,7 +71,7 @@ class BTSongTableViewController: UIViewController, SphereMenuDelegate, UIScrollV
 
         if (self.tableView != nil)
         {
-            self.tableView!.delegate = BTSongTableViewDelegate()
+            self.tableView!.delegate = self
             self.dataSource = BTSongTableViewDataSource()
             self.tableView!.dataSource = dataSource
         }
@@ -139,15 +139,9 @@ class BTSongTableViewController: UIViewController, SphereMenuDelegate, UIScrollV
             
         }
     }
-}
-
-// MARK: - BTSongTableViewDelegate
-
-class BTSongTableViewDelegate: NSObject, UITableViewDelegate
-{
+    
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath)
     {
-        
     }
     
     func tableView(tableView: UITableView, willDisplayCell cell: UITableViewCell, forRowAtIndexPath indexPath: NSIndexPath)
@@ -161,7 +155,6 @@ class BTSongTableViewDelegate: NSObject, UITableViewDelegate
 class BTSongTableViewDataSource: NSObject, UITableViewDataSource
 {
     var tableCellsArray: [BabyTunes.Song] = []
-    
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int
     {
@@ -193,7 +186,7 @@ class BTSongTableViewDataSource: NSObject, UITableViewDataSource
         
         let query = PFQuery(className: "Song")
         query.whereKey("language", equalTo: language)
-        
+    
         query.findObjectsInBackgroundWithBlock{
             (objects: [PFObject]?, error: NSError?) -> Void in
             

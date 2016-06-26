@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
@@ -18,17 +18,17 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="228" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="gbG-VM-M85" userLabel="BTSongTable">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="60" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="gbG-VM-M85" userLabel="BTSongTable">
                                 <rect key="frame" x="0.0" y="28" width="600" height="572"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <inset key="separatorInset" minX="15" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 <color key="sectionIndexBackgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="BTSongTableCell" rowHeight="228" id="PRp-hq-Koa" userLabel="BTSongTableCell" customClass="BTSongTableCell" customModule="BabyTunes" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="22" width="600" height="228"/>
+                                    <tableViewCell opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="BTSongTableCell" rowHeight="60" id="PRp-hq-Koa" userLabel="BTSongTableCell" customClass="BTSongTableCell" customModule="BabyTunes" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="22" width="600" height="60"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="PRp-hq-Koa" id="tRu-ZH-iJF">
-                                            <rect key="frame" x="0.0" y="0.0" width="600" height="228"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="60"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="This is the place to put the song name" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsLetterSpacingToFitWidth="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Avt-ck-bnd">
@@ -53,7 +53,7 @@
                                             <constraints>
                                                 <constraint firstItem="Paw-dL-d6A" firstAttribute="leading" secondItem="Avt-ck-bnd" secondAttribute="leading" constant="-46" id="CX3-ek-jPd"/>
                                                 <constraint firstItem="Avt-ck-bnd" firstAttribute="top" secondItem="tRu-ZH-iJF" secondAttribute="top" constant="8" id="ISv-3y-6QJ"/>
-                                                <constraint firstItem="Paw-dL-d6A" firstAttribute="bottom" secondItem="tRu-ZH-iJF" secondAttribute="bottomMargin" constant="-181" id="LQq-i1-S2r"/>
+                                                <constraint firstItem="Paw-dL-d6A" firstAttribute="bottom" secondItem="tRu-ZH-iJF" secondAttribute="bottomMargin" constant="-13" id="LQq-i1-S2r"/>
                                                 <constraint firstItem="Paw-dL-d6A" firstAttribute="leading" secondItem="tRu-ZH-iJF" secondAttribute="leading" constant="17" id="qzz-uD-9ir"/>
                                             </constraints>
                                         </tableViewCellContentView>
