@@ -1,1 +1,0 @@
-PODS_BABYTUNES_SWIFTYJSON_OTHER_LDFLAGS = -framework "Foundation"

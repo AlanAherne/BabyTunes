@@ -1,15 +1,16 @@
 # Uncomment this line to define a global platform for your project
 platform :ios, '8.0'
-link_with 'BabyTunesTests', 'BabyTunesTests'
+#link_with 'BabyTunesTests', 'BabyTunesTests'
+use_frameworks!
 
 target 'BabyTunes' do
-pod 'SwiftyJSON', :git => "https://github.com/orta/SwiftyJSON", :branch => "podspec"
-pod 'Alamofire', :git => "https://github.com/mrackwitz/Alamofire.git", :branch => "podspec"
+pod 'SwiftyJSON', :git => 'https://github.com/SwiftyJSON/SwiftyJSON.git'
+pod 'Alamofire', '~> 3.0’
 end
 
 target 'BabyTunesTests' do
 
-pod 'FBSnapshotTestCase', :git => 'https://github.com/delannoyk/ios-snapshot-test-case'
+pod 'FBSnapshotTestCase'
 
 end
 
