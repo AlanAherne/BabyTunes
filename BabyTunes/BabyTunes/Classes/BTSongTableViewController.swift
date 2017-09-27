@@ -6,18 +6,16 @@
 //  Created by Alan Aherne on 30/01/15.
 //  Copyright (c) 2014 Alan Aherne. All rights reserved.
 //
-import BabyTunes
 import UIKit
-import Parse
 
 // MARK: - enums
 
 enum Language : Int
 {
-    case ENGLAND, GERMANY, FRANCE, SPAIN
+    case england, germany, france, spain
 
-    static let languageNames = [ENGLAND : "english", GERMANY : "german", FRANCE : "french", SPAIN : "spanish"]
-    static let languageMouseNames = [ENGLAND : "MouseEN", GERMANY : "MouseDE", FRANCE : "MouseFR", SPAIN : "MouseSP"]
+    static let languageNames = [england : "english", germany : "german", france : "french", spain : "spanish"]
+    static let languageMouseNames = [england : "MouseEN", germany : "MouseDE", france : "MouseFR", spain : "MouseSP"]
     
     func languageName() -> String
     {
@@ -76,7 +74,7 @@ class BTSongTableViewController: UIViewController, SphereMenuDelegate, UIScrollV
             self.tableView!.dataSource = dataSource
         }
         
-        self.dataSource!.loadSongsForLanguage(self.tableView, language: Language.GERMANY.languageName())
+        self.dataSource!.loadSongsForLanguage(self.tableView, language: Language.germany.languageName())
         
         self.view.backgroundColor = UIColor(red:0.2, green:0.38, blue:0.8, alpha:1)
         
@@ -85,28 +83,28 @@ class BTSongTableViewController: UIViewController, SphereMenuDelegate, UIScrollV
         while let language = Language(rawValue: j) {
             
             let image = language.languageMouseCharacterIconImage()
-            images.append(image)
+            images.append(image!)
             j += 1
             if (j > 6) {break}
         }
         
-        let bounds: CGRect = UIScreen.mainScreen().bounds
+        let bounds: CGRect = UIScreen.main.bounds
         let width:CGFloat = bounds.size.width
         let height:CGFloat = bounds.size.height
         
-        menu = SphereMenu(startPoint: CGPointMake(width * 0.5, height - 50), startImage: Language.GERMANY.languageMouseCharacterIconImage(), submenuImages:images)
+        menu = SphereMenu(startPoint: CGPoint(x: width * 0.5, y: height - 50), startImage: Language.germany.languageMouseCharacterIconImage(), submenuImages:images)
         menu.delegate = self
         self.view.addSubview(menu)
     }
     
-    override func viewDidAppear(animated: Bool)
+    override func viewDidAppear(_ animated: Bool)
     {
         super.viewDidAppear(animated)
     }
 
-    override func supportedInterfaceOrientations() -> UIInterfaceOrientationMask
+    override var supportedInterfaceOrientations : UIInterfaceOrientationMask
     {
-        let orientation: UIInterfaceOrientationMask = [UIInterfaceOrientationMask.Portrait, UIInterfaceOrientationMask.PortraitUpsideDown]
+        let orientation: UIInterfaceOrientationMask = [UIInterfaceOrientationMask.portrait, UIInterfaceOrientationMask.portraitUpsideDown]
         return orientation
     }
     
@@ -118,14 +116,14 @@ class BTSongTableViewController: UIViewController, SphereMenuDelegate, UIScrollV
 
     // MARK: - UIScrollviewViewDelegate
     
-    func scrollViewWillBeginDragging(scrollView: UIScrollView)
+    func scrollViewWillBeginDragging(_ scrollView: UIScrollView)
     {
         menu.shrinkSubmenu()
     }
     
     // MARK: - SphereMenuDelegate
     
-    func sphereDidSelected(index: Int)
+    func sphereDidSelected(_ index: Int)
     {
         if let languageIndex = Language(rawValue : index)
         {
@@ -140,70 +138,58 @@ class BTSongTableViewController: UIViewController, SphereMenuDelegate, UIScrollV
         }
     }
     
-    func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath)
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath)
     {
     }
     
-    func tableView(tableView: UITableView, willDisplayCell cell: UITableViewCell, forRowAtIndexPath indexPath: NSIndexPath)
+    func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath)
     {
         SlideInCellAnimator.animate(cell)
     }
 }
 
 // MARK: - BTSongTableViewDataSource
+let songsDict = ["english": ["Baa Baa Black Sheep", "Hush Little Baby", "Mary Had A Little Lamb", "The Animals Went In Two By Two", "Im A Little Teapot", "Old Mac Donald Had A Farm", "The Grand Old Duke Of York", "Hickory Dickory Dock", "Incy Wincy Spider", "Oranges And Lemons", "Three Blind Mice", "Humpty Dumpty", "London Bridge Is Falling Down", "Sing A Song Of Sixpence"],
+                 "german": ["Alle Voegel sind schon da", "Ein Vogel wollte Hochzeit machen", "Kommt ein Vogel geflogen", "Auf einem Baum ein Kuckuck", "Der Mond ist aufgegangen", "Es klappert die Muehle", "Oh du lieber Augustin", "Backe backe Kuchen", "Die Gedanken sind frei", "Es tanzt ein Bi-Ba-Butzemann", "Spannenlanger Hansel", "Bruederchen komm tanz mit mir", "Ein Maennlein steht im Walde", "Haensel und Gretel", "Weisst du wieviel Sternlein stehen"],
+                 "spanish": ["A mi burro", "El cocherito,lere", "La Tarara", "Anton Pirulero", "El patio de mi casa", "La reina Berenguela", "Tanto vestido blanco", "Cu-Cu, cantaba la rana", "Estando el senor don gato", "Los pollitos", "Tengo una muneca", "Debajo de un boton", "Jugando al escondite", "Quisiera ser tan alta",	"Tres hojitas, Madre"],
+                 "french" : ["A la claire fontaine", "Cadet Rouselle", "Gentil coqulicot", "Le grand cerf", "Alouette, gentille alouette", "Cest Gugusse", "Il etait un petit navire", "Lempreur et le petit prince", "Arlequin danse sa boutique", "Compere Guilleri", "Jean de la Lune", "Maman, les ptits bateau", "Au claire de la lune", "Jean petit qui danse", "Savez - vous planter les choux"]]
 
 class BTSongTableViewDataSource: NSObject, UITableViewDataSource
 {
-    var tableCellsArray: [BabyTunes.Song] = []
+    var tableCellsArray: [Song] = []
     
-    func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int
     {
         return tableCellsArray.count;
     }
     
-    func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat
+    func tableView(_ tableView: UITableView, heightForRowAtIndexPath indexPath: IndexPath) -> CGFloat
     {
         return 120
     }
     
-    func numberOfSectionsInTableView(tableView: UITableView) -> Int
+    func numberOfSections(in tableView: UITableView) -> Int
     {
         return 1
     }
     
-    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell
     {
-        let cell = tableView.dequeueReusableCellWithIdentifier("BTSongTableCell", forIndexPath: indexPath) as! BTSongTableCell
+        let cell = tableView.dequeueReusableCell(withIdentifier: "BTSongTableCell", for: indexPath) as! BTSongTableCell
         cell.configure(tableCellsArray[indexPath.row])
         return cell
     }
     
     // MARK: - Helpers
     
-    func loadSongsForLanguage(tableView: UITableView, language: String )
+    func loadSongsForLanguage(_ tableView: UITableView, language: String )
     {
+        let dict = songsDict[language]
         self.tableCellsArray.removeAll()
         
-        let query = PFQuery(className: "Song")
-        query.whereKey("language", equalTo: language)
-    
-        query.findObjectsInBackgroundWithBlock{
-            (objects: [PFObject]?, error: NSError?) -> Void in
-            
-            if error == nil
-            {
-                if let objects = objects as? [BabyTunes.Song] {
-                    for (_, object) in objects.enumerate() {
-                        self.tableCellsArray.append(object)
-                    }
-                }
-                tableView.reloadSections(NSIndexSet(indexesInRange: NSMakeRange(0, tableView.numberOfSections)), withRowAnimation: .Automatic)
-            }
-            else
-            {
-                print("%@", error)
-            }
+        for title in dict!{
+            let song:Song = Song(fromLanguage: language, songTitle: title)
+            self.tableCellsArray.append(song)
         }
     }
-    
 }
