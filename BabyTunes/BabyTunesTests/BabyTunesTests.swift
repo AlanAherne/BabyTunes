@@ -25,11 +25,8 @@ class BabyTunesTests: FBSnapshotTestCase {
     
     func testBTSongTableCell()
     {
-        let songTableCell = BTSongTableCell(style: .Default, reuseIdentifier: nil)
-        
-        let songTest = BabyTunes.Song()
-        songTest.title = "Test"
-        
+        let songTableCell = BTSongTableCell(style: .default, reuseIdentifier: nil)
+        let songTest:Song = Song(fromLanguage: "german", songTitle: "Test")
         songTableCell.configure(songTest)
         FBSnapshotVerifyView(songTableCell)
     }
