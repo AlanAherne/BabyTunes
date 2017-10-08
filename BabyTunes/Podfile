@@ -1,11 +1,15 @@
 # Uncomment this line to define a global platform for your project
-platform :ios, '8.0'
+
+source 'https://github.com/CocoaPods/Specs.git'
+
+platform :ios, '10.0'
 #link_with 'BabyTunesTests', 'BabyTunesTests'
 use_frameworks!
 
 target 'BabyTunes' do
 pod 'SwiftyJSON'
 pod 'Alamofire', '~> 4.5'
+pod 'Swinject', '2.1.0'
 end
 
 target 'BabyTunesTests' do
