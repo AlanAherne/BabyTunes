@@ -39,7 +39,6 @@ open class PopCirCleMenuView: UIView, UIGestureRecognizerDelegate {
         setup()
 
         addGestureRecognizer(longPressGestureRecognizer)
-
     }
 
     required public init?(coder aDecoder: NSCoder) {

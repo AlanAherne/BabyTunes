@@ -73,7 +73,7 @@ open class CircleMenu: UIButton {
     open var normalBorderColor: UIColor = UIColor.white
 
     /// The object that acts as the delegate of the circle menu.
-    @IBOutlet weak open var delegate: AnyObject? //CircleMenuDelegate?
+    @IBOutlet weak open var delegate: CircleMenuDelegate?
 
     var buttons: [CircleMenuButton]?
 
@@ -189,7 +189,7 @@ open class CircleMenu: UIButton {
         tapRotatedAnimation(Float(duration), isSelected: isShow)
     }
 
-    internal func buttonHandler(_ sender: UIButton) {
+    @objc internal func buttonHandler(_ sender: UIButton) {
         guard case let sender as CircleMenuButton = sender else {
             return
         }

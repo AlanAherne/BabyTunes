@@ -13,7 +13,7 @@ enum WheelAlignmentType{
     case left, center
 }
 
-class AWCollectionViewDialLayout: UICollectionViewFlowLayout {
+class AWCollectionViewDialLayout: UICollectionViewFlowLayout, UIGestureRecognizerDelegate {
     var cellCount:Int!
     var wheelType:WheelAlignmentType!
     var center:CGPoint!
@@ -23,7 +23,6 @@ class AWCollectionViewDialLayout: UICollectionViewFlowLayout {
     var cellSize:CGSize!
     var angularSpacing:CGFloat!
     var dialRadius:CGFloat!
-    var currentIndexPath:IndexPath!
     
     var shouldSnap = false
     var shouldFlip = false
@@ -81,9 +80,9 @@ class AWCollectionViewDialLayout: UICollectionViewFlowLayout {
         let temp = Float(self.angularSpacing)
         let dds = Float(self.dialRadius + (deltaX*scaleFactor))
         
-        var rX = cosf(temp * Float(newIndex) * Float(M_PI/180)) * dds
+        var rX = cosf(temp * Float(newIndex) * Float(Float.pi/180)) * dds
         
-        let rY = sinf(temp * Float(newIndex) * Float(M_PI/180)) * dds
+        let rY = sinf(temp * Float(newIndex) * Float(Float.pi/180)) * dds
         var oX = -self.dialRadius + self.xOffset - (0.5 * self.cellSize.width);
         let oY = self.collectionView!.bounds.size.height/2 + self.collectionView!.contentOffset.y - (0.5 * self.cellSize.height)
         
@@ -154,11 +153,9 @@ class AWCollectionViewDialLayout: UICollectionViewFlowLayout {
         theAttributes.size = self.cellSize
         
         var scaleFactor:CGFloat
-        var deltaX:CGFloat
         var translationT:CGAffineTransform
       
-        
-        let rotationValue = self.angularSpacing * newIndex * CGFloat(M_PI/180)
+        let rotationValue = self.angularSpacing * newIndex * CGFloat(Float.pi/180)
         var rotationT = CGAffineTransform(rotationAngle: rotationValue)
         
         if(shouldFlip){
@@ -173,7 +170,6 @@ class AWCollectionViewDialLayout: UICollectionViewFlowLayout {
             translationT = CGAffineTransform(translationX: 0 , y: 0)
         }else  {
             scaleFactor = fmax(0.4, 1 - fabs( CGFloat(newIndex) * 0.50))
-            deltaX =  self.collectionView!.bounds.size.width / 2
             
             if(shouldFlip){
                 theAttributes.center = CGPoint( x: self.collectionView!.frame.size.width + self.dialRadius - self.xOffset , y: self.collectionView!.bounds.size.height/2 + self.collectionView!.contentOffset.y)
@@ -186,8 +182,6 @@ class AWCollectionViewDialLayout: UICollectionViewFlowLayout {
                 print("should not Flip ")
             }
         }
-        
-        
         
         let scaleT:CGAffineTransform = CGAffineTransform(scaleX: scaleFactor, y: scaleFactor)
         theAttributes.alpha = scaleFactor

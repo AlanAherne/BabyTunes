@@ -13,14 +13,15 @@ open class Song: NSObject {
         
         language = songLanguage
         title = songTitle
+        thumbNailImage = UIImage(named: songTitle + "_THM.png")  
         super.init()
     }
     
     var title: String!
     var language: String!
+//AA    var image: UIImage!
+    var thumbNailImage: UIImage!
     var length: Int?
-    var imageFile: NSObject?
-    var imageThumbNailFile: NSObject?
     var songData: NSObject?
     var lyrics: NSObject?
 }

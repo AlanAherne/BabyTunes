@@ -42,16 +42,16 @@ open class CircleMenuButton: UIButton {
         view.addSubview(self)
 
         //Create textLabel
-        textLabel = UITextField(frame: CGRect(x: 0.0, y: 0.0, width: self.bounds.width, height: self.bounds.height))
+        textLabel = UITextField(frame: CGRect(x: 0.0, y: 0.0, width: self.bounds.width*3, height: self.bounds.height))
         guard let textLabel = textLabel else {return}
 
         textLabel.font          = UIFont(name: "Helvetica-Bold", size: 12)
-        textLabel.isHidden        = true
-        textLabel.textColor     = UIColor.white
+        textLabel.isHidden      = true
+        textLabel.textColor     = UIColor.color(255, green: 22, blue: 93, alpha: 1.0)
         textLabel.textAlignment = .center
         textLabel.adjustsFontSizeToFitWidth = true
         textLabel.backgroundColor           = UIColor.clear
-        textLabel.isUserInteractionEnabled    = false
+        textLabel.isUserInteractionEnabled  = false
         textLabel.contentVerticalAlignment  = .top
 
         aContainer.addSubview(view)
