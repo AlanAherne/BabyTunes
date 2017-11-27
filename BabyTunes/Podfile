@@ -2,7 +2,7 @@
 
 source 'https://github.com/CocoaPods/Specs.git'
 
-platform :ios, '10.0'
+platform :ios, '9.0'
 #link_with 'BabyTunesTests', 'BabyTunesTests'
 use_frameworks!
 
@@ -10,6 +10,7 @@ target 'BabyTunes' do
 pod 'SwiftyJSON'
 pod 'Alamofire', '~> 4.5'
 pod 'Swinject', '2.1.0'
+pod 'ColorMatchTabs', '~> 2.0'
 end
 
 target 'BabyTunesTests' do

@@ -7,6 +7,66 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1420A08D1FCC4F3D00A367DD /* Ein Vogel wollte Hochzeit machen.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1420A07D1FCC4F3C00A367DD /* Ein Vogel wollte Hochzeit machen.jpg */; };
+		1420A08E1FCC4F3D00A367DD /* Kommt ein Vogel geflogen.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1420A07E1FCC4F3C00A367DD /* Kommt ein Vogel geflogen.jpg */; };
+		1420A08F1FCC4F3D00A367DD /* Ein Maennlein steht im Walde.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1420A07F1FCC4F3C00A367DD /* Ein Maennlein steht im Walde.jpg */; };
+		1420A0901FCC4F3D00A367DD /* Alle Voegel sind schon da.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1420A0801FCC4F3C00A367DD /* Alle Voegel sind schon da.jpg */; };
+		1420A0911FCC4F3D00A367DD /* Der Mond ist aufgegangen.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1420A0811FCC4F3C00A367DD /* Der Mond ist aufgegangen.jpg */; };
+		1420A0921FCC4F3D00A367DD /* Weisst du wieviel Sternlein stehen.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1420A0821FCC4F3C00A367DD /* Weisst du wieviel Sternlein stehen.jpg */; };
+		1420A0931FCC4F3D00A367DD /* Es klappert die Muehle.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1420A0831FCC4F3D00A367DD /* Es klappert die Muehle.jpg */; };
+		1420A0941FCC4F3D00A367DD /* Bruederchen komm tanz mit mir.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1420A0841FCC4F3D00A367DD /* Bruederchen komm tanz mit mir.jpg */; };
+		1420A0951FCC4F3D00A367DD /* Auf einem Baum ein Kuckuck.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1420A0851FCC4F3D00A367DD /* Auf einem Baum ein Kuckuck.jpg */; };
+		1420A0961FCC4F3D00A367DD /* Es tanzt ein Bi-Ba-Butzemann.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1420A0861FCC4F3D00A367DD /* Es tanzt ein Bi-Ba-Butzemann.jpg */; };
+		1420A0971FCC4F3D00A367DD /* Die Gedanken sind frei.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1420A0871FCC4F3D00A367DD /* Die Gedanken sind frei.jpg */; };
+		1420A0981FCC4F3D00A367DD /* Haensel und Gretel.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1420A0881FCC4F3D00A367DD /* Haensel und Gretel.jpg */; };
+		1420A0991FCC4F3D00A367DD /* Spannenlanger Hansel.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1420A0891FCC4F3D00A367DD /* Spannenlanger Hansel.jpg */; };
+		1420A09A1FCC4F3D00A367DD /* Oh du lieber Augustin.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1420A08A1FCC4F3D00A367DD /* Oh du lieber Augustin.jpg */; };
+		1420A09B1FCC4F3D00A367DD /* Backe backe Kuchen.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1420A08B1FCC4F3D00A367DD /* Backe backe Kuchen.jpg */; };
+		1420A0AC1FCC4F8D00A367DD /* Three Blind Mice.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1420A09D1FCC4F8C00A367DD /* Three Blind Mice.jpg */; };
+		1420A0AD1FCC4F8D00A367DD /* The Animals Went In Two By Two.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1420A09E1FCC4F8C00A367DD /* The Animals Went In Two By Two.jpg */; };
+		1420A0AE1FCC4F8D00A367DD /* Hickory Dickory Dock.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1420A09F1FCC4F8C00A367DD /* Hickory Dickory Dock.jpg */; };
+		1420A0AF1FCC4F8D00A367DD /* Twinkle Twinkle Litte Star.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1420A0A01FCC4F8C00A367DD /* Twinkle Twinkle Litte Star.jpg */; };
+		1420A0B01FCC4F8D00A367DD /* Incy Wincy Spider.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1420A0A11FCC4F8C00A367DD /* Incy Wincy Spider.jpg */; };
+		1420A0B11FCC4F8D00A367DD /* Hush Little Baby.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1420A0A21FCC4F8C00A367DD /* Hush Little Baby.jpg */; };
+		1420A0B21FCC4F8D00A367DD /* London Bridge Is Falling Down.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1420A0A31FCC4F8D00A367DD /* London Bridge Is Falling Down.jpg */; };
+		1420A0B31FCC4F8D00A367DD /* The Grand Old Duke Of York.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1420A0A41FCC4F8D00A367DD /* The Grand Old Duke Of York.jpg */; };
+		1420A0B41FCC4F8D00A367DD /* Baa Baa Black Sheep.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1420A0A51FCC4F8D00A367DD /* Baa Baa Black Sheep.jpg */; };
+		1420A0B51FCC4F8D00A367DD /* Mary Had A Little Lamb.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1420A0A61FCC4F8D00A367DD /* Mary Had A Little Lamb.jpg */; };
+		1420A0B61FCC4F8D00A367DD /* Humpty Dumpty.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1420A0A71FCC4F8D00A367DD /* Humpty Dumpty.jpg */; };
+		1420A0B71FCC4F8D00A367DD /* Oranges And Lemons.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1420A0A81FCC4F8D00A367DD /* Oranges And Lemons.jpg */; };
+		1420A0B81FCC4F8D00A367DD /* Old Mac Donald Had A Farm.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1420A0A91FCC4F8D00A367DD /* Old Mac Donald Had A Farm.jpg */; };
+		1420A0B91FCC4F8D00A367DD /* Im A Little Teapot.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1420A0AA1FCC4F8D00A367DD /* Im A Little Teapot.jpg */; };
+		1420A0BA1FCC4F8D00A367DD /* Sing A Song Of Sixpence.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1420A0AB1FCC4F8D00A367DD /* Sing A Song Of Sixpence.jpg */; };
+		1420A0CB1FCC4FBB00A367DD /* Cadet Rouselle.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1420A0BC1FCC4FBA00A367DD /* Cadet Rouselle.jpg */; };
+		1420A0CC1FCC4FBB00A367DD /* Lempreur et le petit prince.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1420A0BD1FCC4FBA00A367DD /* Lempreur et le petit prince.jpg */; };
+		1420A0CD1FCC4FBB00A367DD /* Savez - vous planter les choux.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1420A0BE1FCC4FBA00A367DD /* Savez - vous planter les choux.jpg */; };
+		1420A0CE1FCC4FBB00A367DD /* A la claire fontaine.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1420A0BF1FCC4FBA00A367DD /* A la claire fontaine.jpg */; };
+		1420A0CF1FCC4FBB00A367DD /* Il etait un petit navire.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1420A0C01FCC4FBA00A367DD /* Il etait un petit navire.jpg */; };
+		1420A0D01FCC4FBB00A367DD /* Compere Guilleri.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1420A0C11FCC4FBA00A367DD /* Compere Guilleri.jpg */; };
+		1420A0D11FCC4FBB00A367DD /* Jean de la Lune.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1420A0C21FCC4FBA00A367DD /* Jean de la Lune.jpg */; };
+		1420A0D21FCC4FBB00A367DD /* Arlequin danse sa boutique.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1420A0C31FCC4FBB00A367DD /* Arlequin danse sa boutique.jpg */; };
+		1420A0D31FCC4FBB00A367DD /* Au claire de la lune.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1420A0C41FCC4FBB00A367DD /* Au claire de la lune.jpg */; };
+		1420A0D41FCC4FBB00A367DD /* Jean petit qui danse.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1420A0C51FCC4FBB00A367DD /* Jean petit qui danse.jpg */; };
+		1420A0D51FCC4FBB00A367DD /* Maman, les ptits bateau.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1420A0C61FCC4FBB00A367DD /* Maman, les ptits bateau.jpg */; };
+		1420A0D61FCC4FBB00A367DD /* Gentil coqulicot.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1420A0C71FCC4FBB00A367DD /* Gentil coqulicot.jpg */; };
+		1420A0D71FCC4FBB00A367DD /* Alouette, gentille alouette.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1420A0C81FCC4FBB00A367DD /* Alouette, gentille alouette.jpg */; };
+		1420A0D81FCC4FBB00A367DD /* Cest Gugusse.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1420A0C91FCC4FBB00A367DD /* Cest Gugusse.jpg */; };
+		1420A0D91FCC4FBB00A367DD /* Le grand cerf.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1420A0CA1FCC4FBB00A367DD /* Le grand cerf.jpg */; };
+		1420A0EA1FCC4FE000A367DD /* Cu-Cu, cantaba la rana.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1420A0DB1FCC4FDE00A367DD /* Cu-Cu, cantaba la rana.jpg */; };
+		1420A0EB1FCC4FE000A367DD /* Tres hojitas, Madre.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1420A0DC1FCC4FDE00A367DD /* Tres hojitas, Madre.jpg */; };
+		1420A0EC1FCC4FE000A367DD /* La reina Berenguela.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1420A0DD1FCC4FDE00A367DD /* La reina Berenguela.jpg */; };
+		1420A0ED1FCC4FE000A367DD /* A mi burro.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1420A0DE1FCC4FDE00A367DD /* A mi burro.jpg */; };
+		1420A0EE1FCC4FE000A367DD /* Quisiera ser tan alta.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1420A0DF1FCC4FDF00A367DD /* Quisiera ser tan alta.jpg */; };
+		1420A0EF1FCC4FE000A367DD /* Estando el senor don gato.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1420A0E01FCC4FDF00A367DD /* Estando el senor don gato.jpg */; };
+		1420A0F01FCC4FE000A367DD /* El cocherito, lere.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1420A0E11FCC4FDF00A367DD /* El cocherito, lere.jpg */; };
+		1420A0F11FCC4FE000A367DD /* Jugando al escondite.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1420A0E21FCC4FDF00A367DD /* Jugando al escondite.jpg */; };
+		1420A0F21FCC4FE000A367DD /* El patio de mi casa.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1420A0E31FCC4FDF00A367DD /* El patio de mi casa.jpg */; };
+		1420A0F31FCC4FE000A367DD /* Anton Pirulero.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1420A0E41FCC4FDF00A367DD /* Anton Pirulero.jpg */; };
+		1420A0F41FCC4FE000A367DD /* Tanto vestido blanco.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1420A0E51FCC4FDF00A367DD /* Tanto vestido blanco.jpg */; };
+		1420A0F51FCC4FE000A367DD /* Tengo una muneca.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1420A0E61FCC4FDF00A367DD /* Tengo una muneca.jpg */; };
+		1420A0F61FCC4FE000A367DD /* Los pollitos.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1420A0E71FCC4FDF00A367DD /* Los pollitos.jpg */; };
+		1420A0F71FCC4FE000A367DD /* Debajo de un boton.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1420A0E81FCC4FDF00A367DD /* Debajo de un boton.jpg */; };
+		1420A0F81FCC4FE000A367DD /* La Tarara.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1420A0E91FCC4FE000A367DD /* La Tarara.jpg */; };
 		143CEBE21F94E9B10050F06E /* ImageUtility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 143CEBE11F94E9B10050F06E /* ImageUtility.swift */; };
 		143CEBE31F94EA560050F06E /* ImageUtility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 143CEBE11F94E9B10050F06E /* ImageUtility.swift */; };
 		143EF4F61F7F759F00E25F7B /* AppAssemblyProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 143EF4F51F7F759F00E25F7B /* AppAssemblyProtocol.swift */; };
@@ -16,90 +76,28 @@
 		143EF5011F7F821A00E25F7B /* WindowHandlerState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 143EF5001F7F821A00E25F7B /* WindowHandlerState.swift */; };
 		143EF5031F7F828600E25F7B /* WindowHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 143EF5021F7F828600E25F7B /* WindowHandler.swift */; };
 		143EF5051F7F84DF00E25F7B /* Assemblies.swift in Sources */ = {isa = PBXBuildFile; fileRef = 143EF5041F7F84DF00E25F7B /* Assemblies.swift */; };
-		145D8B411F8B60D0000E5405 /* AWCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 145D8B401F8A5A69000E5405 /* AWCollectionCell.swift */; };
-		145D8B421F8B60D0000E5405 /* AWCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 145D8B401F8A5A69000E5405 /* AWCollectionCell.swift */; };
-		145D8B431F8B60D5000E5405 /* AWCollectionViewDialLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 145D8B3E1F8A5A0D000E5405 /* AWCollectionViewDialLayout.swift */; };
-		145D8B441F8B60D6000E5405 /* AWCollectionViewDialLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 145D8B3E1F8A5A0D000E5405 /* AWCollectionViewDialLayout.swift */; };
-		1467AD021F94E122003F26A7 /* Im A Little Teapot_THM.png in Resources */ = {isa = PBXBuildFile; fileRef = 1467ACF11F94E121003F26A7 /* Im A Little Teapot_THM.png */; };
-		1467AD031F94E122003F26A7 /* Incy Wincy Spider_THM.png in Resources */ = {isa = PBXBuildFile; fileRef = 1467ACF21F94E121003F26A7 /* Incy Wincy Spider_THM.png */; };
-		1467AD041F94E122003F26A7 /* The Animals Went In Two By Two_THM.png in Resources */ = {isa = PBXBuildFile; fileRef = 1467ACF31F94E121003F26A7 /* The Animals Went In Two By Two_THM.png */; };
-		1467AD051F94E122003F26A7 /* Three Blind Mice_THM.png in Resources */ = {isa = PBXBuildFile; fileRef = 1467ACF41F94E121003F26A7 /* Three Blind Mice_THM.png */; };
-		1467AD061F94E122003F26A7 /* Hickory Dickory Dock_THM.png in Resources */ = {isa = PBXBuildFile; fileRef = 1467ACF51F94E121003F26A7 /* Hickory Dickory Dock_THM.png */; };
-		1467AD071F94E122003F26A7 /* Oranges And Lemons_THM.png in Resources */ = {isa = PBXBuildFile; fileRef = 1467ACF61F94E121003F26A7 /* Oranges And Lemons_THM.png */; };
-		1467AD081F94E122003F26A7 /* Old Mac Donald Had A Farm_THM.png in Resources */ = {isa = PBXBuildFile; fileRef = 1467ACF71F94E121003F26A7 /* Old Mac Donald Had A Farm_THM.png */; };
-		1467AD091F94E122003F26A7 /* Baa Baa Black Sheep_THM.png in Resources */ = {isa = PBXBuildFile; fileRef = 1467ACF81F94E121003F26A7 /* Baa Baa Black Sheep_THM.png */; };
-		1467AD0A1F94E122003F26A7 /* Twinkle Twinkle Little Star_THM.png in Resources */ = {isa = PBXBuildFile; fileRef = 1467ACF91F94E122003F26A7 /* Twinkle Twinkle Little Star_THM.png */; };
-		1467AD0B1F94E122003F26A7 /* London Bridge Is Falling Down_THM.png in Resources */ = {isa = PBXBuildFile; fileRef = 1467ACFA1F94E122003F26A7 /* London Bridge Is Falling Down_THM.png */; };
-		1467AD0C1F94E122003F26A7 /* Mary Had A Little Lamb_THM.png in Resources */ = {isa = PBXBuildFile; fileRef = 1467ACFB1F94E122003F26A7 /* Mary Had A Little Lamb_THM.png */; };
-		1467AD0D1F94E122003F26A7 /* Old MacDonald Had A Farm_THM.png in Resources */ = {isa = PBXBuildFile; fileRef = 1467ACFC1F94E122003F26A7 /* Old MacDonald Had A Farm_THM.png */; };
-		1467AD0E1F94E122003F26A7 /* Humpty Dumpty_THM.png in Resources */ = {isa = PBXBuildFile; fileRef = 1467ACFD1F94E122003F26A7 /* Humpty Dumpty_THM.png */; };
-		1467AD0F1F94E122003F26A7 /* Sing A Song Of Sixpence_THM.png in Resources */ = {isa = PBXBuildFile; fileRef = 1467ACFE1F94E122003F26A7 /* Sing A Song Of Sixpence_THM.png */; };
-		1467AD101F94E122003F26A7 /* The Grand Old Duke Of York_THM.png in Resources */ = {isa = PBXBuildFile; fileRef = 1467ACFF1F94E122003F26A7 /* The Grand Old Duke Of York_THM.png */; };
-		1467AD111F94E122003F26A7 /* Hush Little Baby_THM.png in Resources */ = {isa = PBXBuildFile; fileRef = 1467AD001F94E122003F26A7 /* Hush Little Baby_THM.png */; };
-		1467AD121F94E122003F26A7 /* Twinkle Twinkle Litte Star_THM.png in Resources */ = {isa = PBXBuildFile; fileRef = 1467AD011F94E122003F26A7 /* Twinkle Twinkle Litte Star_THM.png */; };
-		1467AD231F94E153003F26A7 /* Weisst du wieviel Sternlein stehen_THM.png in Resources */ = {isa = PBXBuildFile; fileRef = 1467AD141F94E152003F26A7 /* Weisst du wieviel Sternlein stehen_THM.png */; };
-		1467AD241F94E153003F26A7 /* Die Gedanken sind frei_THM.png in Resources */ = {isa = PBXBuildFile; fileRef = 1467AD151F94E152003F26A7 /* Die Gedanken sind frei_THM.png */; };
-		1467AD251F94E153003F26A7 /* Bruederchen komm tanz mit mir_THM.png in Resources */ = {isa = PBXBuildFile; fileRef = 1467AD161F94E152003F26A7 /* Bruederchen komm tanz mit mir_THM.png */; };
-		1467AD261F94E153003F26A7 /* Es klappert die Muehle_THM.png in Resources */ = {isa = PBXBuildFile; fileRef = 1467AD171F94E152003F26A7 /* Es klappert die Muehle_THM.png */; };
-		1467AD271F94E153003F26A7 /* Auf einem Baum ein Kuckuck_THM.png in Resources */ = {isa = PBXBuildFile; fileRef = 1467AD181F94E152003F26A7 /* Auf einem Baum ein Kuckuck_THM.png */; };
-		1467AD281F94E153003F26A7 /* Backe backe Kuchen_THM.png in Resources */ = {isa = PBXBuildFile; fileRef = 1467AD191F94E152003F26A7 /* Backe backe Kuchen_THM.png */; };
-		1467AD291F94E153003F26A7 /* Ein Vogel wollte Hochzeit machen_THM.png in Resources */ = {isa = PBXBuildFile; fileRef = 1467AD1A1F94E152003F26A7 /* Ein Vogel wollte Hochzeit machen_THM.png */; };
-		1467AD2A1F94E153003F26A7 /* Alle Voegel sind schon da_THM.png in Resources */ = {isa = PBXBuildFile; fileRef = 1467AD1B1F94E152003F26A7 /* Alle Voegel sind schon da_THM.png */; };
-		1467AD2B1F94E153003F26A7 /* Ein Maennlein steht im Walde_THM.png in Resources */ = {isa = PBXBuildFile; fileRef = 1467AD1C1F94E152003F26A7 /* Ein Maennlein steht im Walde_THM.png */; };
-		1467AD2C1F94E153003F26A7 /* Spannenlanger Hansel_THM.png in Resources */ = {isa = PBXBuildFile; fileRef = 1467AD1D1F94E152003F26A7 /* Spannenlanger Hansel_THM.png */; };
-		1467AD2D1F94E153003F26A7 /* Kommt ein Vogel geflogen_THM.png in Resources */ = {isa = PBXBuildFile; fileRef = 1467AD1E1F94E152003F26A7 /* Kommt ein Vogel geflogen_THM.png */; };
-		1467AD2E1F94E153003F26A7 /* Der Mond ist aufgegangen_THM.png in Resources */ = {isa = PBXBuildFile; fileRef = 1467AD1F1F94E152003F26A7 /* Der Mond ist aufgegangen_THM.png */; };
-		1467AD2F1F94E153003F26A7 /* Haensel und Gretel_THM.png in Resources */ = {isa = PBXBuildFile; fileRef = 1467AD201F94E152003F26A7 /* Haensel und Gretel_THM.png */; };
-		1467AD301F94E153003F26A7 /* Oh du lieber Augustin_THM.png in Resources */ = {isa = PBXBuildFile; fileRef = 1467AD211F94E152003F26A7 /* Oh du lieber Augustin_THM.png */; };
-		1467AD311F94E153003F26A7 /* Es tanzt ein Bi-Ba-Butzemann_THM.png in Resources */ = {isa = PBXBuildFile; fileRef = 1467AD221F94E153003F26A7 /* Es tanzt ein Bi-Ba-Butzemann_THM.png */; };
-		1467AD421F94E181003F26A7 /* A la claire fontaine_THM.png in Resources */ = {isa = PBXBuildFile; fileRef = 1467AD331F94E180003F26A7 /* A la claire fontaine_THM.png */; };
-		1467AD431F94E181003F26A7 /* Au claire de la lune_THM.png in Resources */ = {isa = PBXBuildFile; fileRef = 1467AD341F94E180003F26A7 /* Au claire de la lune_THM.png */; };
-		1467AD441F94E181003F26A7 /* Alouette gentille alouette_THM.png in Resources */ = {isa = PBXBuildFile; fileRef = 1467AD351F94E180003F26A7 /* Alouette gentille alouette_THM.png */; };
-		1467AD451F94E181003F26A7 /* Gentil coqulicot_THM.png in Resources */ = {isa = PBXBuildFile; fileRef = 1467AD361F94E180003F26A7 /* Gentil coqulicot_THM.png */; };
-		1467AD461F94E181003F26A7 /* Il etait un petit navire_THM.png in Resources */ = {isa = PBXBuildFile; fileRef = 1467AD371F94E180003F26A7 /* Il etait un petit navire_THM.png */; };
-		1467AD471F94E181003F26A7 /* Cadet Rouselle_THM.png in Resources */ = {isa = PBXBuildFile; fileRef = 1467AD381F94E180003F26A7 /* Cadet Rouselle_THM.png */; };
-		1467AD481F94E181003F26A7 /* Le grand cerf_THM.png in Resources */ = {isa = PBXBuildFile; fileRef = 1467AD391F94E180003F26A7 /* Le grand cerf_THM.png */; };
-		1467AD491F94E181003F26A7 /* Lempreur et le petit prince_THM.png in Resources */ = {isa = PBXBuildFile; fileRef = 1467AD3A1F94E180003F26A7 /* Lempreur et le petit prince_THM.png */; };
-		1467AD4A1F94E181003F26A7 /* Maman les ptits bateau_THM.png in Resources */ = {isa = PBXBuildFile; fileRef = 1467AD3B1F94E180003F26A7 /* Maman les ptits bateau_THM.png */; };
-		1467AD4B1F94E181003F26A7 /* Arlequin danse sa boutique_THM.png in Resources */ = {isa = PBXBuildFile; fileRef = 1467AD3C1F94E181003F26A7 /* Arlequin danse sa boutique_THM.png */; };
-		1467AD4C1F94E181003F26A7 /* Compere Guilleri_THM.png in Resources */ = {isa = PBXBuildFile; fileRef = 1467AD3D1F94E181003F26A7 /* Compere Guilleri_THM.png */; };
-		1467AD4D1F94E181003F26A7 /* Savez - vous planter les choux_THM.png in Resources */ = {isa = PBXBuildFile; fileRef = 1467AD3E1F94E181003F26A7 /* Savez - vous planter les choux_THM.png */; };
-		1467AD4E1F94E181003F26A7 /* Cest Gugusse_THM.png in Resources */ = {isa = PBXBuildFile; fileRef = 1467AD3F1F94E181003F26A7 /* Cest Gugusse_THM.png */; };
-		1467AD4F1F94E181003F26A7 /* Jean de la Lune_THM.png in Resources */ = {isa = PBXBuildFile; fileRef = 1467AD401F94E181003F26A7 /* Jean de la Lune_THM.png */; };
-		1467AD501F94E181003F26A7 /* Jean petit qui danse_THM.png in Resources */ = {isa = PBXBuildFile; fileRef = 1467AD411F94E181003F26A7 /* Jean petit qui danse_THM.png */; };
-		1467AD611F94E1A5003F26A7 /* Quisiera ser tan alta_THM.png in Resources */ = {isa = PBXBuildFile; fileRef = 1467AD521F94E1A4003F26A7 /* Quisiera ser tan alta_THM.png */; };
-		1467AD621F94E1A5003F26A7 /* Cu-Cu cantaba la rana_THM.png in Resources */ = {isa = PBXBuildFile; fileRef = 1467AD531F94E1A4003F26A7 /* Cu-Cu cantaba la rana_THM.png */; };
-		1467AD631F94E1A5003F26A7 /* Anton Pirulero_THM.png in Resources */ = {isa = PBXBuildFile; fileRef = 1467AD541F94E1A4003F26A7 /* Anton Pirulero_THM.png */; };
-		1467AD641F94E1A5003F26A7 /* Jugando al escondite_THM.png in Resources */ = {isa = PBXBuildFile; fileRef = 1467AD551F94E1A4003F26A7 /* Jugando al escondite_THM.png */; };
-		1467AD651F94E1A5003F26A7 /* Tanto vestido blanco_THM.png in Resources */ = {isa = PBXBuildFile; fileRef = 1467AD561F94E1A4003F26A7 /* Tanto vestido blanco_THM.png */; };
-		1467AD661F94E1A5003F26A7 /* Tengo una muneca_THM.png in Resources */ = {isa = PBXBuildFile; fileRef = 1467AD571F94E1A4003F26A7 /* Tengo una muneca_THM.png */; };
-		1467AD671F94E1A5003F26A7 /* Debajo de un boton_THM.png in Resources */ = {isa = PBXBuildFile; fileRef = 1467AD581F94E1A4003F26A7 /* Debajo de un boton_THM.png */; };
-		1467AD681F94E1A5003F26A7 /* El patio de mi casa_THM.png in Resources */ = {isa = PBXBuildFile; fileRef = 1467AD591F94E1A4003F26A7 /* El patio de mi casa_THM.png */; };
-		1467AD691F94E1A5003F26A7 /* La Tarara_THM.png in Resources */ = {isa = PBXBuildFile; fileRef = 1467AD5A1F94E1A4003F26A7 /* La Tarara_THM.png */; };
-		1467AD6A1F94E1A5003F26A7 /* Tres hojitas Madre_THM.png in Resources */ = {isa = PBXBuildFile; fileRef = 1467AD5B1F94E1A5003F26A7 /* Tres hojitas Madre_THM.png */; };
-		1467AD6B1F94E1A5003F26A7 /* El cocherito lere_THM.png in Resources */ = {isa = PBXBuildFile; fileRef = 1467AD5C1F94E1A5003F26A7 /* El cocherito lere_THM.png */; };
-		1467AD6C1F94E1A5003F26A7 /* La reina Berenguela_THM.png in Resources */ = {isa = PBXBuildFile; fileRef = 1467AD5D1F94E1A5003F26A7 /* La reina Berenguela_THM.png */; };
-		1467AD6D1F94E1A5003F26A7 /* A mi burro_THM.png in Resources */ = {isa = PBXBuildFile; fileRef = 1467AD5E1F94E1A5003F26A7 /* A mi burro_THM.png */; };
-		1467AD6E1F94E1A5003F26A7 /* Los pollitos_THM.png in Resources */ = {isa = PBXBuildFile; fileRef = 1467AD5F1F94E1A5003F26A7 /* Los pollitos_THM.png */; };
-		1467AD6F1F94E1A5003F26A7 /* Estando el senor don gato_THM.png in Resources */ = {isa = PBXBuildFile; fileRef = 1467AD601F94E1A5003F26A7 /* Estando el senor don gato_THM.png */; };
-		146F135C1F7FD1C0005EE206 /* CircleMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 146F13581F7FD1BF005EE206 /* CircleMenu.swift */; };
-		146F135D1F7FD1C0005EE206 /* CircleMenuButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 146F13591F7FD1BF005EE206 /* CircleMenuButton.swift */; };
-		146F135E1F7FD1C0005EE206 /* Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 146F135A1F7FD1BF005EE206 /* Utility.swift */; };
-		146F135F1F7FD1C0005EE206 /* PopCirCleMenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 146F135B1F7FD1C0005EE206 /* PopCirCleMenuView.swift */; };
-		146F13601F80D290005EE206 /* PopCirCleMenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 146F135B1F7FD1C0005EE206 /* PopCirCleMenuView.swift */; };
-		146F13611F80D2DD005EE206 /* CircleMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 146F13581F7FD1BF005EE206 /* CircleMenu.swift */; };
-		146F13621F80D2E1005EE206 /* CircleMenuButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 146F13591F7FD1BF005EE206 /* CircleMenuButton.swift */; };
-		146F13631F80D2F5005EE206 /* Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 146F135A1F7FD1BF005EE206 /* Utility.swift */; };
+		1441102F1FAC8AE300534B6E /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1441102E1FAC8AE300534B6E /* HomeViewController.swift */; };
 		146F13661F825B78005EE206 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 146F13641F825B77005EE206 /* LaunchScreen.storyboard */; };
+		1475CA801F9FD89E00E61A7A /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1475CA7F1F9FD89E00E61A7A /* Home.storyboard */; };
 		1498A11E1F7A39B5006B2019 /* Song.swift in Sources */ = {isa = PBXBuildFile; fileRef = 585982E11B9E25E1009F3B38 /* Song.swift */; };
-		14D5445A1F826D6000D31098 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 14D544581F826D6000D31098 /* Main.storyboard */; };
+		149BFA5D1FACAC0A004CF826 /* UIFont+Zeplin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 149BFA5C1FACAC0A004CF826 /* UIFont+Zeplin.swift */; };
+		149BFA5F1FACACF3004CF826 /* StubContentViewControllersProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 149BFA5E1FACACF3004CF826 /* StubContentViewControllersProvider.swift */; };
+		149BFA611FACAD3E004CF826 /* TabItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 149BFA601FACAD3E004CF826 /* TabItem.swift */; };
+		149BFA631FACAFD0004CF826 /* TabSwitcherItemsProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 149BFA621FACAFD0004CF826 /* TabSwitcherItemsProvider.swift */; };
+		149BFA651FACB07C004CF826 /* StubContentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 149BFA641FACB07C004CF826 /* StubContentViewController.swift */; };
+		149BFA691FACB2D9004CF826 /* SongTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 149BFA671FACB2D9004CF826 /* SongTableViewCell.swift */; };
+		149BFA6A1FACB2D9004CF826 /* SongTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 149BFA681FACB2D9004CF826 /* SongTableViewCell.xib */; };
+		149F76C71FCCA3F4003B01F9 /* BigMouseFR.png in Resources */ = {isa = PBXBuildFile; fileRef = 149F76C31FCCA3F4003B01F9 /* BigMouseFR.png */; };
+		149F76C81FCCA3F4003B01F9 /* BigMouseSP.png in Resources */ = {isa = PBXBuildFile; fileRef = 149F76C41FCCA3F4003B01F9 /* BigMouseSP.png */; };
+		149F76C91FCCA3F4003B01F9 /* BigMouseDE.png in Resources */ = {isa = PBXBuildFile; fileRef = 149F76C51FCCA3F4003B01F9 /* BigMouseDE.png */; };
+		149F76CA1FCCA3F4003B01F9 /* BigMouseEN.png in Resources */ = {isa = PBXBuildFile; fileRef = 149F76C61FCCA3F4003B01F9 /* BigMouseEN.png */; };
+		14C3C2961FC1B789000B92E8 /* GothamProBlack.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 149BFA5B1FACAB18004CF826 /* GothamProBlack.ttf */; };
+		14C3C2971FC1B78C000B92E8 /* GothamProBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 149BFA581FACAB17004CF826 /* GothamProBold.ttf */; };
+		14C3C2981FC1B78F000B92E8 /* GothamProMedium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 149BFA591FACAB17004CF826 /* GothamProMedium.ttf */; };
+		14C3C2991FC1B791000B92E8 /* GothamProRegular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 149BFA5A1FACAB17004CF826 /* GothamProRegular.ttf */; };
 		20CDAAFA6EB01FF201A8BD90 /* Pods_BabyTunes.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A73C4CF6C69ABD84EF1D09E0 /* Pods_BabyTunes.framework */; };
 		45B12AE97881DBC96C0E548C /* Pods_BabyTunesTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FBAEA6EEA1155C40EF5A818F /* Pods_BabyTunesTests.framework */; };
 		581A66211B41D9A800F888E1 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 58799ED21AA4FED0008100F1 /* libz.dylib */; };
-		581A66221B41DA2300F888E1 /* BTSongTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5859D51D1A7CEE61002F2CC6 /* BTSongTableViewController.swift */; };
-		581A66231B41DA3000F888E1 /* SphereMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5859D51C1A7CEE61002F2CC6 /* SphereMenu.swift */; };
-		581A66241B41DA4D00F888E1 /* BTSongTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58B7B78B1A82B8D000843589 /* BTSongTableCell.swift */; };
-		581A66251B41DA5F00F888E1 /* SlideInCellAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58C60F041A863CEF0008315F /* SlideInCellAnimator.swift */; };
 		581A662A1B41DD9D00F888E1 /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 58F546AF1ADDA9890066311D /* AdSupport.framework */; };
 		581A662B1B41DD9D00F888E1 /* libz.1.1.3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 58F546AB1ADDA9340066311D /* libz.1.1.3.dylib */; };
 		581A662C1B41DD9D00F888E1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 58F546A61ADDA8B90066311D /* Foundation.framework */; };
@@ -116,22 +114,12 @@
 		581A66371B41DD9D00F888E1 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 58799EC41AA4FE4C008100F1 /* CoreGraphics.framework */; };
 		581A66381B41DD9D00F888E1 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 58799EC21AA4FE3E008100F1 /* CFNetwork.framework */; };
 		581A66391B41DD9D00F888E1 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 58799EC01AA4FE2C008100F1 /* AudioToolbox.framework */; };
-		5859D51E1A7CEE61002F2CC6 /* SphereMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5859D51C1A7CEE61002F2CC6 /* SphereMenu.swift */; };
-		5859D51F1A7CEE61002F2CC6 /* BTSongTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5859D51D1A7CEE61002F2CC6 /* BTSongTableViewController.swift */; };
 		588073E01A754A9A0006A6C8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 588073DF1A754A9A0006A6C8 /* AppDelegate.swift */; };
-		588073E31A754A9A0006A6C8 /* BabyTunes.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 588073E11A754A9A0006A6C8 /* BabyTunes.xcdatamodeld */; };
 		588073EA1A754A9B0006A6C8 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 588073E91A754A9B0006A6C8 /* Images.xcassets */; };
 		588073F91A754A9C0006A6C8 /* BabyTunesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 588073F81A754A9C0006A6C8 /* BabyTunesTests.swift */; };
-		588D47C41A87B47900898313 /* BigMouseEN.png in Resources */ = {isa = PBXBuildFile; fileRef = 588D47C01A87B47900898313 /* BigMouseEN.png */; };
-		588D47C51A87B47900898313 /* BigMouseFR.png in Resources */ = {isa = PBXBuildFile; fileRef = 588D47C11A87B47900898313 /* BigMouseFR.png */; };
-		588D47C61A87B47900898313 /* BigMouseDE.png in Resources */ = {isa = PBXBuildFile; fileRef = 588D47C21A87B47900898313 /* BigMouseDE.png */; };
-		588D47C71A87B47900898313 /* BigMouseSP.png in Resources */ = {isa = PBXBuildFile; fileRef = 588D47C31A87B47900898313 /* BigMouseSP.png */; };
 		588D4DA31AC88CD400B3B14B /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 588D4DA21AC88CD400B3B14B /* Social.framework */; };
 		588D4DA51AC88CEC00B3B14B /* Accounts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 588D4DA41AC88CEC00B3B14B /* Accounts.framework */; };
 		588D4DA61AC88F4F00B3B14B /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 58799EC61AA4FE5A008100F1 /* CoreLocation.framework */; };
-		58B744AA1A79907E0090EBBF /* MainWallpaper.png in Resources */ = {isa = PBXBuildFile; fileRef = 58B744A01A79907E0090EBBF /* MainWallpaper.png */; };
-		58B7B78C1A82B8D000843589 /* BTSongTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58B7B78B1A82B8D000843589 /* BTSongTableCell.swift */; };
-		58C60F051A863CEF0008315F /* SlideInCellAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58C60F041A863CEF0008315F /* SlideInCellAnimator.swift */; };
 		58E652221C095EDF0036F820 /* Song.swift in Sources */ = {isa = PBXBuildFile; fileRef = 585982E11B9E25E1009F3B38 /* Song.swift */; };
 		58F546A31ADDA6E40066311D /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 58799EC21AA4FE3E008100F1 /* CFNetwork.framework */; };
 		58F546A41ADDA71B0066311D /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 58799EC81AA4FE6A008100F1 /* MobileCoreServices.framework */; };
@@ -158,6 +146,66 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1420A07D1FCC4F3C00A367DD /* Ein Vogel wollte Hochzeit machen.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Ein Vogel wollte Hochzeit machen.jpg"; sourceTree = "<group>"; };
+		1420A07E1FCC4F3C00A367DD /* Kommt ein Vogel geflogen.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Kommt ein Vogel geflogen.jpg"; sourceTree = "<group>"; };
+		1420A07F1FCC4F3C00A367DD /* Ein Maennlein steht im Walde.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Ein Maennlein steht im Walde.jpg"; sourceTree = "<group>"; };
+		1420A0801FCC4F3C00A367DD /* Alle Voegel sind schon da.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Alle Voegel sind schon da.jpg"; sourceTree = "<group>"; };
+		1420A0811FCC4F3C00A367DD /* Der Mond ist aufgegangen.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Der Mond ist aufgegangen.jpg"; sourceTree = "<group>"; };
+		1420A0821FCC4F3C00A367DD /* Weisst du wieviel Sternlein stehen.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Weisst du wieviel Sternlein stehen.jpg"; sourceTree = "<group>"; };
+		1420A0831FCC4F3D00A367DD /* Es klappert die Muehle.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Es klappert die Muehle.jpg"; sourceTree = "<group>"; };
+		1420A0841FCC4F3D00A367DD /* Bruederchen komm tanz mit mir.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Bruederchen komm tanz mit mir.jpg"; sourceTree = "<group>"; };
+		1420A0851FCC4F3D00A367DD /* Auf einem Baum ein Kuckuck.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Auf einem Baum ein Kuckuck.jpg"; sourceTree = "<group>"; };
+		1420A0861FCC4F3D00A367DD /* Es tanzt ein Bi-Ba-Butzemann.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Es tanzt ein Bi-Ba-Butzemann.jpg"; sourceTree = "<group>"; };
+		1420A0871FCC4F3D00A367DD /* Die Gedanken sind frei.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Die Gedanken sind frei.jpg"; sourceTree = "<group>"; };
+		1420A0881FCC4F3D00A367DD /* Haensel und Gretel.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Haensel und Gretel.jpg"; sourceTree = "<group>"; };
+		1420A0891FCC4F3D00A367DD /* Spannenlanger Hansel.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Spannenlanger Hansel.jpg"; sourceTree = "<group>"; };
+		1420A08A1FCC4F3D00A367DD /* Oh du lieber Augustin.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Oh du lieber Augustin.jpg"; sourceTree = "<group>"; };
+		1420A08B1FCC4F3D00A367DD /* Backe backe Kuchen.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Backe backe Kuchen.jpg"; sourceTree = "<group>"; };
+		1420A09D1FCC4F8C00A367DD /* Three Blind Mice.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Three Blind Mice.jpg"; sourceTree = "<group>"; };
+		1420A09E1FCC4F8C00A367DD /* The Animals Went In Two By Two.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "The Animals Went In Two By Two.jpg"; sourceTree = "<group>"; };
+		1420A09F1FCC4F8C00A367DD /* Hickory Dickory Dock.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Hickory Dickory Dock.jpg"; sourceTree = "<group>"; };
+		1420A0A01FCC4F8C00A367DD /* Twinkle Twinkle Litte Star.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Twinkle Twinkle Litte Star.jpg"; sourceTree = "<group>"; };
+		1420A0A11FCC4F8C00A367DD /* Incy Wincy Spider.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Incy Wincy Spider.jpg"; sourceTree = "<group>"; };
+		1420A0A21FCC4F8C00A367DD /* Hush Little Baby.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Hush Little Baby.jpg"; sourceTree = "<group>"; };
+		1420A0A31FCC4F8D00A367DD /* London Bridge Is Falling Down.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "London Bridge Is Falling Down.jpg"; sourceTree = "<group>"; };
+		1420A0A41FCC4F8D00A367DD /* The Grand Old Duke Of York.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "The Grand Old Duke Of York.jpg"; sourceTree = "<group>"; };
+		1420A0A51FCC4F8D00A367DD /* Baa Baa Black Sheep.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Baa Baa Black Sheep.jpg"; sourceTree = "<group>"; };
+		1420A0A61FCC4F8D00A367DD /* Mary Had A Little Lamb.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Mary Had A Little Lamb.jpg"; sourceTree = "<group>"; };
+		1420A0A71FCC4F8D00A367DD /* Humpty Dumpty.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Humpty Dumpty.jpg"; sourceTree = "<group>"; };
+		1420A0A81FCC4F8D00A367DD /* Oranges And Lemons.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Oranges And Lemons.jpg"; sourceTree = "<group>"; };
+		1420A0A91FCC4F8D00A367DD /* Old Mac Donald Had A Farm.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Old Mac Donald Had A Farm.jpg"; sourceTree = "<group>"; };
+		1420A0AA1FCC4F8D00A367DD /* Im A Little Teapot.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Im A Little Teapot.jpg"; sourceTree = "<group>"; };
+		1420A0AB1FCC4F8D00A367DD /* Sing A Song Of Sixpence.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Sing A Song Of Sixpence.jpg"; sourceTree = "<group>"; };
+		1420A0BC1FCC4FBA00A367DD /* Cadet Rouselle.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Cadet Rouselle.jpg"; sourceTree = "<group>"; };
+		1420A0BD1FCC4FBA00A367DD /* Lempreur et le petit prince.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Lempreur et le petit prince.jpg"; sourceTree = "<group>"; };
+		1420A0BE1FCC4FBA00A367DD /* Savez - vous planter les choux.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Savez - vous planter les choux.jpg"; sourceTree = "<group>"; };
+		1420A0BF1FCC4FBA00A367DD /* A la claire fontaine.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "A la claire fontaine.jpg"; sourceTree = "<group>"; };
+		1420A0C01FCC4FBA00A367DD /* Il etait un petit navire.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Il etait un petit navire.jpg"; sourceTree = "<group>"; };
+		1420A0C11FCC4FBA00A367DD /* Compere Guilleri.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Compere Guilleri.jpg"; sourceTree = "<group>"; };
+		1420A0C21FCC4FBA00A367DD /* Jean de la Lune.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Jean de la Lune.jpg"; sourceTree = "<group>"; };
+		1420A0C31FCC4FBB00A367DD /* Arlequin danse sa boutique.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Arlequin danse sa boutique.jpg"; sourceTree = "<group>"; };
+		1420A0C41FCC4FBB00A367DD /* Au claire de la lune.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Au claire de la lune.jpg"; sourceTree = "<group>"; };
+		1420A0C51FCC4FBB00A367DD /* Jean petit qui danse.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Jean petit qui danse.jpg"; sourceTree = "<group>"; };
+		1420A0C61FCC4FBB00A367DD /* Maman, les ptits bateau.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Maman, les ptits bateau.jpg"; sourceTree = "<group>"; };
+		1420A0C71FCC4FBB00A367DD /* Gentil coqulicot.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Gentil coqulicot.jpg"; sourceTree = "<group>"; };
+		1420A0C81FCC4FBB00A367DD /* Alouette, gentille alouette.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Alouette, gentille alouette.jpg"; sourceTree = "<group>"; };
+		1420A0C91FCC4FBB00A367DD /* Cest Gugusse.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Cest Gugusse.jpg"; sourceTree = "<group>"; };
+		1420A0CA1FCC4FBB00A367DD /* Le grand cerf.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Le grand cerf.jpg"; sourceTree = "<group>"; };
+		1420A0DB1FCC4FDE00A367DD /* Cu-Cu, cantaba la rana.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Cu-Cu, cantaba la rana.jpg"; sourceTree = "<group>"; };
+		1420A0DC1FCC4FDE00A367DD /* Tres hojitas, Madre.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Tres hojitas, Madre.jpg"; sourceTree = "<group>"; };
+		1420A0DD1FCC4FDE00A367DD /* La reina Berenguela.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "La reina Berenguela.jpg"; sourceTree = "<group>"; };
+		1420A0DE1FCC4FDE00A367DD /* A mi burro.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "A mi burro.jpg"; sourceTree = "<group>"; };
+		1420A0DF1FCC4FDF00A367DD /* Quisiera ser tan alta.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Quisiera ser tan alta.jpg"; sourceTree = "<group>"; };
+		1420A0E01FCC4FDF00A367DD /* Estando el senor don gato.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Estando el senor don gato.jpg"; sourceTree = "<group>"; };
+		1420A0E11FCC4FDF00A367DD /* El cocherito, lere.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "El cocherito, lere.jpg"; sourceTree = "<group>"; };
+		1420A0E21FCC4FDF00A367DD /* Jugando al escondite.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Jugando al escondite.jpg"; sourceTree = "<group>"; };
+		1420A0E31FCC4FDF00A367DD /* El patio de mi casa.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "El patio de mi casa.jpg"; sourceTree = "<group>"; };
+		1420A0E41FCC4FDF00A367DD /* Anton Pirulero.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Anton Pirulero.jpg"; sourceTree = "<group>"; };
+		1420A0E51FCC4FDF00A367DD /* Tanto vestido blanco.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Tanto vestido blanco.jpg"; sourceTree = "<group>"; };
+		1420A0E61FCC4FDF00A367DD /* Tengo una muneca.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Tengo una muneca.jpg"; sourceTree = "<group>"; };
+		1420A0E71FCC4FDF00A367DD /* Los pollitos.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Los pollitos.jpg"; sourceTree = "<group>"; };
+		1420A0E81FCC4FDF00A367DD /* Debajo de un boton.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Debajo de un boton.jpg"; sourceTree = "<group>"; };
+		1420A0E91FCC4FE000A367DD /* La Tarara.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "La Tarara.jpg"; sourceTree = "<group>"; };
 		143CEBE11F94E9B10050F06E /* ImageUtility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageUtility.swift; sourceTree = "<group>"; };
 		143EF4F51F7F759F00E25F7B /* AppAssemblyProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppAssemblyProtocol.swift; sourceTree = "<group>"; };
 		143EF4F71F7F803300E25F7B /* AppAssemblyContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppAssemblyContainer.swift; sourceTree = "<group>"; };
@@ -166,81 +214,27 @@
 		143EF5001F7F821A00E25F7B /* WindowHandlerState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WindowHandlerState.swift; sourceTree = "<group>"; };
 		143EF5021F7F828600E25F7B /* WindowHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WindowHandler.swift; sourceTree = "<group>"; };
 		143EF5041F7F84DF00E25F7B /* Assemblies.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Assemblies.swift; sourceTree = "<group>"; };
-		145D8B3E1F8A5A0D000E5405 /* AWCollectionViewDialLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AWCollectionViewDialLayout.swift; sourceTree = "<group>"; };
-		145D8B401F8A5A69000E5405 /* AWCollectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AWCollectionCell.swift; sourceTree = "<group>"; };
-		1467ACF11F94E121003F26A7 /* Im A Little Teapot_THM.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Im A Little Teapot_THM.png"; path = "BabyTunes/Resources/Thumbnails/English/Im A Little Teapot_THM.png"; sourceTree = SOURCE_ROOT; };
-		1467ACF21F94E121003F26A7 /* Incy Wincy Spider_THM.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Incy Wincy Spider_THM.png"; path = "BabyTunes/Resources/Thumbnails/English/Incy Wincy Spider_THM.png"; sourceTree = SOURCE_ROOT; };
-		1467ACF31F94E121003F26A7 /* The Animals Went In Two By Two_THM.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "The Animals Went In Two By Two_THM.png"; path = "BabyTunes/Resources/Thumbnails/English/The Animals Went In Two By Two_THM.png"; sourceTree = SOURCE_ROOT; };
-		1467ACF41F94E121003F26A7 /* Three Blind Mice_THM.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Three Blind Mice_THM.png"; path = "BabyTunes/Resources/Thumbnails/English/Three Blind Mice_THM.png"; sourceTree = SOURCE_ROOT; };
-		1467ACF51F94E121003F26A7 /* Hickory Dickory Dock_THM.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Hickory Dickory Dock_THM.png"; path = "BabyTunes/Resources/Thumbnails/English/Hickory Dickory Dock_THM.png"; sourceTree = SOURCE_ROOT; };
-		1467ACF61F94E121003F26A7 /* Oranges And Lemons_THM.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Oranges And Lemons_THM.png"; path = "BabyTunes/Resources/Thumbnails/English/Oranges And Lemons_THM.png"; sourceTree = SOURCE_ROOT; };
-		1467ACF71F94E121003F26A7 /* Old Mac Donald Had A Farm_THM.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Old Mac Donald Had A Farm_THM.png"; path = "BabyTunes/Resources/Thumbnails/English/Old Mac Donald Had A Farm_THM.png"; sourceTree = SOURCE_ROOT; };
-		1467ACF81F94E121003F26A7 /* Baa Baa Black Sheep_THM.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Baa Baa Black Sheep_THM.png"; path = "BabyTunes/Resources/Thumbnails/English/Baa Baa Black Sheep_THM.png"; sourceTree = SOURCE_ROOT; };
-		1467ACF91F94E122003F26A7 /* Twinkle Twinkle Little Star_THM.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Twinkle Twinkle Little Star_THM.png"; path = "BabyTunes/Resources/Thumbnails/English/Twinkle Twinkle Little Star_THM.png"; sourceTree = SOURCE_ROOT; };
-		1467ACFA1F94E122003F26A7 /* London Bridge Is Falling Down_THM.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "London Bridge Is Falling Down_THM.png"; path = "BabyTunes/Resources/Thumbnails/English/London Bridge Is Falling Down_THM.png"; sourceTree = SOURCE_ROOT; };
-		1467ACFB1F94E122003F26A7 /* Mary Had A Little Lamb_THM.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Mary Had A Little Lamb_THM.png"; path = "BabyTunes/Resources/Thumbnails/English/Mary Had A Little Lamb_THM.png"; sourceTree = SOURCE_ROOT; };
-		1467ACFC1F94E122003F26A7 /* Old MacDonald Had A Farm_THM.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Old MacDonald Had A Farm_THM.png"; path = "BabyTunes/Resources/Thumbnails/English/Old MacDonald Had A Farm_THM.png"; sourceTree = SOURCE_ROOT; };
-		1467ACFD1F94E122003F26A7 /* Humpty Dumpty_THM.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Humpty Dumpty_THM.png"; path = "BabyTunes/Resources/Thumbnails/English/Humpty Dumpty_THM.png"; sourceTree = SOURCE_ROOT; };
-		1467ACFE1F94E122003F26A7 /* Sing A Song Of Sixpence_THM.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Sing A Song Of Sixpence_THM.png"; path = "BabyTunes/Resources/Thumbnails/English/Sing A Song Of Sixpence_THM.png"; sourceTree = SOURCE_ROOT; };
-		1467ACFF1F94E122003F26A7 /* The Grand Old Duke Of York_THM.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "The Grand Old Duke Of York_THM.png"; path = "BabyTunes/Resources/Thumbnails/English/The Grand Old Duke Of York_THM.png"; sourceTree = SOURCE_ROOT; };
-		1467AD001F94E122003F26A7 /* Hush Little Baby_THM.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Hush Little Baby_THM.png"; path = "BabyTunes/Resources/Thumbnails/English/Hush Little Baby_THM.png"; sourceTree = SOURCE_ROOT; };
-		1467AD011F94E122003F26A7 /* Twinkle Twinkle Litte Star_THM.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Twinkle Twinkle Litte Star_THM.png"; path = "BabyTunes/Resources/Thumbnails/English/Twinkle Twinkle Litte Star_THM.png"; sourceTree = SOURCE_ROOT; };
-		1467AD141F94E152003F26A7 /* Weisst du wieviel Sternlein stehen_THM.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Weisst du wieviel Sternlein stehen_THM.png"; path = "BabyTunes/Resources/Thumbnails/German/Weisst du wieviel Sternlein stehen_THM.png"; sourceTree = SOURCE_ROOT; };
-		1467AD151F94E152003F26A7 /* Die Gedanken sind frei_THM.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Die Gedanken sind frei_THM.png"; path = "BabyTunes/Resources/Thumbnails/German/Die Gedanken sind frei_THM.png"; sourceTree = SOURCE_ROOT; };
-		1467AD161F94E152003F26A7 /* Bruederchen komm tanz mit mir_THM.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Bruederchen komm tanz mit mir_THM.png"; path = "BabyTunes/Resources/Thumbnails/German/Bruederchen komm tanz mit mir_THM.png"; sourceTree = SOURCE_ROOT; };
-		1467AD171F94E152003F26A7 /* Es klappert die Muehle_THM.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Es klappert die Muehle_THM.png"; path = "BabyTunes/Resources/Thumbnails/German/Es klappert die Muehle_THM.png"; sourceTree = SOURCE_ROOT; };
-		1467AD181F94E152003F26A7 /* Auf einem Baum ein Kuckuck_THM.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Auf einem Baum ein Kuckuck_THM.png"; path = "BabyTunes/Resources/Thumbnails/German/Auf einem Baum ein Kuckuck_THM.png"; sourceTree = SOURCE_ROOT; };
-		1467AD191F94E152003F26A7 /* Backe backe Kuchen_THM.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Backe backe Kuchen_THM.png"; path = "BabyTunes/Resources/Thumbnails/German/Backe backe Kuchen_THM.png"; sourceTree = SOURCE_ROOT; };
-		1467AD1A1F94E152003F26A7 /* Ein Vogel wollte Hochzeit machen_THM.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Ein Vogel wollte Hochzeit machen_THM.png"; path = "BabyTunes/Resources/Thumbnails/German/Ein Vogel wollte Hochzeit machen_THM.png"; sourceTree = SOURCE_ROOT; };
-		1467AD1B1F94E152003F26A7 /* Alle Voegel sind schon da_THM.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Alle Voegel sind schon da_THM.png"; path = "BabyTunes/Resources/Thumbnails/German/Alle Voegel sind schon da_THM.png"; sourceTree = SOURCE_ROOT; };
-		1467AD1C1F94E152003F26A7 /* Ein Maennlein steht im Walde_THM.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Ein Maennlein steht im Walde_THM.png"; path = "BabyTunes/Resources/Thumbnails/German/Ein Maennlein steht im Walde_THM.png"; sourceTree = SOURCE_ROOT; };
-		1467AD1D1F94E152003F26A7 /* Spannenlanger Hansel_THM.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Spannenlanger Hansel_THM.png"; path = "BabyTunes/Resources/Thumbnails/German/Spannenlanger Hansel_THM.png"; sourceTree = SOURCE_ROOT; };
-		1467AD1E1F94E152003F26A7 /* Kommt ein Vogel geflogen_THM.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Kommt ein Vogel geflogen_THM.png"; path = "BabyTunes/Resources/Thumbnails/German/Kommt ein Vogel geflogen_THM.png"; sourceTree = SOURCE_ROOT; };
-		1467AD1F1F94E152003F26A7 /* Der Mond ist aufgegangen_THM.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Der Mond ist aufgegangen_THM.png"; path = "BabyTunes/Resources/Thumbnails/German/Der Mond ist aufgegangen_THM.png"; sourceTree = SOURCE_ROOT; };
-		1467AD201F94E152003F26A7 /* Haensel und Gretel_THM.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Haensel und Gretel_THM.png"; path = "BabyTunes/Resources/Thumbnails/German/Haensel und Gretel_THM.png"; sourceTree = SOURCE_ROOT; };
-		1467AD211F94E152003F26A7 /* Oh du lieber Augustin_THM.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Oh du lieber Augustin_THM.png"; path = "BabyTunes/Resources/Thumbnails/German/Oh du lieber Augustin_THM.png"; sourceTree = SOURCE_ROOT; };
-		1467AD221F94E153003F26A7 /* Es tanzt ein Bi-Ba-Butzemann_THM.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Es tanzt ein Bi-Ba-Butzemann_THM.png"; path = "BabyTunes/Resources/Thumbnails/German/Es tanzt ein Bi-Ba-Butzemann_THM.png"; sourceTree = SOURCE_ROOT; };
-		1467AD331F94E180003F26A7 /* A la claire fontaine_THM.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "A la claire fontaine_THM.png"; path = "BabyTunes/Resources/Thumbnails/French/A la claire fontaine_THM.png"; sourceTree = SOURCE_ROOT; };
-		1467AD341F94E180003F26A7 /* Au claire de la lune_THM.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Au claire de la lune_THM.png"; path = "BabyTunes/Resources/Thumbnails/French/Au claire de la lune_THM.png"; sourceTree = SOURCE_ROOT; };
-		1467AD351F94E180003F26A7 /* Alouette gentille alouette_THM.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Alouette gentille alouette_THM.png"; path = "BabyTunes/Resources/Thumbnails/French/Alouette gentille alouette_THM.png"; sourceTree = SOURCE_ROOT; };
-		1467AD361F94E180003F26A7 /* Gentil coqulicot_THM.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Gentil coqulicot_THM.png"; path = "BabyTunes/Resources/Thumbnails/French/Gentil coqulicot_THM.png"; sourceTree = SOURCE_ROOT; };
-		1467AD371F94E180003F26A7 /* Il etait un petit navire_THM.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Il etait un petit navire_THM.png"; path = "BabyTunes/Resources/Thumbnails/French/Il etait un petit navire_THM.png"; sourceTree = SOURCE_ROOT; };
-		1467AD381F94E180003F26A7 /* Cadet Rouselle_THM.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Cadet Rouselle_THM.png"; path = "BabyTunes/Resources/Thumbnails/French/Cadet Rouselle_THM.png"; sourceTree = SOURCE_ROOT; };
-		1467AD391F94E180003F26A7 /* Le grand cerf_THM.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Le grand cerf_THM.png"; path = "BabyTunes/Resources/Thumbnails/French/Le grand cerf_THM.png"; sourceTree = SOURCE_ROOT; };
-		1467AD3A1F94E180003F26A7 /* Lempreur et le petit prince_THM.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Lempreur et le petit prince_THM.png"; path = "BabyTunes/Resources/Thumbnails/French/Lempreur et le petit prince_THM.png"; sourceTree = SOURCE_ROOT; };
-		1467AD3B1F94E180003F26A7 /* Maman les ptits bateau_THM.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Maman les ptits bateau_THM.png"; path = "BabyTunes/Resources/Thumbnails/French/Maman les ptits bateau_THM.png"; sourceTree = SOURCE_ROOT; };
-		1467AD3C1F94E181003F26A7 /* Arlequin danse sa boutique_THM.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Arlequin danse sa boutique_THM.png"; path = "BabyTunes/Resources/Thumbnails/French/Arlequin danse sa boutique_THM.png"; sourceTree = SOURCE_ROOT; };
-		1467AD3D1F94E181003F26A7 /* Compere Guilleri_THM.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Compere Guilleri_THM.png"; path = "BabyTunes/Resources/Thumbnails/French/Compere Guilleri_THM.png"; sourceTree = SOURCE_ROOT; };
-		1467AD3E1F94E181003F26A7 /* Savez - vous planter les choux_THM.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Savez - vous planter les choux_THM.png"; path = "BabyTunes/Resources/Thumbnails/French/Savez - vous planter les choux_THM.png"; sourceTree = SOURCE_ROOT; };
-		1467AD3F1F94E181003F26A7 /* Cest Gugusse_THM.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Cest Gugusse_THM.png"; path = "BabyTunes/Resources/Thumbnails/French/Cest Gugusse_THM.png"; sourceTree = SOURCE_ROOT; };
-		1467AD401F94E181003F26A7 /* Jean de la Lune_THM.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Jean de la Lune_THM.png"; path = "BabyTunes/Resources/Thumbnails/French/Jean de la Lune_THM.png"; sourceTree = SOURCE_ROOT; };
-		1467AD411F94E181003F26A7 /* Jean petit qui danse_THM.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Jean petit qui danse_THM.png"; path = "BabyTunes/Resources/Thumbnails/French/Jean petit qui danse_THM.png"; sourceTree = SOURCE_ROOT; };
-		1467AD521F94E1A4003F26A7 /* Quisiera ser tan alta_THM.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Quisiera ser tan alta_THM.png"; path = "BabyTunes/Resources/Thumbnails/Spanish/Quisiera ser tan alta_THM.png"; sourceTree = SOURCE_ROOT; };
-		1467AD531F94E1A4003F26A7 /* Cu-Cu cantaba la rana_THM.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Cu-Cu cantaba la rana_THM.png"; path = "BabyTunes/Resources/Thumbnails/Spanish/Cu-Cu cantaba la rana_THM.png"; sourceTree = SOURCE_ROOT; };
-		1467AD541F94E1A4003F26A7 /* Anton Pirulero_THM.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Anton Pirulero_THM.png"; path = "BabyTunes/Resources/Thumbnails/Spanish/Anton Pirulero_THM.png"; sourceTree = SOURCE_ROOT; };
-		1467AD551F94E1A4003F26A7 /* Jugando al escondite_THM.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Jugando al escondite_THM.png"; path = "BabyTunes/Resources/Thumbnails/Spanish/Jugando al escondite_THM.png"; sourceTree = SOURCE_ROOT; };
-		1467AD561F94E1A4003F26A7 /* Tanto vestido blanco_THM.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Tanto vestido blanco_THM.png"; path = "BabyTunes/Resources/Thumbnails/Spanish/Tanto vestido blanco_THM.png"; sourceTree = SOURCE_ROOT; };
-		1467AD571F94E1A4003F26A7 /* Tengo una muneca_THM.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Tengo una muneca_THM.png"; path = "BabyTunes/Resources/Thumbnails/Spanish/Tengo una muneca_THM.png"; sourceTree = SOURCE_ROOT; };
-		1467AD581F94E1A4003F26A7 /* Debajo de un boton_THM.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Debajo de un boton_THM.png"; path = "BabyTunes/Resources/Thumbnails/Spanish/Debajo de un boton_THM.png"; sourceTree = SOURCE_ROOT; };
-		1467AD591F94E1A4003F26A7 /* El patio de mi casa_THM.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "El patio de mi casa_THM.png"; path = "BabyTunes/Resources/Thumbnails/Spanish/El patio de mi casa_THM.png"; sourceTree = SOURCE_ROOT; };
-		1467AD5A1F94E1A4003F26A7 /* La Tarara_THM.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "La Tarara_THM.png"; path = "BabyTunes/Resources/Thumbnails/Spanish/La Tarara_THM.png"; sourceTree = SOURCE_ROOT; };
-		1467AD5B1F94E1A5003F26A7 /* Tres hojitas Madre_THM.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Tres hojitas Madre_THM.png"; path = "BabyTunes/Resources/Thumbnails/Spanish/Tres hojitas Madre_THM.png"; sourceTree = SOURCE_ROOT; };
-		1467AD5C1F94E1A5003F26A7 /* El cocherito lere_THM.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "El cocherito lere_THM.png"; path = "BabyTunes/Resources/Thumbnails/Spanish/El cocherito lere_THM.png"; sourceTree = SOURCE_ROOT; };
-		1467AD5D1F94E1A5003F26A7 /* La reina Berenguela_THM.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "La reina Berenguela_THM.png"; path = "BabyTunes/Resources/Thumbnails/Spanish/La reina Berenguela_THM.png"; sourceTree = SOURCE_ROOT; };
-		1467AD5E1F94E1A5003F26A7 /* A mi burro_THM.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "A mi burro_THM.png"; path = "BabyTunes/Resources/Thumbnails/Spanish/A mi burro_THM.png"; sourceTree = SOURCE_ROOT; };
-		1467AD5F1F94E1A5003F26A7 /* Los pollitos_THM.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Los pollitos_THM.png"; path = "BabyTunes/Resources/Thumbnails/Spanish/Los pollitos_THM.png"; sourceTree = SOURCE_ROOT; };
-		1467AD601F94E1A5003F26A7 /* Estando el senor don gato_THM.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Estando el senor don gato_THM.png"; path = "BabyTunes/Resources/Thumbnails/Spanish/Estando el senor don gato_THM.png"; sourceTree = SOURCE_ROOT; };
-		146F13581F7FD1BF005EE206 /* CircleMenu.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircleMenu.swift; sourceTree = "<group>"; };
-		146F13591F7FD1BF005EE206 /* CircleMenuButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircleMenuButton.swift; sourceTree = "<group>"; };
-		146F135A1F7FD1BF005EE206 /* Utility.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utility.swift; sourceTree = "<group>"; };
-		146F135B1F7FD1C0005EE206 /* PopCirCleMenuView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PopCirCleMenuView.swift; sourceTree = "<group>"; };
+		1441102E1FAC8AE300534B6E /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		146F13651F825B77005EE206 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		14D544591F826D6000D31098 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		1475CA7F1F9FD89E00E61A7A /* Home.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
+		149BFA581FACAB17004CF826 /* GothamProBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = GothamProBold.ttf; sourceTree = "<group>"; };
+		149BFA591FACAB17004CF826 /* GothamProMedium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = GothamProMedium.ttf; sourceTree = "<group>"; };
+		149BFA5A1FACAB17004CF826 /* GothamProRegular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = GothamProRegular.ttf; sourceTree = "<group>"; };
+		149BFA5B1FACAB18004CF826 /* GothamProBlack.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = GothamProBlack.ttf; sourceTree = "<group>"; };
+		149BFA5C1FACAC0A004CF826 /* UIFont+Zeplin.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIFont+Zeplin.swift"; sourceTree = "<group>"; };
+		149BFA5E1FACACF3004CF826 /* StubContentViewControllersProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StubContentViewControllersProvider.swift; sourceTree = "<group>"; };
+		149BFA601FACAD3E004CF826 /* TabItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabItem.swift; sourceTree = "<group>"; };
+		149BFA621FACAFD0004CF826 /* TabSwitcherItemsProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabSwitcherItemsProvider.swift; sourceTree = "<group>"; };
+		149BFA641FACB07C004CF826 /* StubContentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StubContentViewController.swift; sourceTree = "<group>"; };
+		149BFA671FACB2D9004CF826 /* SongTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SongTableViewCell.swift; sourceTree = "<group>"; };
+		149BFA681FACB2D9004CF826 /* SongTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SongTableViewCell.xib; sourceTree = "<group>"; };
+		149F76C31FCCA3F4003B01F9 /* BigMouseFR.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = BigMouseFR.png; path = MausCharacters/BigMouseFR.png; sourceTree = "<group>"; };
+		149F76C41FCCA3F4003B01F9 /* BigMouseSP.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = BigMouseSP.png; path = MausCharacters/BigMouseSP.png; sourceTree = "<group>"; };
+		149F76C51FCCA3F4003B01F9 /* BigMouseDE.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = BigMouseDE.png; path = MausCharacters/BigMouseDE.png; sourceTree = "<group>"; };
+		149F76C61FCCA3F4003B01F9 /* BigMouseEN.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = BigMouseEN.png; path = MausCharacters/BigMouseEN.png; sourceTree = "<group>"; };
 		21D39E8716F8F15058103779 /* Pods-BabyTunes.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BabyTunes.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BabyTunes/Pods-BabyTunes.debug.xcconfig"; sourceTree = "<group>"; };
 		582B179A1A9A0B8D008B0620 /* BabyTunesTests-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "BabyTunesTests-Bridging-Header.h"; path = "../BabyTunes/Classes/BabyTunesTests-Bridging-Header.h"; sourceTree = "<group>"; };
 		585982E11B9E25E1009F3B38 /* Song.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Song.swift; sourceTree = "<group>"; };
-		5859D51C1A7CEE61002F2CC6 /* SphereMenu.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SphereMenu.swift; sourceTree = "<group>"; };
-		5859D51D1A7CEE61002F2CC6 /* BTSongTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BTSongTableViewController.swift; sourceTree = "<group>"; };
 		58799EC01AA4FE2C008100F1 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		58799EC21AA4FE3E008100F1 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
 		58799EC41AA4FE4C008100F1 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -252,24 +246,15 @@
 		58799ED01AA4FEB4008100F1 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		58799ED21AA4FED0008100F1 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
 		58799ED41AA4FEE4008100F1 /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
-		58799ED61AA4FFAF008100F1 /* BabyTunes-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "BabyTunes-Bridging-Header.h"; sourceTree = "<group>"; };
 		588073DA1A754A9A0006A6C8 /* BabyTunes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BabyTunes.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		588073DE1A754A9A0006A6C8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		588073DF1A754A9A0006A6C8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		588073E21A754A9A0006A6C8 /* BabyTunes.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = BabyTunes.xcdatamodel; sourceTree = "<group>"; };
 		588073E91A754A9B0006A6C8 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		588073F21A754A9C0006A6C8 /* BabyTunesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BabyTunesTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		588073F71A754A9C0006A6C8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		588073F81A754A9C0006A6C8 /* BabyTunesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BabyTunesTests.swift; sourceTree = "<group>"; };
-		588D47C01A87B47900898313 /* BigMouseEN.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BigMouseEN.png; sourceTree = "<group>"; };
-		588D47C11A87B47900898313 /* BigMouseFR.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BigMouseFR.png; sourceTree = "<group>"; };
-		588D47C21A87B47900898313 /* BigMouseDE.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BigMouseDE.png; sourceTree = "<group>"; };
-		588D47C31A87B47900898313 /* BigMouseSP.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BigMouseSP.png; sourceTree = "<group>"; };
 		588D4DA21AC88CD400B3B14B /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
 		588D4DA41AC88CEC00B3B14B /* Accounts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accounts.framework; path = System/Library/Frameworks/Accounts.framework; sourceTree = SDKROOT; };
-		58B744A01A79907E0090EBBF /* MainWallpaper.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = MainWallpaper.png; sourceTree = "<group>"; };
-		58B7B78B1A82B8D000843589 /* BTSongTableCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BTSongTableCell.swift; sourceTree = "<group>"; };
-		58C60F041A863CEF0008315F /* SlideInCellAnimator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SlideInCellAnimator.swift; path = InitialViewController/SlideInCellAnimator.swift; sourceTree = "<group>"; };
 		58F546A61ADDA8B90066311D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		58F546AB1ADDA9340066311D /* libz.1.1.3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.1.1.3.dylib; path = usr/lib/libz.1.1.3.dylib; sourceTree = SDKROOT; };
 		58F546AF1ADDA9890066311D /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
@@ -332,10 +317,99 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1420A07B1FCC4F2900A367DD /* German */ = {
+			isa = PBXGroup;
+			children = (
+				1420A0801FCC4F3C00A367DD /* Alle Voegel sind schon da.jpg */,
+				1420A0851FCC4F3D00A367DD /* Auf einem Baum ein Kuckuck.jpg */,
+				1420A08B1FCC4F3D00A367DD /* Backe backe Kuchen.jpg */,
+				1420A0841FCC4F3D00A367DD /* Bruederchen komm tanz mit mir.jpg */,
+				1420A0811FCC4F3C00A367DD /* Der Mond ist aufgegangen.jpg */,
+				1420A0871FCC4F3D00A367DD /* Die Gedanken sind frei.jpg */,
+				1420A07F1FCC4F3C00A367DD /* Ein Maennlein steht im Walde.jpg */,
+				1420A07D1FCC4F3C00A367DD /* Ein Vogel wollte Hochzeit machen.jpg */,
+				1420A0831FCC4F3D00A367DD /* Es klappert die Muehle.jpg */,
+				1420A0861FCC4F3D00A367DD /* Es tanzt ein Bi-Ba-Butzemann.jpg */,
+				1420A0881FCC4F3D00A367DD /* Haensel und Gretel.jpg */,
+				1420A07E1FCC4F3C00A367DD /* Kommt ein Vogel geflogen.jpg */,
+				1420A08A1FCC4F3D00A367DD /* Oh du lieber Augustin.jpg */,
+				1420A0891FCC4F3D00A367DD /* Spannenlanger Hansel.jpg */,
+				1420A0821FCC4F3C00A367DD /* Weisst du wieviel Sternlein stehen.jpg */,
+			);
+			path = German;
+			sourceTree = "<group>";
+		};
+		1420A09C1FCC4F7800A367DD /* English */ = {
+			isa = PBXGroup;
+			children = (
+				1420A0A51FCC4F8D00A367DD /* Baa Baa Black Sheep.jpg */,
+				1420A09F1FCC4F8C00A367DD /* Hickory Dickory Dock.jpg */,
+				1420A0A71FCC4F8D00A367DD /* Humpty Dumpty.jpg */,
+				1420A0A21FCC4F8C00A367DD /* Hush Little Baby.jpg */,
+				1420A0AA1FCC4F8D00A367DD /* Im A Little Teapot.jpg */,
+				1420A0A11FCC4F8C00A367DD /* Incy Wincy Spider.jpg */,
+				1420A0A31FCC4F8D00A367DD /* London Bridge Is Falling Down.jpg */,
+				1420A0A61FCC4F8D00A367DD /* Mary Had A Little Lamb.jpg */,
+				1420A0A91FCC4F8D00A367DD /* Old Mac Donald Had A Farm.jpg */,
+				1420A0A81FCC4F8D00A367DD /* Oranges And Lemons.jpg */,
+				1420A0AB1FCC4F8D00A367DD /* Sing A Song Of Sixpence.jpg */,
+				1420A09E1FCC4F8C00A367DD /* The Animals Went In Two By Two.jpg */,
+				1420A0A41FCC4F8D00A367DD /* The Grand Old Duke Of York.jpg */,
+				1420A09D1FCC4F8C00A367DD /* Three Blind Mice.jpg */,
+				1420A0A01FCC4F8C00A367DD /* Twinkle Twinkle Litte Star.jpg */,
+			);
+			path = English;
+			sourceTree = "<group>";
+		};
+		1420A0BB1FCC4F9C00A367DD /* French */ = {
+			isa = PBXGroup;
+			children = (
+				1420A0BF1FCC4FBA00A367DD /* A la claire fontaine.jpg */,
+				1420A0C81FCC4FBB00A367DD /* Alouette, gentille alouette.jpg */,
+				1420A0C31FCC4FBB00A367DD /* Arlequin danse sa boutique.jpg */,
+				1420A0C41FCC4FBB00A367DD /* Au claire de la lune.jpg */,
+				1420A0BC1FCC4FBA00A367DD /* Cadet Rouselle.jpg */,
+				1420A0C91FCC4FBB00A367DD /* Cest Gugusse.jpg */,
+				1420A0C11FCC4FBA00A367DD /* Compere Guilleri.jpg */,
+				1420A0C71FCC4FBB00A367DD /* Gentil coqulicot.jpg */,
+				1420A0C01FCC4FBA00A367DD /* Il etait un petit navire.jpg */,
+				1420A0C21FCC4FBA00A367DD /* Jean de la Lune.jpg */,
+				1420A0C51FCC4FBB00A367DD /* Jean petit qui danse.jpg */,
+				1420A0CA1FCC4FBB00A367DD /* Le grand cerf.jpg */,
+				1420A0BD1FCC4FBA00A367DD /* Lempreur et le petit prince.jpg */,
+				1420A0C61FCC4FBB00A367DD /* Maman, les ptits bateau.jpg */,
+				1420A0BE1FCC4FBA00A367DD /* Savez - vous planter les choux.jpg */,
+			);
+			path = French;
+			sourceTree = "<group>";
+		};
+		1420A0DA1FCC4FCC00A367DD /* Spanish */ = {
+			isa = PBXGroup;
+			children = (
+				1420A0DE1FCC4FDE00A367DD /* A mi burro.jpg */,
+				1420A0E41FCC4FDF00A367DD /* Anton Pirulero.jpg */,
+				1420A0DB1FCC4FDE00A367DD /* Cu-Cu, cantaba la rana.jpg */,
+				1420A0E81FCC4FDF00A367DD /* Debajo de un boton.jpg */,
+				1420A0E11FCC4FDF00A367DD /* El cocherito, lere.jpg */,
+				1420A0E31FCC4FDF00A367DD /* El patio de mi casa.jpg */,
+				1420A0E01FCC4FDF00A367DD /* Estando el senor don gato.jpg */,
+				1420A0E21FCC4FDF00A367DD /* Jugando al escondite.jpg */,
+				1420A0DD1FCC4FDE00A367DD /* La reina Berenguela.jpg */,
+				1420A0E91FCC4FE000A367DD /* La Tarara.jpg */,
+				1420A0E71FCC4FDF00A367DD /* Los pollitos.jpg */,
+				1420A0DF1FCC4FDF00A367DD /* Quisiera ser tan alta.jpg */,
+				1420A0E51FCC4FDF00A367DD /* Tanto vestido blanco.jpg */,
+				1420A0E61FCC4FDF00A367DD /* Tengo una muneca.jpg */,
+				1420A0DC1FCC4FDE00A367DD /* Tres hojitas, Madre.jpg */,
+			);
+			path = Spanish;
+			sourceTree = "<group>";
+		};
 		143CEBE01F94E8C20050F06E /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
 				143CEBE11F94E9B10050F06E /* ImageUtility.swift */,
+				149BFA5C1FACAC0A004CF826 /* UIFont+Zeplin.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -396,117 +470,6 @@
 			path = Protocol;
 			sourceTree = "<group>";
 		};
-		145D8B3F1F8A5A2D000E5405 /* CollectionViewDialLayout */ = {
-			isa = PBXGroup;
-			children = (
-				145D8B401F8A5A69000E5405 /* AWCollectionCell.swift */,
-				145D8B3E1F8A5A0D000E5405 /* AWCollectionViewDialLayout.swift */,
-			);
-			path = CollectionViewDialLayout;
-			sourceTree = "<group>";
-		};
-		1467ACE71F94DF57003F26A7 /* ThumbNails */ = {
-			isa = PBXGroup;
-			children = (
-				1467AD511F94E186003F26A7 /* Spanish */,
-				1467AD321F94E15E003F26A7 /* French */,
-				1467AD131F94E12F003F26A7 /* German */,
-				1467ACF01F94E0D8003F26A7 /* English */,
-			);
-			name = ThumbNails;
-			path = "New Group";
-			sourceTree = "<group>";
-		};
-		1467ACF01F94E0D8003F26A7 /* English */ = {
-			isa = PBXGroup;
-			children = (
-				1467ACF81F94E121003F26A7 /* Baa Baa Black Sheep_THM.png */,
-				1467ACF51F94E121003F26A7 /* Hickory Dickory Dock_THM.png */,
-				1467ACFD1F94E122003F26A7 /* Humpty Dumpty_THM.png */,
-				1467AD001F94E122003F26A7 /* Hush Little Baby_THM.png */,
-				1467ACF11F94E121003F26A7 /* Im A Little Teapot_THM.png */,
-				1467ACF21F94E121003F26A7 /* Incy Wincy Spider_THM.png */,
-				1467ACFA1F94E122003F26A7 /* London Bridge Is Falling Down_THM.png */,
-				1467ACFB1F94E122003F26A7 /* Mary Had A Little Lamb_THM.png */,
-				1467ACF71F94E121003F26A7 /* Old Mac Donald Had A Farm_THM.png */,
-				1467ACFC1F94E122003F26A7 /* Old MacDonald Had A Farm_THM.png */,
-				1467ACF61F94E121003F26A7 /* Oranges And Lemons_THM.png */,
-				1467ACFE1F94E122003F26A7 /* Sing A Song Of Sixpence_THM.png */,
-				1467ACF31F94E121003F26A7 /* The Animals Went In Two By Two_THM.png */,
-				1467ACFF1F94E122003F26A7 /* The Grand Old Duke Of York_THM.png */,
-				1467ACF41F94E121003F26A7 /* Three Blind Mice_THM.png */,
-				1467AD011F94E122003F26A7 /* Twinkle Twinkle Litte Star_THM.png */,
-				1467ACF91F94E122003F26A7 /* Twinkle Twinkle Little Star_THM.png */,
-			);
-			path = English;
-			sourceTree = "<group>";
-		};
-		1467AD131F94E12F003F26A7 /* German */ = {
-			isa = PBXGroup;
-			children = (
-				1467AD1B1F94E152003F26A7 /* Alle Voegel sind schon da_THM.png */,
-				1467AD181F94E152003F26A7 /* Auf einem Baum ein Kuckuck_THM.png */,
-				1467AD191F94E152003F26A7 /* Backe backe Kuchen_THM.png */,
-				1467AD161F94E152003F26A7 /* Bruederchen komm tanz mit mir_THM.png */,
-				1467AD1F1F94E152003F26A7 /* Der Mond ist aufgegangen_THM.png */,
-				1467AD151F94E152003F26A7 /* Die Gedanken sind frei_THM.png */,
-				1467AD1C1F94E152003F26A7 /* Ein Maennlein steht im Walde_THM.png */,
-				1467AD1A1F94E152003F26A7 /* Ein Vogel wollte Hochzeit machen_THM.png */,
-				1467AD171F94E152003F26A7 /* Es klappert die Muehle_THM.png */,
-				1467AD221F94E153003F26A7 /* Es tanzt ein Bi-Ba-Butzemann_THM.png */,
-				1467AD201F94E152003F26A7 /* Haensel und Gretel_THM.png */,
-				1467AD1E1F94E152003F26A7 /* Kommt ein Vogel geflogen_THM.png */,
-				1467AD211F94E152003F26A7 /* Oh du lieber Augustin_THM.png */,
-				1467AD1D1F94E152003F26A7 /* Spannenlanger Hansel_THM.png */,
-				1467AD141F94E152003F26A7 /* Weisst du wieviel Sternlein stehen_THM.png */,
-			);
-			path = German;
-			sourceTree = "<group>";
-		};
-		1467AD321F94E15E003F26A7 /* French */ = {
-			isa = PBXGroup;
-			children = (
-				1467AD331F94E180003F26A7 /* A la claire fontaine_THM.png */,
-				1467AD351F94E180003F26A7 /* Alouette gentille alouette_THM.png */,
-				1467AD3C1F94E181003F26A7 /* Arlequin danse sa boutique_THM.png */,
-				1467AD341F94E180003F26A7 /* Au claire de la lune_THM.png */,
-				1467AD381F94E180003F26A7 /* Cadet Rouselle_THM.png */,
-				1467AD3F1F94E181003F26A7 /* Cest Gugusse_THM.png */,
-				1467AD3D1F94E181003F26A7 /* Compere Guilleri_THM.png */,
-				1467AD361F94E180003F26A7 /* Gentil coqulicot_THM.png */,
-				1467AD371F94E180003F26A7 /* Il etait un petit navire_THM.png */,
-				1467AD401F94E181003F26A7 /* Jean de la Lune_THM.png */,
-				1467AD411F94E181003F26A7 /* Jean petit qui danse_THM.png */,
-				1467AD391F94E180003F26A7 /* Le grand cerf_THM.png */,
-				1467AD3A1F94E180003F26A7 /* Lempreur et le petit prince_THM.png */,
-				1467AD3B1F94E180003F26A7 /* Maman les ptits bateau_THM.png */,
-				1467AD3E1F94E181003F26A7 /* Savez - vous planter les choux_THM.png */,
-			);
-			path = French;
-			sourceTree = "<group>";
-		};
-		1467AD511F94E186003F26A7 /* Spanish */ = {
-			isa = PBXGroup;
-			children = (
-				1467AD5E1F94E1A5003F26A7 /* A mi burro_THM.png */,
-				1467AD541F94E1A4003F26A7 /* Anton Pirulero_THM.png */,
-				1467AD531F94E1A4003F26A7 /* Cu-Cu cantaba la rana_THM.png */,
-				1467AD581F94E1A4003F26A7 /* Debajo de un boton_THM.png */,
-				1467AD5C1F94E1A5003F26A7 /* El cocherito lere_THM.png */,
-				1467AD591F94E1A4003F26A7 /* El patio de mi casa_THM.png */,
-				1467AD601F94E1A5003F26A7 /* Estando el senor don gato_THM.png */,
-				1467AD551F94E1A4003F26A7 /* Jugando al escondite_THM.png */,
-				1467AD5D1F94E1A5003F26A7 /* La reina Berenguela_THM.png */,
-				1467AD5A1F94E1A4003F26A7 /* La Tarara_THM.png */,
-				1467AD5F1F94E1A5003F26A7 /* Los pollitos_THM.png */,
-				1467AD521F94E1A4003F26A7 /* Quisiera ser tan alta_THM.png */,
-				1467AD561F94E1A4003F26A7 /* Tanto vestido blanco_THM.png */,
-				1467AD571F94E1A4003F26A7 /* Tengo una muneca_THM.png */,
-				1467AD5B1F94E1A5003F26A7 /* Tres hojitas Madre_THM.png */,
-			);
-			path = Spanish;
-			sourceTree = "<group>";
-		};
 		146F13521F7FCB11005EE206 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
@@ -526,6 +489,10 @@
 		146F13541F7FCB4B005EE206 /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				149BFA661FACB2CB004CF826 /* Views */,
+				1475CA7F1F9FD89E00E61A7A /* Home.storyboard */,
+				1441102E1FAC8AE300534B6E /* HomeViewController.swift */,
+				149BFA641FACB07C004CF826 /* StubContentViewController.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -533,29 +500,39 @@
 		146F13551F7FD032005EE206 /* UIComponents */ = {
 			isa = PBXGroup;
 			children = (
-				146F13561F7FD126005EE206 /* CustomViews */,
 			);
 			path = UIComponents;
 			sourceTree = "<group>";
 		};
-		146F13561F7FD126005EE206 /* CustomViews */ = {
+		149BFA571FACAADE004CF826 /* Font */ = {
 			isa = PBXGroup;
 			children = (
-				145D8B3F1F8A5A2D000E5405 /* CollectionViewDialLayout */,
-				146F13571F7FD143005EE206 /* PopCircleMenu */,
+				149BFA5B1FACAB18004CF826 /* GothamProBlack.ttf */,
+				149BFA581FACAB17004CF826 /* GothamProBold.ttf */,
+				149BFA591FACAB17004CF826 /* GothamProMedium.ttf */,
+				149BFA5A1FACAB17004CF826 /* GothamProRegular.ttf */,
 			);
-			path = CustomViews;
+			path = Font;
 			sourceTree = "<group>";
 		};
-		146F13571F7FD143005EE206 /* PopCircleMenu */ = {
+		149BFA661FACB2CB004CF826 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				146F13581F7FD1BF005EE206 /* CircleMenu.swift */,
-				146F13591F7FD1BF005EE206 /* CircleMenuButton.swift */,
-				146F135B1F7FD1C0005EE206 /* PopCirCleMenuView.swift */,
-				146F135A1F7FD1BF005EE206 /* Utility.swift */,
+				149BFA671FACB2D9004CF826 /* SongTableViewCell.swift */,
+				149BFA681FACB2D9004CF826 /* SongTableViewCell.xib */,
 			);
-			path = PopCircleMenu;
+			path = Views;
+			sourceTree = "<group>";
+		};
+		14CE96791FBE27B7001E4710 /* SongImage */ = {
+			isa = PBXGroup;
+			children = (
+				1420A0DA1FCC4FCC00A367DD /* Spanish */,
+				1420A0BB1FCC4F9C00A367DD /* French */,
+				1420A09C1FCC4F7800A367DD /* English */,
+				1420A07B1FCC4F2900A367DD /* German */,
+			);
+			path = SongImage;
 			sourceTree = "<group>";
 		};
 		287C12D95ABFCDC906CEC9BD /* Frameworks */ = {
@@ -598,7 +575,6 @@
 			isa = PBXGroup;
 			children = (
 				58B61C911B714E01009D7475 /* Models */,
-				58C60F061A863D160008315F /* InitialViewController */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -627,7 +603,6 @@
 			isa = PBXGroup;
 			children = (
 				143CEBE01F94E8C20050F06E /* Utilities */,
-				14D544581F826D6000D31098 /* Main.storyboard */,
 				146F13521F7FCB11005EE206 /* Modules */,
 				143EF4F21F7F752200E25F7B /* Components */,
 				5859D51B1A7CEE61002F2CC6 /* Classes */,
@@ -635,7 +610,6 @@
 				588073DF1A754A9A0006A6C8 /* AppDelegate.swift */,
 				588073E91A754A9B0006A6C8 /* Images.xcassets */,
 				146F13641F825B77005EE206 /* LaunchScreen.storyboard */,
-				588073E11A754A9A0006A6C8 /* BabyTunes.xcdatamodeld */,
 				588073DD1A754A9A0006A6C8 /* Supporting Files */,
 			);
 			path = BabyTunes;
@@ -670,50 +644,25 @@
 		588074041A7835CD0006A6C8 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				1467ACE71F94DF57003F26A7 /* ThumbNails */,
-				588D47BF1A87B47900898313 /* MausCharacters */,
-				58B7449F1A79907E0090EBBF /* Backgrounds */,
+				149F76C51FCCA3F4003B01F9 /* BigMouseDE.png */,
+				149F76C61FCCA3F4003B01F9 /* BigMouseEN.png */,
+				149F76C31FCCA3F4003B01F9 /* BigMouseFR.png */,
+				149F76C41FCCA3F4003B01F9 /* BigMouseSP.png */,
+				14CE96791FBE27B7001E4710 /* SongImage */,
+				149BFA571FACAADE004CF826 /* Font */,
 			);
 			path = Resources;
-			sourceTree = "<group>";
-		};
-		588D47BF1A87B47900898313 /* MausCharacters */ = {
-			isa = PBXGroup;
-			children = (
-				588D47C01A87B47900898313 /* BigMouseEN.png */,
-				588D47C11A87B47900898313 /* BigMouseFR.png */,
-				588D47C21A87B47900898313 /* BigMouseDE.png */,
-				588D47C31A87B47900898313 /* BigMouseSP.png */,
-			);
-			path = MausCharacters;
 			sourceTree = "<group>";
 		};
 		58B61C911B714E01009D7475 /* Models */ = {
 			isa = PBXGroup;
 			children = (
 				585982E11B9E25E1009F3B38 /* Song.swift */,
+				149BFA5E1FACACF3004CF826 /* StubContentViewControllersProvider.swift */,
+				149BFA601FACAD3E004CF826 /* TabItem.swift */,
+				149BFA621FACAFD0004CF826 /* TabSwitcherItemsProvider.swift */,
 			);
 			name = Models;
-			sourceTree = "<group>";
-		};
-		58B7449F1A79907E0090EBBF /* Backgrounds */ = {
-			isa = PBXGroup;
-			children = (
-				58B744A01A79907E0090EBBF /* MainWallpaper.png */,
-			);
-			path = Backgrounds;
-			sourceTree = "<group>";
-		};
-		58C60F061A863D160008315F /* InitialViewController */ = {
-			isa = PBXGroup;
-			children = (
-				5859D51D1A7CEE61002F2CC6 /* BTSongTableViewController.swift */,
-				58B7B78B1A82B8D000843589 /* BTSongTableCell.swift */,
-				5859D51C1A7CEE61002F2CC6 /* SphereMenu.swift */,
-				58C60F041A863CEF0008315F /* SlideInCellAnimator.swift */,
-				58799ED61AA4FFAF008100F1 /* BabyTunes-Bridging-Header.h */,
-			);
-			name = InitialViewController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -807,76 +756,78 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1467AD091F94E122003F26A7 /* Baa Baa Black Sheep_THM.png in Resources */,
-				1467AD451F94E181003F26A7 /* Gentil coqulicot_THM.png in Resources */,
-				1467AD611F94E1A5003F26A7 /* Quisiera ser tan alta_THM.png in Resources */,
-				1467AD481F94E181003F26A7 /* Le grand cerf_THM.png in Resources */,
-				1467AD491F94E181003F26A7 /* Lempreur et le petit prince_THM.png in Resources */,
-				1467AD031F94E122003F26A7 /* Incy Wincy Spider_THM.png in Resources */,
-				1467AD651F94E1A5003F26A7 /* Tanto vestido blanco_THM.png in Resources */,
-				1467AD2D1F94E153003F26A7 /* Kommt ein Vogel geflogen_THM.png in Resources */,
-				1467AD441F94E181003F26A7 /* Alouette gentille alouette_THM.png in Resources */,
-				1467AD2F1F94E153003F26A7 /* Haensel und Gretel_THM.png in Resources */,
-				1467AD641F94E1A5003F26A7 /* Jugando al escondite_THM.png in Resources */,
-				1467AD081F94E122003F26A7 /* Old Mac Donald Had A Farm_THM.png in Resources */,
-				58B744AA1A79907E0090EBBF /* MainWallpaper.png in Resources */,
-				1467AD681F94E1A5003F26A7 /* El patio de mi casa_THM.png in Resources */,
-				1467AD4F1F94E181003F26A7 /* Jean de la Lune_THM.png in Resources */,
-				588D47C71A87B47900898313 /* BigMouseSP.png in Resources */,
-				1467AD501F94E181003F26A7 /* Jean petit qui danse_THM.png in Resources */,
-				1467AD4B1F94E181003F26A7 /* Arlequin danse sa boutique_THM.png in Resources */,
-				1467AD021F94E122003F26A7 /* Im A Little Teapot_THM.png in Resources */,
-				1467AD311F94E153003F26A7 /* Es tanzt ein Bi-Ba-Butzemann_THM.png in Resources */,
-				1467AD061F94E122003F26A7 /* Hickory Dickory Dock_THM.png in Resources */,
-				1467AD241F94E153003F26A7 /* Die Gedanken sind frei_THM.png in Resources */,
-				1467AD4C1F94E181003F26A7 /* Compere Guilleri_THM.png in Resources */,
-				1467AD6A1F94E1A5003F26A7 /* Tres hojitas Madre_THM.png in Resources */,
-				1467AD4D1F94E181003F26A7 /* Savez - vous planter les choux_THM.png in Resources */,
-				1467AD2A1F94E153003F26A7 /* Alle Voegel sind schon da_THM.png in Resources */,
-				1467AD2C1F94E153003F26A7 /* Spannenlanger Hansel_THM.png in Resources */,
-				1467AD231F94E153003F26A7 /* Weisst du wieviel Sternlein stehen_THM.png in Resources */,
-				1467AD6E1F94E1A5003F26A7 /* Los pollitos_THM.png in Resources */,
-				1467AD0A1F94E122003F26A7 /* Twinkle Twinkle Little Star_THM.png in Resources */,
-				1467AD4E1F94E181003F26A7 /* Cest Gugusse_THM.png in Resources */,
-				1467AD2E1F94E153003F26A7 /* Der Mond ist aufgegangen_THM.png in Resources */,
-				1467AD0E1F94E122003F26A7 /* Humpty Dumpty_THM.png in Resources */,
-				1467AD0F1F94E122003F26A7 /* Sing A Song Of Sixpence_THM.png in Resources */,
-				588D47C41A87B47900898313 /* BigMouseEN.png in Resources */,
-				1467AD281F94E153003F26A7 /* Backe backe Kuchen_THM.png in Resources */,
-				1467AD121F94E122003F26A7 /* Twinkle Twinkle Litte Star_THM.png in Resources */,
-				1467AD4A1F94E181003F26A7 /* Maman les ptits bateau_THM.png in Resources */,
-				1467AD471F94E181003F26A7 /* Cadet Rouselle_THM.png in Resources */,
-				1467AD6D1F94E1A5003F26A7 /* A mi burro_THM.png in Resources */,
-				1467AD6C1F94E1A5003F26A7 /* La reina Berenguela_THM.png in Resources */,
-				1467AD101F94E122003F26A7 /* The Grand Old Duke Of York_THM.png in Resources */,
+				1420A0B41FCC4F8D00A367DD /* Baa Baa Black Sheep.jpg in Resources */,
+				1420A0F51FCC4FE000A367DD /* Tengo una muneca.jpg in Resources */,
+				1420A0D81FCC4FBB00A367DD /* Cest Gugusse.jpg in Resources */,
+				1420A0951FCC4F3D00A367DD /* Auf einem Baum ein Kuckuck.jpg in Resources */,
+				1420A0921FCC4F3D00A367DD /* Weisst du wieviel Sternlein stehen.jpg in Resources */,
+				1420A0B61FCC4F8D00A367DD /* Humpty Dumpty.jpg in Resources */,
+				1420A0AD1FCC4F8D00A367DD /* The Animals Went In Two By Two.jpg in Resources */,
+				14C3C2981FC1B78F000B92E8 /* GothamProMedium.ttf in Resources */,
+				1420A0F21FCC4FE000A367DD /* El patio de mi casa.jpg in Resources */,
+				1420A0AE1FCC4F8D00A367DD /* Hickory Dickory Dock.jpg in Resources */,
+				1420A09A1FCC4F3D00A367DD /* Oh du lieber Augustin.jpg in Resources */,
+				1420A0971FCC4F3D00A367DD /* Die Gedanken sind frei.jpg in Resources */,
+				1420A0BA1FCC4F8D00A367DD /* Sing A Song Of Sixpence.jpg in Resources */,
+				1420A0AF1FCC4F8D00A367DD /* Twinkle Twinkle Litte Star.jpg in Resources */,
+				14C3C2961FC1B789000B92E8 /* GothamProBlack.ttf in Resources */,
+				1420A0961FCC4F3D00A367DD /* Es tanzt ein Bi-Ba-Butzemann.jpg in Resources */,
+				1420A0B21FCC4F8D00A367DD /* London Bridge Is Falling Down.jpg in Resources */,
+				1420A0F71FCC4FE000A367DD /* Debajo de un boton.jpg in Resources */,
+				1420A0CE1FCC4FBB00A367DD /* A la claire fontaine.jpg in Resources */,
+				1420A0D51FCC4FBB00A367DD /* Maman, les ptits bateau.jpg in Resources */,
+				1420A0AC1FCC4F8D00A367DD /* Three Blind Mice.jpg in Resources */,
+				1420A0F81FCC4FE000A367DD /* La Tarara.jpg in Resources */,
+				1420A0D91FCC4FBB00A367DD /* Le grand cerf.jpg in Resources */,
+				1420A0D71FCC4FBB00A367DD /* Alouette, gentille alouette.jpg in Resources */,
+				1420A0941FCC4F3D00A367DD /* Bruederchen komm tanz mit mir.jpg in Resources */,
+				1420A0CC1FCC4FBB00A367DD /* Lempreur et le petit prince.jpg in Resources */,
+				1420A0991FCC4F3D00A367DD /* Spannenlanger Hansel.jpg in Resources */,
+				1420A0B51FCC4F8D00A367DD /* Mary Had A Little Lamb.jpg in Resources */,
+				1420A0D41FCC4FBB00A367DD /* Jean petit qui danse.jpg in Resources */,
+				1420A08D1FCC4F3D00A367DD /* Ein Vogel wollte Hochzeit machen.jpg in Resources */,
+				1420A0CD1FCC4FBB00A367DD /* Savez - vous planter les choux.jpg in Resources */,
+				1420A0D31FCC4FBB00A367DD /* Au claire de la lune.jpg in Resources */,
+				1420A0F11FCC4FE000A367DD /* Jugando al escondite.jpg in Resources */,
+				1420A0CB1FCC4FBB00A367DD /* Cadet Rouselle.jpg in Resources */,
+				1420A0F61FCC4FE000A367DD /* Los pollitos.jpg in Resources */,
+				149F76C71FCCA3F4003B01F9 /* BigMouseFR.png in Resources */,
+				1420A0901FCC4F3D00A367DD /* Alle Voegel sind schon da.jpg in Resources */,
+				1420A0F41FCC4FE000A367DD /* Tanto vestido blanco.jpg in Resources */,
+				1420A08E1FCC4F3D00A367DD /* Kommt ein Vogel geflogen.jpg in Resources */,
+				1420A0EC1FCC4FE000A367DD /* La reina Berenguela.jpg in Resources */,
+				1420A0B71FCC4F8D00A367DD /* Oranges And Lemons.jpg in Resources */,
+				149BFA6A1FACB2D9004CF826 /* SongTableViewCell.xib in Resources */,
 				146F13661F825B78005EE206 /* LaunchScreen.storyboard in Resources */,
-				1467AD071F94E122003F26A7 /* Oranges And Lemons_THM.png in Resources */,
-				1467AD2B1F94E153003F26A7 /* Ein Maennlein steht im Walde_THM.png in Resources */,
-				1467AD431F94E181003F26A7 /* Au claire de la lune_THM.png in Resources */,
-				1467AD051F94E122003F26A7 /* Three Blind Mice_THM.png in Resources */,
-				1467AD461F94E181003F26A7 /* Il etait un petit navire_THM.png in Resources */,
-				1467AD041F94E122003F26A7 /* The Animals Went In Two By Two_THM.png in Resources */,
-				1467AD261F94E153003F26A7 /* Es klappert die Muehle_THM.png in Resources */,
-				1467AD0C1F94E122003F26A7 /* Mary Had A Little Lamb_THM.png in Resources */,
-				1467AD421F94E181003F26A7 /* A la claire fontaine_THM.png in Resources */,
-				588D47C51A87B47900898313 /* BigMouseFR.png in Resources */,
-				1467AD0B1F94E122003F26A7 /* London Bridge Is Falling Down_THM.png in Resources */,
-				14D5445A1F826D6000D31098 /* Main.storyboard in Resources */,
-				588D47C61A87B47900898313 /* BigMouseDE.png in Resources */,
-				1467AD691F94E1A5003F26A7 /* La Tarara_THM.png in Resources */,
-				1467AD661F94E1A5003F26A7 /* Tengo una muneca_THM.png in Resources */,
-				1467AD631F94E1A5003F26A7 /* Anton Pirulero_THM.png in Resources */,
-				1467AD0D1F94E122003F26A7 /* Old MacDonald Had A Farm_THM.png in Resources */,
-				1467AD621F94E1A5003F26A7 /* Cu-Cu cantaba la rana_THM.png in Resources */,
+				1420A0ED1FCC4FE000A367DD /* A mi burro.jpg in Resources */,
+				1475CA801F9FD89E00E61A7A /* Home.storyboard in Resources */,
+				1420A0EF1FCC4FE000A367DD /* Estando el senor don gato.jpg in Resources */,
+				149F76C91FCCA3F4003B01F9 /* BigMouseDE.png in Resources */,
+				149F76CA1FCCA3F4003B01F9 /* BigMouseEN.png in Resources */,
+				1420A0EB1FCC4FE000A367DD /* Tres hojitas, Madre.jpg in Resources */,
+				1420A0D21FCC4FBB00A367DD /* Arlequin danse sa boutique.jpg in Resources */,
+				1420A0D61FCC4FBB00A367DD /* Gentil coqulicot.jpg in Resources */,
+				1420A0EA1FCC4FE000A367DD /* Cu-Cu, cantaba la rana.jpg in Resources */,
+				1420A0B11FCC4F8D00A367DD /* Hush Little Baby.jpg in Resources */,
+				1420A08F1FCC4F3D00A367DD /* Ein Maennlein steht im Walde.jpg in Resources */,
+				1420A0931FCC4F3D00A367DD /* Es klappert die Muehle.jpg in Resources */,
+				149F76C81FCCA3F4003B01F9 /* BigMouseSP.png in Resources */,
+				1420A0B01FCC4F8D00A367DD /* Incy Wincy Spider.jpg in Resources */,
+				1420A0F31FCC4FE000A367DD /* Anton Pirulero.jpg in Resources */,
+				1420A0981FCC4F3D00A367DD /* Haensel und Gretel.jpg in Resources */,
+				14C3C2971FC1B78C000B92E8 /* GothamProBold.ttf in Resources */,
+				1420A0EE1FCC4FE000A367DD /* Quisiera ser tan alta.jpg in Resources */,
+				1420A0D11FCC4FBB00A367DD /* Jean de la Lune.jpg in Resources */,
+				1420A0F01FCC4FE000A367DD /* El cocherito, lere.jpg in Resources */,
+				1420A0CF1FCC4FBB00A367DD /* Il etait un petit navire.jpg in Resources */,
+				1420A0D01FCC4FBB00A367DD /* Compere Guilleri.jpg in Resources */,
+				1420A0911FCC4F3D00A367DD /* Der Mond ist aufgegangen.jpg in Resources */,
+				1420A0B91FCC4F8D00A367DD /* Im A Little Teapot.jpg in Resources */,
+				1420A0B81FCC4F8D00A367DD /* Old Mac Donald Had A Farm.jpg in Resources */,
 				588073EA1A754A9B0006A6C8 /* Images.xcassets in Resources */,
-				1467AD671F94E1A5003F26A7 /* Debajo de un boton_THM.png in Resources */,
-				1467AD271F94E153003F26A7 /* Auf einem Baum ein Kuckuck_THM.png in Resources */,
-				1467AD6B1F94E1A5003F26A7 /* El cocherito lere_THM.png in Resources */,
-				1467AD291F94E153003F26A7 /* Ein Vogel wollte Hochzeit machen_THM.png in Resources */,
-				1467AD251F94E153003F26A7 /* Bruederchen komm tanz mit mir_THM.png in Resources */,
-				1467AD301F94E153003F26A7 /* Oh du lieber Augustin_THM.png in Resources */,
-				1467AD6F1F94E1A5003F26A7 /* Estando el senor don gato_THM.png in Resources */,
-				1467AD111F94E122003F26A7 /* Hush Little Baby_THM.png in Resources */,
+				14C3C2991FC1B791000B92E8 /* GothamProRegular.ttf in Resources */,
+				1420A09B1FCC4F3D00A367DD /* Backe backe Kuchen.jpg in Resources */,
+				1420A0B31FCC4F8D00A367DD /* The Grand Old Duke Of York.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -913,12 +864,14 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-BabyTunes/Pods-BabyTunes-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/ColorMatchTabs/ColorMatchTabs.framework",
 				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
 				"${BUILT_PRODUCTS_DIR}/Swinject/Swinject.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ColorMatchTabs.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Swinject.framework",
 			);
@@ -1004,26 +957,22 @@
 			buildActionMask = 2147483647;
 			files = (
 				58E652221C095EDF0036F820 /* Song.swift in Sources */,
-				58B7B78C1A82B8D000843589 /* BTSongTableCell.swift in Sources */,
 				143EF5011F7F821A00E25F7B /* WindowHandlerState.swift in Sources */,
 				143EF5051F7F84DF00E25F7B /* Assemblies.swift in Sources */,
-				146F135D1F7FD1C0005EE206 /* CircleMenuButton.swift in Sources */,
-				146F135F1F7FD1C0005EE206 /* PopCirCleMenuView.swift in Sources */,
+				149BFA5D1FACAC0A004CF826 /* UIFont+Zeplin.swift in Sources */,
+				1441102F1FAC8AE300534B6E /* HomeViewController.swift in Sources */,
+				149BFA5F1FACACF3004CF826 /* StubContentViewControllersProvider.swift in Sources */,
 				588073E01A754A9A0006A6C8 /* AppDelegate.swift in Sources */,
 				143EF4F81F7F803300E25F7B /* AppAssemblyContainer.swift in Sources */,
-				145D8B411F8B60D0000E5405 /* AWCollectionCell.swift in Sources */,
-				588073E31A754A9A0006A6C8 /* BabyTunes.xcdatamodeld in Sources */,
-				145D8B431F8B60D5000E5405 /* AWCollectionViewDialLayout.swift in Sources */,
-				58C60F051A863CEF0008315F /* SlideInCellAnimator.swift in Sources */,
-				5859D51F1A7CEE61002F2CC6 /* BTSongTableViewController.swift in Sources */,
-				146F135C1F7FD1C0005EE206 /* CircleMenu.swift in Sources */,
+				149BFA611FACAD3E004CF826 /* TabItem.swift in Sources */,
+				149BFA651FACB07C004CF826 /* StubContentViewController.swift in Sources */,
+				149BFA691FACB2D9004CF826 /* SongTableViewCell.swift in Sources */,
 				143EF4FA1F7F804F00E25F7B /* AppAssembly.swift in Sources */,
 				143CEBE21F94E9B10050F06E /* ImageUtility.swift in Sources */,
-				5859D51E1A7CEE61002F2CC6 /* SphereMenu.swift in Sources */,
+				149BFA631FACAFD0004CF826 /* TabSwitcherItemsProvider.swift in Sources */,
 				143EF5031F7F828600E25F7B /* WindowHandler.swift in Sources */,
 				143EF4F61F7F759F00E25F7B /* AppAssemblyProtocol.swift in Sources */,
 				143EF4FF1F7F81F600E25F7B /* WindowHandlerProtocol.swift in Sources */,
-				146F135E1F7FD1C0005EE206 /* Utility.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1031,19 +980,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				146F13631F80D2F5005EE206 /* Utility.swift in Sources */,
 				1498A11E1F7A39B5006B2019 /* Song.swift in Sources */,
-				145D8B421F8B60D0000E5405 /* AWCollectionCell.swift in Sources */,
-				146F13621F80D2E1005EE206 /* CircleMenuButton.swift in Sources */,
-				581A66221B41DA2300F888E1 /* BTSongTableViewController.swift in Sources */,
-				146F13611F80D2DD005EE206 /* CircleMenu.swift in Sources */,
-				581A66241B41DA4D00F888E1 /* BTSongTableCell.swift in Sources */,
-				146F13601F80D290005EE206 /* PopCirCleMenuView.swift in Sources */,
-				145D8B441F8B60D6000E5405 /* AWCollectionViewDialLayout.swift in Sources */,
 				143CEBE31F94EA560050F06E /* ImageUtility.swift in Sources */,
 				588073F91A754A9C0006A6C8 /* BabyTunesTests.swift in Sources */,
-				581A66231B41DA3000F888E1 /* SphereMenu.swift in Sources */,
-				581A66251B41DA5F00F888E1 /* SlideInCellAnimator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1064,14 +1003,6 @@
 				146F13651F825B77005EE206 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-		14D544581F826D6000D31098 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				14D544591F826D6000D31098 /* Base */,
-			);
-			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -1122,7 +1053,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -1168,7 +1099,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
@@ -1193,6 +1124,7 @@
 					"FB_REFERENCE_IMAGE_DIR=\"\\\"$(SOURCE_ROOT)/$(PROJECT_NAME)Tests/ReferenceImages\\\"\"",
 				);
 				INFOPLIST_FILE = BabyTunes/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LINK_WITH_STANDARD_LIBRARIES = YES;
 				OTHER_LDFLAGS = (
@@ -1227,6 +1159,7 @@
 				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				"FRAMEWORK_SEARCH_PATHS[arch=*]" = "$(inherited)";
 				INFOPLIST_FILE = BabyTunes/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LINK_WITH_STANDARD_LIBRARIES = YES;
 				OTHER_LDFLAGS = (
@@ -1258,12 +1191,13 @@
 					"$(inherited)",
 				);
 				INFOPLIST_FILE = BabyTunesTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "CCDimensions.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "BabyTunes/Classes/BabyTunesTests-Bridging-Header.h";
 				"SWIFT_OBJC_BRIDGING_HEADER[arch=*]" = "BabyTunes/Classes/BabyTunesTests-Bridging-Header.h";
-				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
 				SWIFT_VERSION = 4.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BabyTunes.app/BabyTunes";
 			};
@@ -1276,12 +1210,13 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = BabyTunesTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "CCDimensions.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "BabyTunes/Classes/BabyTunesTests-Bridging-Header.h";
 				"SWIFT_OBJC_BRIDGING_HEADER[arch=*]" = "BabyTunes/Classes/BabyTunesTests-Bridging-Header.h";
-				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
 				SWIFT_VERSION = 4.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BabyTunes.app/BabyTunes";
 			};
@@ -1318,19 +1253,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCVersionGroup section */
-		588073E11A754A9A0006A6C8 /* BabyTunes.xcdatamodeld */ = {
-			isa = XCVersionGroup;
-			children = (
-				588073E21A754A9A0006A6C8 /* BabyTunes.xcdatamodel */,
-			);
-			currentVersion = 588073E21A754A9A0006A6C8 /* BabyTunes.xcdatamodel */;
-			path = BabyTunes.xcdatamodeld;
-			sourceTree = "<group>";
-			versionGroupType = wrapper.xcdatamodel;
-		};
-/* End XCVersionGroup section */
 	};
 	rootObject = 588073D21A754A9A0006A6C8 /* Project object */;
 }

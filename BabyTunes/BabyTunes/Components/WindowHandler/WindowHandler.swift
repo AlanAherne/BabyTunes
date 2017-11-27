@@ -27,7 +27,7 @@ extension WindowHandler {
         if appDelegate.window == nil {
             appDelegate.window = UIWindow(frame: UIScreen.main.bounds)
         }
-        appDelegate.window?.rootViewController = UIStoryboard(name: "Main", bundle: nil).instantiateInitialViewController()
+        appDelegate.window?.rootViewController = UIStoryboard(name: "Home", bundle: nil).instantiateInitialViewController()
         appDelegate.window?.makeKeyAndVisible()
     }
 }

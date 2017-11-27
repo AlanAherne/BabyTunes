@@ -10,16 +10,18 @@ import UIKit
 open class Song: NSObject {
     
     init(fromLanguage songLanguage: String, songTitle: String) {
-        
+
         language = songLanguage
         title = songTitle
-        thumbNailImage = UIImage(named: songTitle + "_THM.png")  
+        thumbNailImage = UIImage(named: songTitle.replacingOccurrences(of: ",", with: "") + "_THM.png")
+        songImage = UIImage(named: songTitle + ".jpg")
+        
         super.init()
     }
     
     var title: String!
     var language: String!
-//AA    var image: UIImage!
+    var songImage: UIImage!
     var thumbNailImage: UIImage!
     var length: Int?
     var songData: NSObject?
