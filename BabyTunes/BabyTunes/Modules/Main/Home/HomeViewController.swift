@@ -9,9 +9,6 @@ class HomeViewContoller: ColorMatchTabsViewController, CircleMenuDelegate {
         let _  = self.view
         
         titleLabel.font = UIFont.navigationTitleFont()
-        // to hide bottom button remove the following line
-       //AA popoverViewController = ExamplePopoverViewController()
-       //AA popoverViewController?.delegate = self
         
         dataSource = self
         reloadData()
