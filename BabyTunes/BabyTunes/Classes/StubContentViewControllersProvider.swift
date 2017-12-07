@@ -12,19 +12,19 @@ import ColorMatchTabs
 class StubContentViewControllersProvider {
     
     static let viewControllers: [UIViewController] = {
-        let productsViewController = StubContentViewController()
-        productsViewController.language = .england
+        let englishViewController = StubContentViewController()
+        englishViewController.language = .england
         
-        let venuesViewController = StubContentViewController()
-        venuesViewController.language = .germany
+        let germanViewController = StubContentViewController()
+        germanViewController.language = .germany
         
-        let reviewsViewController = StubContentViewController()
-        reviewsViewController.language = .france
+        let frenchViewController = StubContentViewController()
+        frenchViewController.language = .france
         
-        let usersViewController = StubContentViewController()
-        usersViewController.language = .spain
+        let spanishViewController = StubContentViewController()
+        spanishViewController.language = .spain
         
-        return [productsViewController, venuesViewController, reviewsViewController, usersViewController]
+        return [englishViewController, germanViewController, frenchViewController, spanishViewController]
     }()
     
 }

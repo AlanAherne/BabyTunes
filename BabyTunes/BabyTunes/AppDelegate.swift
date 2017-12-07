@@ -16,20 +16,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         
-        AppAssembly.install()
-        Song.initialize()
-        
-        // [Optional] Power your app with Local Datastore. For more info, go to
-        // https://parse.com/docs/ios_guide#localdatastore/iOS
-//AA        Parse.enableLocalDatastore()
-        
-        // Initialize Parse.
-//AA        Parse.setApplicationId("0N4r8JBZAMC4ZwOaVICN4b1snWByQURzzbb76rYu",
-//AA            clientKey: "zJycIa7EQbj6Emiw2ypVsPx4HCcFBfyMRGyOidwz")
-        
-        // [Optional] Track statistics around application opens.
-//AA        PFAnalytics.trackAppOpened(launchOptions: launchOptions)
-        
+        AppAssembly.install()        
         return true
     }
 

@@ -6,7 +6,7 @@ PODS:
   - FBSnapshotTestCase/Core (2.1.4)
   - FBSnapshotTestCase/SwiftSupport (2.1.4):
     - FBSnapshotTestCase/Core
-  - SwiftyJSON (3.1.4)
+  - SwiftyJSON (4.0.0)
   - Swinject (2.1.0)
 
 DEPENDENCIES:
@@ -20,7 +20,7 @@ SPEC CHECKSUMS:
   Alamofire: 2d95912bf4c34f164fdfc335872e8c312acaea4a
   ColorMatchTabs: f92f9ff526340c9816570ff2ee9abfc6d85d4a2b
   FBSnapshotTestCase: 094f9f314decbabe373b87cc339bea235a63e07a
-  SwiftyJSON: c2842d878f95482ffceec5709abc3d05680c0220
+  SwiftyJSON: 070dabdcb1beb81b247c65ffa3a79dbbfb3b48aa
   Swinject: 85e468ac75c5c2d234076f98c591d57d56bc64bc
 
 PODFILE CHECKSUM: 50fee3adf7a0ff3f00aefbf09c3b95ff928d50a9

@@ -2,76 +2,19 @@
 import UIKit
 import ColorMatchTabs
 
-class HomeViewContoller: ColorMatchTabsViewController, CircleMenuDelegate {
+class HomeViewContoller: ColorMatchTabsViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        let _  = self.view
         
         titleLabel.font = UIFont.navigationTitleFont()
-        
+        titleLabel.font = UIFont.navigationTitleFont()
+        // to hide bottom button remove the following line
+        popoverViewController = LanguagePopoverViewController()
+        popoverViewController?.delegate = self
         dataSource = self
         reloadData()
-/*
-        self.popMenuView.circleButton?.delegate = self
-        //Buttons count
-        popMenuView.circleButton?.buttonsCount = 4
-        
-        //Distance between buttons and the red circle
-        popMenuView.circleButton?.distance = 115
-        
-        //Delay between show buttons
-        popMenuView.circleButton?.showDelay = 0.03
-        
-        //Animation Duration
-        popMenuView.circleButton?.duration = 0.8
-        
-        guard let button = popMenuView.circleButton else {return}
-        button.layer.cornerRadius = button.bounds.size.width / 2.0
- */
     }
-/*
-    func circleMenu(_ circleMenu: CircleMenu, willDisplay button: CircleMenuButton, atIndex: Int) {
-        
-        if let language = Language(rawValue : atIndex)
-        {
-            //set color
-            button.backgroundColor = UIColor.lightGray
-            button.setImage(language.languageMouseCharacterImage(), for: UIControlState())
-            button.layer.borderWidth = 5.0
-            button.layer.borderColor = UIColor.white.cgColor
-            
-            // set highlited image
-            let highlightedImage  = language.languageMouseCharacterImage()?.withRenderingMode(.alwaysTemplate)
-            button.setImage(highlightedImage, for: .highlighted)
-            button.tintColor = UIColor(red: 0, green: 0, blue: 0, alpha: 0.3)
-            
-            //set text
-            guard let textLabel = button.textLabel else {return}
-            textLabel.text = language.languageName()
-        }
-    }
-    
-    func circleMenu(_ circleMenu: CircleMenu, buttonWillSelected button: CircleMenuButton, atIndex: Int) {
-        print("button!!!!! will selected: \(atIndex)")
-        
-        /* Use this for the language/country change
-         if let languageIndex = Language(rawValue : atIndex)
-         {
-         self.dataSource!.loadSongsForLanguage(language: languageIndex.languageName())
-         }
-         */
-    }
-    
-    func circleMenu(_ circleMenu: CircleMenu, buttonDidSelected button: CircleMenuButton, atIndex: Int) {
-        print("button!!!!! did selected: \(atIndex)")
-    }
-    
-    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        print("Select Item :: ", indexPath.item)
-        //collectionView.scrollToItemAtIndexPath(indexPath, atScrollPosition: UICollectionViewScrollPosition.Top, animated: true)
-    }
- */
 }
 
 extension HomeViewContoller: ColorMatchTabsViewControllerDataSource {
@@ -85,7 +28,6 @@ extension HomeViewContoller: ColorMatchTabsViewControllerDataSource {
     }
     
     func tabsViewController(_ controller: ColorMatchTabsViewController, titleAt index: Int) -> String {
-        print("TabSwitcherItemsProvider.items[index].title -> \(TabSwitcherItemsProvider.items[index].title)")
         return TabSwitcherItemsProvider.items[index].title
     }
     
@@ -138,9 +80,12 @@ enum Language : Int
     {
         return UIImage(named: "\(languageMouseName())")
     }
+}
+
+extension HomeViewContoller: PopoverViewControllerDelegate {
     
-    func languageMouseCharacterImage() -> UIImage!
-    {
-        return UIImage(named: "Big\(languageMouseName())")
+    func popoverViewController(_ popoverViewController: PopoverViewController, didSelectItemAt index: Int) {
+        selectItem(at: index)
     }
+    
 }
