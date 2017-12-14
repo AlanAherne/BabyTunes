@@ -70,16 +70,12 @@
 		143BC8F61FE023C300D02BDB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 143BC8F51FE023C300D02BDB /* Main.storyboard */; };
 		143BC9121FE0265100D02BDB /* FlipDismissAnimationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 143BC9101FE0265100D02BDB /* FlipDismissAnimationController.swift */; };
 		143BC9131FE0265100D02BDB /* FlipPresentAnimationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 143BC9111FE0265100D02BDB /* FlipPresentAnimationController.swift */; };
-		143BC9161FE026DA00D02BDB /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 143BC9151FE026DA00D02BDB /* Images.xcassets */; };
-		143BC91A1FE026FB00D02BDB /* PetCardStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 143BC9181FE026FB00D02BDB /* PetCardStore.swift */; };
-		143BC91B1FE026FB00D02BDB /* Pets.plist in Resources */ = {isa = PBXBuildFile; fileRef = 143BC9191FE026FB00D02BDB /* Pets.plist */; };
 		143BC91F1FE0271200D02BDB /* AnimationHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 143BC91D1FE0271200D02BDB /* AnimationHelper.swift */; };
 		143BC9201FE0271200D02BDB /* StoryboardSupport.swift in Sources */ = {isa = PBXBuildFile; fileRef = 143BC91E1FE0271200D02BDB /* StoryboardSupport.swift */; };
 		143BC9231FE0276F00D02BDB /* SwipeInteractionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 143BC9221FE0276F00D02BDB /* SwipeInteractionController.swift */; };
 		143BC9281FE0279300D02BDB /* PageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 143BC9251FE0279300D02BDB /* PageViewController.swift */; };
 		143BC9291FE0279300D02BDB /* RevealViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 143BC9261FE0279300D02BDB /* RevealViewController.swift */; };
 		143BC92A1FE0279300D02BDB /* CardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 143BC9271FE0279300D02BDB /* CardViewController.swift */; };
-		143BC92C1FE028BE00D02BDB /* PetCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 143BC92B1FE028BD00D02BDB /* PetCard.swift */; };
 		143CEBE21F94E9B10050F06E /* ImageUtility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 143CEBE11F94E9B10050F06E /* ImageUtility.swift */; };
 		143CEBE31F94EA560050F06E /* ImageUtility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 143CEBE11F94E9B10050F06E /* ImageUtility.swift */; };
 		143EF4F61F7F759F00E25F7B /* AppAssemblyProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 143EF4F51F7F759F00E25F7B /* AppAssemblyProtocol.swift */; };
@@ -161,7 +157,6 @@
 		14D89A461FD6C922001F2FC1 /* Cadet Rouselle.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 14D89A371FD6C921001F2FC1 /* Cadet Rouselle.mp3 */; };
 		14D89A471FD6C922001F2FC1 /* Au claire de la lune.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 14D89A381FD6C921001F2FC1 /* Au claire de la lune.mp3 */; };
 		14D89A481FD6C922001F2FC1 /* Il etait un petit navire.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 14D89A391FD6C922001F2FC1 /* Il etait un petit navire.mp3 */; };
-		14DDE6C91FCF482600491B2B /* LanguagePopoverViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14DDE6C81FCF482600491B2B /* LanguagePopoverViewController.swift */; };
 		14F73A301FD3FDAD00CCC67A /* pause@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 14F73A281FD3FDAB00CCC67A /* pause@3x.png */; };
 		14F73A311FD3FDAD00CCC67A /* play_@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 14F73A291FD3FDAB00CCC67A /* play_@3x.png */; };
 		14F73A321FD3FDAD00CCC67A /* pause@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 14F73A2A1FD3FDAC00CCC67A /* pause@2x.png */; };
@@ -288,16 +283,12 @@
 		143BC8F51FE023C300D02BDB /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		143BC9101FE0265100D02BDB /* FlipDismissAnimationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FlipDismissAnimationController.swift; path = "BabyTunes/Modules/Main/Home/Animation controllers/FlipDismissAnimationController.swift"; sourceTree = SOURCE_ROOT; };
 		143BC9111FE0265100D02BDB /* FlipPresentAnimationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FlipPresentAnimationController.swift; path = "BabyTunes/Modules/Main/Home/Animation controllers/FlipPresentAnimationController.swift"; sourceTree = SOURCE_ROOT; };
-		143BC9151FE026DA00D02BDB /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = "BabyTunes/Modules/Main/Home/Bundle files/Images.xcassets"; sourceTree = SOURCE_ROOT; };
-		143BC9181FE026FB00D02BDB /* PetCardStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PetCardStore.swift; path = Data/PetCardStore.swift; sourceTree = "<group>"; };
-		143BC9191FE026FB00D02BDB /* Pets.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Pets.plist; path = Data/Pets.plist; sourceTree = "<group>"; };
 		143BC91D1FE0271200D02BDB /* AnimationHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AnimationHelper.swift; path = BabyTunes/Modules/Main/Home/Helpers/AnimationHelper.swift; sourceTree = SOURCE_ROOT; };
 		143BC91E1FE0271200D02BDB /* StoryboardSupport.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = StoryboardSupport.swift; path = BabyTunes/Modules/Main/Home/Helpers/StoryboardSupport.swift; sourceTree = SOURCE_ROOT; };
 		143BC9221FE0276F00D02BDB /* SwipeInteractionController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SwipeInteractionController.swift; path = "BabyTunes/Modules/Main/Home/Interaction controllers/SwipeInteractionController.swift"; sourceTree = SOURCE_ROOT; };
 		143BC9251FE0279300D02BDB /* PageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PageViewController.swift; path = "BabyTunes/Modules/Main/Home/View controllers/PageViewController.swift"; sourceTree = SOURCE_ROOT; };
 		143BC9261FE0279300D02BDB /* RevealViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RevealViewController.swift; path = "BabyTunes/Modules/Main/Home/View controllers/RevealViewController.swift"; sourceTree = SOURCE_ROOT; };
 		143BC9271FE0279300D02BDB /* CardViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CardViewController.swift; path = "BabyTunes/Modules/Main/Home/View controllers/CardViewController.swift"; sourceTree = SOURCE_ROOT; };
-		143BC92B1FE028BD00D02BDB /* PetCard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PetCard.swift; sourceTree = "<group>"; };
 		143CEBE11F94E9B10050F06E /* ImageUtility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageUtility.swift; sourceTree = "<group>"; };
 		143EF4F51F7F759F00E25F7B /* AppAssemblyProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppAssemblyProtocol.swift; sourceTree = "<group>"; };
 		143EF4F71F7F803300E25F7B /* AppAssemblyContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppAssemblyContainer.swift; sourceTree = "<group>"; };
@@ -377,7 +368,6 @@
 		14D89A371FD6C921001F2FC1 /* Cadet Rouselle.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Cadet Rouselle.mp3"; sourceTree = "<group>"; };
 		14D89A381FD6C921001F2FC1 /* Au claire de la lune.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Au claire de la lune.mp3"; sourceTree = "<group>"; };
 		14D89A391FD6C922001F2FC1 /* Il etait un petit navire.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Il etait un petit navire.mp3"; sourceTree = "<group>"; };
-		14DDE6C81FCF482600491B2B /* LanguagePopoverViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LanguagePopoverViewController.swift; sourceTree = "<group>"; };
 		14F73A281FD3FDAB00CCC67A /* pause@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "pause@3x.png"; sourceTree = "<group>"; };
 		14F73A291FD3FDAB00CCC67A /* play_@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "play_@3x.png"; sourceTree = "<group>"; };
 		14F73A2A1FD3FDAC00CCC67A /* pause@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "pause@2x.png"; sourceTree = "<group>"; };
@@ -575,7 +565,6 @@
 		143BC9141FE026BE00D02BDB /* Bundle Files */ = {
 			isa = PBXGroup;
 			children = (
-				143BC9151FE026DA00D02BDB /* Images.xcassets */,
 			);
 			name = "Bundle Files";
 			path = "New Group1";
@@ -780,9 +769,6 @@
 				143BC9211FE0275200D02BDB /* Interaction Controllers */,
 				143BC91C1FE0270300D02BDB /* Helpers */,
 				143BC9171FE026EC00D02BDB /* Data */,
-				143BC9181FE026FB00D02BDB /* PetCardStore.swift */,
-				143BC92B1FE028BD00D02BDB /* PetCard.swift */,
-				143BC9191FE026FB00D02BDB /* Pets.plist */,
 				143BC9141FE026BE00D02BDB /* Bundle Files */,
 				143BC90F1FE0262900D02BDB /* Animation Controllers */,
 				149BFA661FACB2CB004CF826 /* Views */,
@@ -794,7 +780,6 @@
 		146F13551F7FD032005EE206 /* UIComponents */ = {
 			isa = PBXGroup;
 			children = (
-				14DDE6C81FCF482600491B2B /* LanguagePopoverViewController.swift */,
 			);
 			path = UIComponents;
 			sourceTree = "<group>";
@@ -1172,7 +1157,6 @@
 				14D89A431FD6C922001F2FC1 /* Maman, les ptits bateau.mp3 in Resources */,
 				1420A08E1FCC4F3D00A367DD /* Kommt ein Vogel geflogen.jpg in Resources */,
 				1420A0EC1FCC4FE000A367DD /* La reina Berenguela.jpg in Resources */,
-				143BC91B1FE026FB00D02BDB /* Pets.plist in Resources */,
 				1420A0B71FCC4F8D00A367DD /* Oranges And Lemons.jpg in Resources */,
 				14D89A401FD6C922001F2FC1 /* Jean de la Lune.mp3 in Resources */,
 				1467E5CD1FD6C8AF001F65C6 /* Tanto vestido blanco.mp3 in Resources */,
@@ -1188,7 +1172,6 @@
 				14F73A331FD3FDAD00CCC67A /* pause_@2x.png in Resources */,
 				1467E5CC1FD6C8AF001F65C6 /* La Tarara.mp3 in Resources */,
 				1467E58E1FD6C836001F65C6 /* The Animals Went In Two By Two.mp3 in Resources */,
-				143BC9161FE026DA00D02BDB /* Images.xcassets in Resources */,
 				1420A0EB1FCC4FE000A367DD /* Tres hojitas, Madre.jpg in Resources */,
 				1420A0D21FCC4FBB00A367DD /* Arlequin danse sa boutique.jpg in Resources */,
 				1467E5CB1FD6C8AF001F65C6 /* Estando el senor don gato.mp3 in Resources */,
@@ -1370,14 +1353,12 @@
 				143BC9281FE0279300D02BDB /* PageViewController.swift in Sources */,
 				143BC91F1FE0271200D02BDB /* AnimationHelper.swift in Sources */,
 				588073E01A754A9A0006A6C8 /* AppDelegate.swift in Sources */,
-				143BC92C1FE028BE00D02BDB /* PetCard.swift in Sources */,
 				143EF4F81F7F803300E25F7B /* AppAssemblyContainer.swift in Sources */,
 				149BFA611FACAD3E004CF826 /* TabItem.swift in Sources */,
 				143BC92A1FE0279300D02BDB /* CardViewController.swift in Sources */,
 				143BC9201FE0271200D02BDB /* StoryboardSupport.swift in Sources */,
 				14F73A3D1FD3FFA000CCC67A /* AudioViewController.swift in Sources */,
 				143BC9231FE0276F00D02BDB /* SwipeInteractionController.swift in Sources */,
-				143BC91A1FE026FB00D02BDB /* PetCardStore.swift in Sources */,
 				143BC9121FE0265100D02BDB /* FlipDismissAnimationController.swift in Sources */,
 				149BFA691FACB2D9004CF826 /* SongTableViewCell.swift in Sources */,
 				143EF4FA1F7F804F00E25F7B /* AppAssembly.swift in Sources */,
@@ -1386,7 +1367,6 @@
 				143EF5031F7F828600E25F7B /* WindowHandler.swift in Sources */,
 				143EF4F61F7F759F00E25F7B /* AppAssemblyProtocol.swift in Sources */,
 				143EF4FF1F7F81F600E25F7B /* WindowHandlerProtocol.swift in Sources */,
-				14DDE6C91FCF482600491B2B /* LanguagePopoverViewController.swift in Sources */,
 				143BC9291FE0279300D02BDB /* RevealViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
