@@ -29,7 +29,7 @@ class SongTableViewCell: UITableViewCell, AVAudioPlayerDelegate {
     
     func apply(_ song: Song) {
         songTitel = song.title
-        contentImageView.image = song.songImage
+        contentImageView.image = song.image
         songTitle.text = songTitel
         songTitle.font = UIFont.cellTitleFont()
         

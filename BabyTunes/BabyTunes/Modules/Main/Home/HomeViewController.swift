@@ -45,42 +45,6 @@ extension HomeViewContoller: ColorMatchTabsViewControllerDataSource {
     
 }
 
-enum Language : Int
-{
-    case england, germany, france, spain
-    
-    static let languageNames = [england : "english", germany : "german", france : "french", spain : "spanish"]
-    static let languageMouseNames = [england : "MouseEN", germany : "MouseDE", france : "MouseFR", spain : "MouseSP"]
-    
-    func languageName() -> String
-    {
-        if let languageName = Language.languageNames[self]
-        {
-            return languageName
-        }
-        else
-        {
-            return "language"
-        }
-    }
-    
-    func languageMouseName() -> String
-    {
-        if let languageMouseName = Language.languageMouseNames[self]
-        {
-            return languageMouseName
-        }
-        else
-        {
-            return "languageMouseName"
-        }
-    }
-    
-    func languageMouseCharacterIconImage() -> UIImage!
-    {
-        return UIImage(named: "\(languageMouseName())")
-    }
-}
 
 extension HomeViewContoller: PopoverViewControllerDelegate {
     

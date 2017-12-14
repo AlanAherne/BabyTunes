@@ -67,6 +67,19 @@
 		1420A0F61FCC4FE000A367DD /* Los pollitos.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1420A0E71FCC4FDF00A367DD /* Los pollitos.jpg */; };
 		1420A0F71FCC4FE000A367DD /* Debajo de un boton.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1420A0E81FCC4FDF00A367DD /* Debajo de un boton.jpg */; };
 		1420A0F81FCC4FE000A367DD /* La Tarara.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1420A0E91FCC4FE000A367DD /* La Tarara.jpg */; };
+		143BC8F61FE023C300D02BDB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 143BC8F51FE023C300D02BDB /* Main.storyboard */; };
+		143BC9121FE0265100D02BDB /* FlipDismissAnimationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 143BC9101FE0265100D02BDB /* FlipDismissAnimationController.swift */; };
+		143BC9131FE0265100D02BDB /* FlipPresentAnimationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 143BC9111FE0265100D02BDB /* FlipPresentAnimationController.swift */; };
+		143BC9161FE026DA00D02BDB /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 143BC9151FE026DA00D02BDB /* Images.xcassets */; };
+		143BC91A1FE026FB00D02BDB /* PetCardStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 143BC9181FE026FB00D02BDB /* PetCardStore.swift */; };
+		143BC91B1FE026FB00D02BDB /* Pets.plist in Resources */ = {isa = PBXBuildFile; fileRef = 143BC9191FE026FB00D02BDB /* Pets.plist */; };
+		143BC91F1FE0271200D02BDB /* AnimationHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 143BC91D1FE0271200D02BDB /* AnimationHelper.swift */; };
+		143BC9201FE0271200D02BDB /* StoryboardSupport.swift in Sources */ = {isa = PBXBuildFile; fileRef = 143BC91E1FE0271200D02BDB /* StoryboardSupport.swift */; };
+		143BC9231FE0276F00D02BDB /* SwipeInteractionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 143BC9221FE0276F00D02BDB /* SwipeInteractionController.swift */; };
+		143BC9281FE0279300D02BDB /* PageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 143BC9251FE0279300D02BDB /* PageViewController.swift */; };
+		143BC9291FE0279300D02BDB /* RevealViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 143BC9261FE0279300D02BDB /* RevealViewController.swift */; };
+		143BC92A1FE0279300D02BDB /* CardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 143BC9271FE0279300D02BDB /* CardViewController.swift */; };
+		143BC92C1FE028BE00D02BDB /* PetCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 143BC92B1FE028BD00D02BDB /* PetCard.swift */; };
 		143CEBE21F94E9B10050F06E /* ImageUtility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 143CEBE11F94E9B10050F06E /* ImageUtility.swift */; };
 		143CEBE31F94EA560050F06E /* ImageUtility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 143CEBE11F94E9B10050F06E /* ImageUtility.swift */; };
 		143EF4F61F7F759F00E25F7B /* AppAssemblyProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 143EF4F51F7F759F00E25F7B /* AppAssemblyProtocol.swift */; };
@@ -76,7 +89,6 @@
 		143EF5011F7F821A00E25F7B /* WindowHandlerState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 143EF5001F7F821A00E25F7B /* WindowHandlerState.swift */; };
 		143EF5031F7F828600E25F7B /* WindowHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 143EF5021F7F828600E25F7B /* WindowHandler.swift */; };
 		143EF5051F7F84DF00E25F7B /* Assemblies.swift in Sources */ = {isa = PBXBuildFile; fileRef = 143EF5041F7F84DF00E25F7B /* Assemblies.swift */; };
-		1441102F1FAC8AE300534B6E /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1441102E1FAC8AE300534B6E /* HomeViewController.swift */; };
 		14562F161FD1336C00FE333A /* ColorMatchTabs in Resources */ = {isa = PBXBuildFile; fileRef = 14562F151FD1336B00FE333A /* ColorMatchTabs */; };
 		1467E5811FD6C836001F65C6 /* Sing A Song Of Sixpence.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 1467E5721FD6C830001F65C6 /* Sing A Song Of Sixpence.mp3 */; };
 		1467E5821FD6C836001F65C6 /* Humpty Dumpty.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 1467E5731FD6C831001F65C6 /* Humpty Dumpty.mp3 */; };
@@ -124,13 +136,10 @@
 		1467E5CC1FD6C8AF001F65C6 /* La Tarara.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 1467E5BD1FD6C8AE001F65C6 /* La Tarara.mp3 */; };
 		1467E5CD1FD6C8AF001F65C6 /* Tanto vestido blanco.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 1467E5BE1FD6C8AE001F65C6 /* Tanto vestido blanco.mp3 */; };
 		146F13661F825B78005EE206 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 146F13641F825B77005EE206 /* LaunchScreen.storyboard */; };
-		1475CA801F9FD89E00E61A7A /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1475CA7F1F9FD89E00E61A7A /* Home.storyboard */; };
 		1498A11E1F7A39B5006B2019 /* Song.swift in Sources */ = {isa = PBXBuildFile; fileRef = 585982E11B9E25E1009F3B38 /* Song.swift */; };
 		149BFA5D1FACAC0A004CF826 /* UIFont+Zeplin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 149BFA5C1FACAC0A004CF826 /* UIFont+Zeplin.swift */; };
-		149BFA5F1FACACF3004CF826 /* StubContentViewControllersProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 149BFA5E1FACACF3004CF826 /* StubContentViewControllersProvider.swift */; };
 		149BFA611FACAD3E004CF826 /* TabItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 149BFA601FACAD3E004CF826 /* TabItem.swift */; };
 		149BFA631FACAFD0004CF826 /* TabSwitcherItemsProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 149BFA621FACAFD0004CF826 /* TabSwitcherItemsProvider.swift */; };
-		149BFA651FACB07C004CF826 /* StubContentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 149BFA641FACB07C004CF826 /* StubContentViewController.swift */; };
 		149BFA691FACB2D9004CF826 /* SongTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 149BFA671FACB2D9004CF826 /* SongTableViewCell.swift */; };
 		149BFA6A1FACB2D9004CF826 /* SongTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 149BFA681FACB2D9004CF826 /* SongTableViewCell.xib */; };
 		14C3C2961FC1B789000B92E8 /* GothamProBlack.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 149BFA5B1FACAB18004CF826 /* GothamProBlack.ttf */; };
@@ -214,6 +223,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1409E6181FE2A468003B71B5 /* MyPlayground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = MyPlayground.playground; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		1420A07D1FCC4F3C00A367DD /* Ein Vogel wollte Hochzeit machen.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Ein Vogel wollte Hochzeit machen.jpg"; sourceTree = "<group>"; };
 		1420A07E1FCC4F3C00A367DD /* Kommt ein Vogel geflogen.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Kommt ein Vogel geflogen.jpg"; sourceTree = "<group>"; };
 		1420A07F1FCC4F3C00A367DD /* Ein Maennlein steht im Walde.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Ein Maennlein steht im Walde.jpg"; sourceTree = "<group>"; };
@@ -275,6 +285,19 @@
 		1420A0E81FCC4FDF00A367DD /* Debajo de un boton.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Debajo de un boton.jpg"; sourceTree = "<group>"; };
 		1420A0E91FCC4FE000A367DD /* La Tarara.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "La Tarara.jpg"; sourceTree = "<group>"; };
 		142273051FD403DA009ED7AF /* BabyTunes-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "BabyTunes-Bridging-Header.h"; path = "BabyTunes/Classes/BabyTunes-Bridging-Header.h"; sourceTree = SOURCE_ROOT; };
+		143BC8F51FE023C300D02BDB /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		143BC9101FE0265100D02BDB /* FlipDismissAnimationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FlipDismissAnimationController.swift; path = "BabyTunes/Modules/Main/Home/Animation controllers/FlipDismissAnimationController.swift"; sourceTree = SOURCE_ROOT; };
+		143BC9111FE0265100D02BDB /* FlipPresentAnimationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FlipPresentAnimationController.swift; path = "BabyTunes/Modules/Main/Home/Animation controllers/FlipPresentAnimationController.swift"; sourceTree = SOURCE_ROOT; };
+		143BC9151FE026DA00D02BDB /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = "BabyTunes/Modules/Main/Home/Bundle files/Images.xcassets"; sourceTree = SOURCE_ROOT; };
+		143BC9181FE026FB00D02BDB /* PetCardStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PetCardStore.swift; path = Data/PetCardStore.swift; sourceTree = "<group>"; };
+		143BC9191FE026FB00D02BDB /* Pets.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Pets.plist; path = Data/Pets.plist; sourceTree = "<group>"; };
+		143BC91D1FE0271200D02BDB /* AnimationHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AnimationHelper.swift; path = BabyTunes/Modules/Main/Home/Helpers/AnimationHelper.swift; sourceTree = SOURCE_ROOT; };
+		143BC91E1FE0271200D02BDB /* StoryboardSupport.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = StoryboardSupport.swift; path = BabyTunes/Modules/Main/Home/Helpers/StoryboardSupport.swift; sourceTree = SOURCE_ROOT; };
+		143BC9221FE0276F00D02BDB /* SwipeInteractionController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SwipeInteractionController.swift; path = "BabyTunes/Modules/Main/Home/Interaction controllers/SwipeInteractionController.swift"; sourceTree = SOURCE_ROOT; };
+		143BC9251FE0279300D02BDB /* PageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PageViewController.swift; path = "BabyTunes/Modules/Main/Home/View controllers/PageViewController.swift"; sourceTree = SOURCE_ROOT; };
+		143BC9261FE0279300D02BDB /* RevealViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RevealViewController.swift; path = "BabyTunes/Modules/Main/Home/View controllers/RevealViewController.swift"; sourceTree = SOURCE_ROOT; };
+		143BC9271FE0279300D02BDB /* CardViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CardViewController.swift; path = "BabyTunes/Modules/Main/Home/View controllers/CardViewController.swift"; sourceTree = SOURCE_ROOT; };
+		143BC92B1FE028BD00D02BDB /* PetCard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PetCard.swift; sourceTree = "<group>"; };
 		143CEBE11F94E9B10050F06E /* ImageUtility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageUtility.swift; sourceTree = "<group>"; };
 		143EF4F51F7F759F00E25F7B /* AppAssemblyProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppAssemblyProtocol.swift; sourceTree = "<group>"; };
 		143EF4F71F7F803300E25F7B /* AppAssemblyContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppAssemblyContainer.swift; sourceTree = "<group>"; };
@@ -283,7 +306,6 @@
 		143EF5001F7F821A00E25F7B /* WindowHandlerState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WindowHandlerState.swift; sourceTree = "<group>"; };
 		143EF5021F7F828600E25F7B /* WindowHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WindowHandler.swift; sourceTree = "<group>"; };
 		143EF5041F7F84DF00E25F7B /* Assemblies.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Assemblies.swift; sourceTree = "<group>"; };
-		1441102E1FAC8AE300534B6E /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		14562F151FD1336B00FE333A /* ColorMatchTabs */ = {isa = PBXFileReference; lastKnownFileType = folder; name = ColorMatchTabs; path = Pods/ColorMatchTabs; sourceTree = "<group>"; };
 		1467E5721FD6C830001F65C6 /* Sing A Song Of Sixpence.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Sing A Song Of Sixpence.mp3"; sourceTree = "<group>"; };
 		1467E5731FD6C831001F65C6 /* Humpty Dumpty.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Humpty Dumpty.mp3"; sourceTree = "<group>"; };
@@ -331,16 +353,13 @@
 		1467E5BD1FD6C8AE001F65C6 /* La Tarara.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "La Tarara.mp3"; sourceTree = "<group>"; };
 		1467E5BE1FD6C8AE001F65C6 /* Tanto vestido blanco.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Tanto vestido blanco.mp3"; sourceTree = "<group>"; };
 		146F13651F825B77005EE206 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		1475CA7F1F9FD89E00E61A7A /* Home.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
 		149BFA581FACAB17004CF826 /* GothamProBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = GothamProBold.ttf; sourceTree = "<group>"; };
 		149BFA591FACAB17004CF826 /* GothamProMedium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = GothamProMedium.ttf; sourceTree = "<group>"; };
 		149BFA5A1FACAB17004CF826 /* GothamProRegular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = GothamProRegular.ttf; sourceTree = "<group>"; };
 		149BFA5B1FACAB18004CF826 /* GothamProBlack.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = GothamProBlack.ttf; sourceTree = "<group>"; };
 		149BFA5C1FACAC0A004CF826 /* UIFont+Zeplin.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIFont+Zeplin.swift"; sourceTree = "<group>"; };
-		149BFA5E1FACACF3004CF826 /* StubContentViewControllersProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StubContentViewControllersProvider.swift; sourceTree = "<group>"; };
 		149BFA601FACAD3E004CF826 /* TabItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabItem.swift; sourceTree = "<group>"; };
 		149BFA621FACAFD0004CF826 /* TabSwitcherItemsProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabSwitcherItemsProvider.swift; sourceTree = "<group>"; };
-		149BFA641FACB07C004CF826 /* StubContentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StubContentViewController.swift; sourceTree = "<group>"; };
 		149BFA671FACB2D9004CF826 /* SongTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SongTableViewCell.swift; sourceTree = "<group>"; };
 		149BFA681FACB2D9004CF826 /* SongTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SongTableViewCell.xib; sourceTree = "<group>"; };
 		14D89A2B1FD6C91C001F2FC1 /* A la claire fontaine.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "A la claire fontaine.mp3"; sourceTree = "<group>"; };
@@ -543,9 +562,67 @@
 			path = Spanish;
 			sourceTree = "<group>";
 		};
+		143BC90F1FE0262900D02BDB /* Animation Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				143BC9101FE0265100D02BDB /* FlipDismissAnimationController.swift */,
+				143BC9111FE0265100D02BDB /* FlipPresentAnimationController.swift */,
+			);
+			name = "Animation Controllers";
+			path = "New Group";
+			sourceTree = "<group>";
+		};
+		143BC9141FE026BE00D02BDB /* Bundle Files */ = {
+			isa = PBXGroup;
+			children = (
+				143BC9151FE026DA00D02BDB /* Images.xcassets */,
+			);
+			name = "Bundle Files";
+			path = "New Group1";
+			sourceTree = "<group>";
+		};
+		143BC9171FE026EC00D02BDB /* Data */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Data;
+			path = "New Group2";
+			sourceTree = "<group>";
+		};
+		143BC91C1FE0270300D02BDB /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				143BC91D1FE0271200D02BDB /* AnimationHelper.swift */,
+				143BC91E1FE0271200D02BDB /* StoryboardSupport.swift */,
+			);
+			name = Helpers;
+			path = "New Group3";
+			sourceTree = "<group>";
+		};
+		143BC9211FE0275200D02BDB /* Interaction Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				143BC9221FE0276F00D02BDB /* SwipeInteractionController.swift */,
+			);
+			name = "Interaction Controllers";
+			path = "New Group4";
+			sourceTree = "<group>";
+		};
+		143BC9241FE0278200D02BDB /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				143BC9271FE0279300D02BDB /* CardViewController.swift */,
+				143BC9251FE0279300D02BDB /* PageViewController.swift */,
+				143BC9261FE0279300D02BDB /* RevealViewController.swift */,
+			);
+			name = "View Controllers";
+			path = "New Group5";
+			sourceTree = "<group>";
+		};
 		143CEBE01F94E8C20050F06E /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
+				1409E6181FE2A468003B71B5 /* MyPlayground.playground */,
 				14F73A391FD3FEDF00CCC67A /* ATAudioVisualizer.h */,
 				14F73A3A1FD3FEDF00CCC67A /* ATAudioVisualizer.m */,
 				143CEBE11F94E9B10050F06E /* ImageUtility.swift */,
@@ -699,10 +776,17 @@
 		146F13541F7FCB4B005EE206 /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				143BC9241FE0278200D02BDB /* View Controllers */,
+				143BC9211FE0275200D02BDB /* Interaction Controllers */,
+				143BC91C1FE0270300D02BDB /* Helpers */,
+				143BC9171FE026EC00D02BDB /* Data */,
+				143BC9181FE026FB00D02BDB /* PetCardStore.swift */,
+				143BC92B1FE028BD00D02BDB /* PetCard.swift */,
+				143BC9191FE026FB00D02BDB /* Pets.plist */,
+				143BC9141FE026BE00D02BDB /* Bundle Files */,
+				143BC90F1FE0262900D02BDB /* Animation Controllers */,
 				149BFA661FACB2CB004CF826 /* Views */,
-				1475CA7F1F9FD89E00E61A7A /* Home.storyboard */,
-				1441102E1FAC8AE300534B6E /* HomeViewController.swift */,
-				149BFA641FACB07C004CF826 /* StubContentViewController.swift */,
+				143BC8F51FE023C300D02BDB /* Main.storyboard */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -913,7 +997,6 @@
 			isa = PBXGroup;
 			children = (
 				585982E11B9E25E1009F3B38 /* Song.swift */,
-				149BFA5E1FACACF3004CF826 /* StubContentViewControllersProvider.swift */,
 				149BFA601FACAD3E004CF826 /* TabItem.swift */,
 				149BFA621FACAFD0004CF826 /* TabSwitcherItemsProvider.swift */,
 			);
@@ -1089,21 +1172,23 @@
 				14D89A431FD6C922001F2FC1 /* Maman, les ptits bateau.mp3 in Resources */,
 				1420A08E1FCC4F3D00A367DD /* Kommt ein Vogel geflogen.jpg in Resources */,
 				1420A0EC1FCC4FE000A367DD /* La reina Berenguela.jpg in Resources */,
+				143BC91B1FE026FB00D02BDB /* Pets.plist in Resources */,
 				1420A0B71FCC4F8D00A367DD /* Oranges And Lemons.jpg in Resources */,
 				14D89A401FD6C922001F2FC1 /* Jean de la Lune.mp3 in Resources */,
 				1467E5CD1FD6C8AF001F65C6 /* Tanto vestido blanco.mp3 in Resources */,
+				143BC8F61FE023C300D02BDB /* Main.storyboard in Resources */,
 				14D89A3D1FD6C922001F2FC1 /* Alouette, gentille alouette.mp3 in Resources */,
 				149BFA6A1FACB2D9004CF826 /* SongTableViewCell.xib in Resources */,
 				146F13661F825B78005EE206 /* LaunchScreen.storyboard in Resources */,
 				1467E5881FD6C836001F65C6 /* Baa Baa Black Sheep.mp3 in Resources */,
 				1420A0ED1FCC4FE000A367DD /* A mi burro.jpg in Resources */,
-				1475CA801F9FD89E00E61A7A /* Home.storyboard in Resources */,
 				1420A0EF1FCC4FE000A367DD /* Estando el senor don gato.jpg in Resources */,
 				1467E5C71FD6C8AF001F65C6 /* La reina Berenguela.mp3 in Resources */,
 				1467E5A21FD6C87F001F65C6 /* Spannenlanger Hansel.mp3 in Resources */,
 				14F73A331FD3FDAD00CCC67A /* pause_@2x.png in Resources */,
 				1467E5CC1FD6C8AF001F65C6 /* La Tarara.mp3 in Resources */,
 				1467E58E1FD6C836001F65C6 /* The Animals Went In Two By Two.mp3 in Resources */,
+				143BC9161FE026DA00D02BDB /* Images.xcassets in Resources */,
 				1420A0EB1FCC4FE000A367DD /* Tres hojitas, Madre.jpg in Resources */,
 				1420A0D21FCC4FBB00A367DD /* Arlequin danse sa boutique.jpg in Resources */,
 				1467E5CB1FD6C8AF001F65C6 /* Estando el senor don gato.mp3 in Resources */,
@@ -1279,15 +1364,21 @@
 				58E652221C095EDF0036F820 /* Song.swift in Sources */,
 				143EF5011F7F821A00E25F7B /* WindowHandlerState.swift in Sources */,
 				143EF5051F7F84DF00E25F7B /* Assemblies.swift in Sources */,
+				143BC9131FE0265100D02BDB /* FlipPresentAnimationController.swift in Sources */,
 				149BFA5D1FACAC0A004CF826 /* UIFont+Zeplin.swift in Sources */,
 				14F73A3B1FD3FEDF00CCC67A /* ATAudioVisualizer.m in Sources */,
-				1441102F1FAC8AE300534B6E /* HomeViewController.swift in Sources */,
-				149BFA5F1FACACF3004CF826 /* StubContentViewControllersProvider.swift in Sources */,
+				143BC9281FE0279300D02BDB /* PageViewController.swift in Sources */,
+				143BC91F1FE0271200D02BDB /* AnimationHelper.swift in Sources */,
 				588073E01A754A9A0006A6C8 /* AppDelegate.swift in Sources */,
+				143BC92C1FE028BE00D02BDB /* PetCard.swift in Sources */,
 				143EF4F81F7F803300E25F7B /* AppAssemblyContainer.swift in Sources */,
 				149BFA611FACAD3E004CF826 /* TabItem.swift in Sources */,
+				143BC92A1FE0279300D02BDB /* CardViewController.swift in Sources */,
+				143BC9201FE0271200D02BDB /* StoryboardSupport.swift in Sources */,
 				14F73A3D1FD3FFA000CCC67A /* AudioViewController.swift in Sources */,
-				149BFA651FACB07C004CF826 /* StubContentViewController.swift in Sources */,
+				143BC9231FE0276F00D02BDB /* SwipeInteractionController.swift in Sources */,
+				143BC91A1FE026FB00D02BDB /* PetCardStore.swift in Sources */,
+				143BC9121FE0265100D02BDB /* FlipDismissAnimationController.swift in Sources */,
 				149BFA691FACB2D9004CF826 /* SongTableViewCell.swift in Sources */,
 				143EF4FA1F7F804F00E25F7B /* AppAssembly.swift in Sources */,
 				143CEBE21F94E9B10050F06E /* ImageUtility.swift in Sources */,
@@ -1296,6 +1387,7 @@
 				143EF4F61F7F759F00E25F7B /* AppAssemblyProtocol.swift in Sources */,
 				143EF4FF1F7F81F600E25F7B /* WindowHandlerProtocol.swift in Sources */,
 				14DDE6C91FCF482600491B2B /* LanguagePopoverViewController.swift in Sources */,
+				143BC9291FE0279300D02BDB /* RevealViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

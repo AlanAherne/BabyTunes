@@ -43,7 +43,7 @@ class StubContentViewController: UITableViewController {
             return cell
         }
         let title = dict?[indexPath.row]
-        NSLog("language : \(language.languageName()) - title : \(title) ")
+        NSLog("language : \(language.languageName()) - title : \(String(describing: title)) ")
         cell.apply(Song(fromLanguage: language.languageName(), songTitle: title!))
         
         return cell
