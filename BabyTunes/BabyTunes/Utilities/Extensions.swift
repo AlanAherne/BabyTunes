@@ -7,3 +7,8 @@
 //
 
 import Foundation
+
+extension Notification.Name {
+    static let playBGMusic = Notification.Name("playBGMusic")
+    static let pauseBGMusic = Notification.Name("pauseBGMusic")
+}
