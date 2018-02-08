@@ -6,24 +6,20 @@
 //  Copyright (c) 2015 CCDimensions. All rights reserved.
 //
 import UIKit
+import RealmSwift
 
-open class Song: NSObject {
+open class Song: Object {
     
-    init(fromLanguage songLanguage: String, songTitle: String) {
-
-        language = songLanguage
-        title = songTitle
-        thumbNailImage = UIImage(named: songTitle.replacingOccurrences(of: ",", with: "") + "_THM.png")
-        songImage = UIImage(named: songTitle + ".jpg")
-        
-        super.init()
+    @objc dynamic var title: String = ""
+    @objc dynamic var locked = true
+    
+    @objc dynamic var language = Language.england.rawValue
+    var languageEnum: Language {
+        get {
+            return Language(rawValue: language)!
+        }
+        set {
+            language = newValue.rawValue
+        }
     }
-    
-    var title: String!
-    var language: String!
-    var songImage: UIImage!
-    var thumbNailImage: UIImage!
-    var length: Int?
-    var songData: NSObject?
-    var lyrics: NSObject?
 }

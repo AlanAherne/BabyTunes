@@ -19,7 +19,7 @@ extension UIFont {
     }
     
     class func songTitleFont() -> UIFont? {
-        return UIFont(name: "GothamPro", size: 15.0)
+        return UIFont(name: "GothamPro-Bold", size: 18.0)
     }
     
     class func cellSubtitleFont() -> UIFont? {
