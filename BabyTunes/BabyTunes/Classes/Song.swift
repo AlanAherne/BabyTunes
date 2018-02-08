@@ -10,7 +10,7 @@ import RealmSwift
 
 open class Song: Object {
     
-    @objc dynamic var title: String! = ""
+    @objc dynamic var title: String = ""
     @objc dynamic var locked = true
     
     @objc dynamic var language = Language.england.rawValue

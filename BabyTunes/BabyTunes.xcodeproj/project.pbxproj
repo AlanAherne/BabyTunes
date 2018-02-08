@@ -25,7 +25,7 @@
 		1420A0AC1FCC4F8D00A367DD /* Three Blind Mice.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1420A09D1FCC4F8C00A367DD /* Three Blind Mice.jpg */; };
 		1420A0AD1FCC4F8D00A367DD /* The Animals Went In Two By Two.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1420A09E1FCC4F8C00A367DD /* The Animals Went In Two By Two.jpg */; };
 		1420A0AE1FCC4F8D00A367DD /* Hickory Dickory Dock.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1420A09F1FCC4F8C00A367DD /* Hickory Dickory Dock.jpg */; };
-		1420A0AF1FCC4F8D00A367DD /* Twinkle Twinkle Litte Star.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1420A0A01FCC4F8C00A367DD /* Twinkle Twinkle Litte Star.jpg */; };
+		1420A0AF1FCC4F8D00A367DD /* Twinkle Twinkle Little Star.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1420A0A01FCC4F8C00A367DD /* Twinkle Twinkle Little Star.jpg */; };
 		1420A0B01FCC4F8D00A367DD /* Incy Wincy Spider.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1420A0A11FCC4F8C00A367DD /* Incy Wincy Spider.jpg */; };
 		1420A0B11FCC4F8D00A367DD /* Hush Little Baby.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1420A0A21FCC4F8C00A367DD /* Hush Little Baby.jpg */; };
 		1420A0B21FCC4F8D00A367DD /* London Bridge Is Falling Down.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1420A0A31FCC4F8D00A367DD /* London Bridge Is Falling Down.jpg */; };
@@ -68,6 +68,8 @@
 		1420A0F71FCC4FE000A367DD /* Debajo de un boton.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1420A0E81FCC4FDF00A367DD /* Debajo de un boton.jpg */; };
 		1420A0F81FCC4FE000A367DD /* La Tarara.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1420A0E91FCC4FE000A367DD /* La Tarara.jpg */; };
 		14280C3E1FE7F6D500CFB8F7 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14280C3D1FE7F6D500CFB8F7 /* Extensions.swift */; };
+		1431E5602014BAB300A042F9 /* Checkbox.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1431E55F2014BAB300A042F9 /* Checkbox.swift */; };
+		1432E9C2201A740700754855 /* SongCardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1432E9C1201A740700754855 /* SongCardViewController.swift */; };
 		143BC8F61FE023C300D02BDB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 143BC8F51FE023C300D02BDB /* Main.storyboard */; };
 		143BC9121FE0265100D02BDB /* FlipDismissAnimationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 143BC9101FE0265100D02BDB /* FlipDismissAnimationController.swift */; };
 		143BC9131FE0265100D02BDB /* FlipPresentAnimationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 143BC9111FE0265100D02BDB /* FlipPresentAnimationController.swift */; };
@@ -76,7 +78,7 @@
 		143BC9231FE0276F00D02BDB /* SwipeInteractionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 143BC9221FE0276F00D02BDB /* SwipeInteractionController.swift */; };
 		143BC9281FE0279300D02BDB /* PageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 143BC9251FE0279300D02BDB /* PageViewController.swift */; };
 		143BC9291FE0279300D02BDB /* RevealViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 143BC9261FE0279300D02BDB /* RevealViewController.swift */; };
-		143BC92A1FE0279300D02BDB /* CardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 143BC9271FE0279300D02BDB /* CardViewController.swift */; };
+		143BC92A1FE0279300D02BDB /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 143BC9271FE0279300D02BDB /* MainViewController.swift */; };
 		143CEBE21F94E9B10050F06E /* ImageUtility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 143CEBE11F94E9B10050F06E /* ImageUtility.swift */; };
 		143EF4F61F7F759F00E25F7B /* AppAssemblyProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 143EF4F51F7F759F00E25F7B /* AppAssemblyProtocol.swift */; };
 		143EF4F81F7F803300E25F7B /* AppAssemblyContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 143EF4F71F7F803300E25F7B /* AppAssemblyContainer.swift */; };
@@ -204,7 +206,7 @@
 		1420A09D1FCC4F8C00A367DD /* Three Blind Mice.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Three Blind Mice.jpg"; sourceTree = "<group>"; };
 		1420A09E1FCC4F8C00A367DD /* The Animals Went In Two By Two.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "The Animals Went In Two By Two.jpg"; sourceTree = "<group>"; };
 		1420A09F1FCC4F8C00A367DD /* Hickory Dickory Dock.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Hickory Dickory Dock.jpg"; sourceTree = "<group>"; };
-		1420A0A01FCC4F8C00A367DD /* Twinkle Twinkle Litte Star.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Twinkle Twinkle Litte Star.jpg"; sourceTree = "<group>"; };
+		1420A0A01FCC4F8C00A367DD /* Twinkle Twinkle Little Star.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Twinkle Twinkle Little Star.jpg"; sourceTree = "<group>"; };
 		1420A0A11FCC4F8C00A367DD /* Incy Wincy Spider.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Incy Wincy Spider.jpg"; sourceTree = "<group>"; };
 		1420A0A21FCC4F8C00A367DD /* Hush Little Baby.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Hush Little Baby.jpg"; sourceTree = "<group>"; };
 		1420A0A31FCC4F8D00A367DD /* London Bridge Is Falling Down.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "London Bridge Is Falling Down.jpg"; sourceTree = "<group>"; };
@@ -248,6 +250,8 @@
 		1420A0E91FCC4FE000A367DD /* La Tarara.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "La Tarara.jpg"; sourceTree = "<group>"; };
 		142273051FD403DA009ED7AF /* BabyTunes-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "BabyTunes-Bridging-Header.h"; path = "BabyTunes/Classes/BabyTunes-Bridging-Header.h"; sourceTree = SOURCE_ROOT; };
 		14280C3D1FE7F6D500CFB8F7 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		1431E55F2014BAB300A042F9 /* Checkbox.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Checkbox.swift; sourceTree = "<group>"; };
+		1432E9C1201A740700754855 /* SongCardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SongCardViewController.swift; path = "BabyTunes/Modules/Main/Home/View controllers/SongCardViewController.swift"; sourceTree = SOURCE_ROOT; };
 		143BC8F51FE023C300D02BDB /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		143BC9101FE0265100D02BDB /* FlipDismissAnimationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FlipDismissAnimationController.swift; path = "BabyTunes/Modules/Main/Home/Animation controllers/FlipDismissAnimationController.swift"; sourceTree = SOURCE_ROOT; };
 		143BC9111FE0265100D02BDB /* FlipPresentAnimationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FlipPresentAnimationController.swift; path = "BabyTunes/Modules/Main/Home/Animation controllers/FlipPresentAnimationController.swift"; sourceTree = SOURCE_ROOT; };
@@ -256,7 +260,7 @@
 		143BC9221FE0276F00D02BDB /* SwipeInteractionController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SwipeInteractionController.swift; path = "BabyTunes/Modules/Main/Home/Interaction controllers/SwipeInteractionController.swift"; sourceTree = SOURCE_ROOT; };
 		143BC9251FE0279300D02BDB /* PageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PageViewController.swift; path = "BabyTunes/Modules/Main/Home/View controllers/PageViewController.swift"; sourceTree = SOURCE_ROOT; };
 		143BC9261FE0279300D02BDB /* RevealViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RevealViewController.swift; path = "BabyTunes/Modules/Main/Home/View controllers/RevealViewController.swift"; sourceTree = SOURCE_ROOT; };
-		143BC9271FE0279300D02BDB /* CardViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CardViewController.swift; path = "BabyTunes/Modules/Main/Home/View controllers/CardViewController.swift"; sourceTree = SOURCE_ROOT; };
+		143BC9271FE0279300D02BDB /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MainViewController.swift; path = "BabyTunes/Modules/Main/Home/View controllers/MainViewController.swift"; sourceTree = SOURCE_ROOT; };
 		143CEBE11F94E9B10050F06E /* ImageUtility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageUtility.swift; sourceTree = "<group>"; };
 		143EF4F51F7F759F00E25F7B /* AppAssemblyProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppAssemblyProtocol.swift; sourceTree = "<group>"; };
 		143EF4F71F7F803300E25F7B /* AppAssemblyContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppAssemblyContainer.swift; sourceTree = "<group>"; };
@@ -265,7 +269,6 @@
 		143EF5001F7F821A00E25F7B /* WindowHandlerState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WindowHandlerState.swift; sourceTree = "<group>"; };
 		143EF5021F7F828600E25F7B /* WindowHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WindowHandler.swift; sourceTree = "<group>"; };
 		143EF5041F7F84DF00E25F7B /* Assemblies.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Assemblies.swift; sourceTree = "<group>"; };
-		14562F151FD1336B00FE333A /* ColorMatchTabs */ = {isa = PBXFileReference; lastKnownFileType = folder; name = ColorMatchTabs; path = Pods/ColorMatchTabs; sourceTree = "<group>"; };
 		1467E5721FD6C830001F65C6 /* Sing A Song Of Sixpence.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Sing A Song Of Sixpence.mp3"; sourceTree = "<group>"; };
 		1467E5731FD6C831001F65C6 /* Humpty Dumpty.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Humpty Dumpty.mp3"; sourceTree = "<group>"; };
 		1467E5741FD6C831001F65C6 /* Old Mac Donald Had A Farm.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Old Mac Donald Had A Farm.mp3"; sourceTree = "<group>"; };
@@ -440,7 +443,7 @@
 				1420A09E1FCC4F8C00A367DD /* The Animals Went In Two By Two.jpg */,
 				1420A0A41FCC4F8D00A367DD /* The Grand Old Duke Of York.jpg */,
 				1420A09D1FCC4F8C00A367DD /* Three Blind Mice.jpg */,
-				1420A0A01FCC4F8C00A367DD /* Twinkle Twinkle Litte Star.jpg */,
+				1420A0A01FCC4F8C00A367DD /* Twinkle Twinkle Little Star.jpg */,
 			);
 			path = English;
 			sourceTree = "<group>";
@@ -502,6 +505,7 @@
 		143BC91C1FE0270300D02BDB /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
+				1431E55F2014BAB300A042F9 /* Checkbox.swift */,
 				143BC91D1FE0271200D02BDB /* AnimationHelper.swift */,
 				143BC91E1FE0271200D02BDB /* StoryboardSupport.swift */,
 			);
@@ -521,9 +525,10 @@
 		143BC9241FE0278200D02BDB /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				143BC9271FE0279300D02BDB /* CardViewController.swift */,
+				143BC9271FE0279300D02BDB /* MainViewController.swift */,
 				143BC9251FE0279300D02BDB /* PageViewController.swift */,
 				143BC9261FE0279300D02BDB /* RevealViewController.swift */,
+				1432E9C1201A740700754855 /* SongCardViewController.swift */,
 			);
 			name = "View Controllers";
 			path = "New Group5";
@@ -820,7 +825,6 @@
 				588073DC1A754A9A0006A6C8 /* BabyTunes */,
 				588073DB1A754A9A0006A6C8 /* Products */,
 				287C12D95ABFCDC906CEC9BD /* Frameworks */,
-				14562F151FD1336B00FE333A /* ColorMatchTabs */,
 				4B8C557E74635FF689881504 /* Pods */,
 			);
 			sourceTree = "<group>";
@@ -962,7 +966,7 @@
 				1420A09A1FCC4F3D00A367DD /* Oh du lieber Augustin.jpg in Resources */,
 				1420A0971FCC4F3D00A367DD /* Die Gedanken sind frei.jpg in Resources */,
 				1420A0BA1FCC4F8D00A367DD /* Sing A Song Of Sixpence.jpg in Resources */,
-				1420A0AF1FCC4F8D00A367DD /* Twinkle Twinkle Litte Star.jpg in Resources */,
+				1420A0AF1FCC4F8D00A367DD /* Twinkle Twinkle Little Star.jpg in Resources */,
 				14C3C2961FC1B789000B92E8 /* GothamProBlack.ttf in Resources */,
 				1420A0961FCC4F3D00A367DD /* Es tanzt ein Bi-Ba-Butzemann.jpg in Resources */,
 				14D89A451FD6C922001F2FC1 /* Gentil coqulicot.mp3 in Resources */,
@@ -1105,6 +1109,7 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-BabyTunes/Pods-BabyTunes-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/InAppPurchaseButton/InAppPurchaseButton.framework",
 				"${BUILT_PRODUCTS_DIR}/Realm/Realm.framework",
 				"${BUILT_PRODUCTS_DIR}/RealmSwift/RealmSwift.framework",
 				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
@@ -1112,6 +1117,7 @@
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/InAppPurchaseButton.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Realm.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RealmSwift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
@@ -1154,10 +1160,12 @@
 				149BFA5D1FACAC0A004CF826 /* UIFont+Zeplin.swift in Sources */,
 				14F73A3B1FD3FEDF00CCC67A /* ATAudioVisualizer.m in Sources */,
 				143BC9281FE0279300D02BDB /* PageViewController.swift in Sources */,
+				1432E9C2201A740700754855 /* SongCardViewController.swift in Sources */,
+				1431E5602014BAB300A042F9 /* Checkbox.swift in Sources */,
 				143BC91F1FE0271200D02BDB /* AnimationHelper.swift in Sources */,
 				588073E01A754A9A0006A6C8 /* AppDelegate.swift in Sources */,
 				143EF4F81F7F803300E25F7B /* AppAssemblyContainer.swift in Sources */,
-				143BC92A1FE0279300D02BDB /* CardViewController.swift in Sources */,
+				143BC92A1FE0279300D02BDB /* MainViewController.swift in Sources */,
 				143BC9201FE0271200D02BDB /* StoryboardSupport.swift in Sources */,
 				143BC9231FE0276F00D02BDB /* SwipeInteractionController.swift in Sources */,
 				143BC9121FE0265100D02BDB /* FlipDismissAnimationController.swift in Sources */,
@@ -1231,7 +1239,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -1277,7 +1285,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
@@ -1302,7 +1310,7 @@
 					"FB_REFERENCE_IMAGE_DIR=\"\\\"$(SOURCE_ROOT)/$(PROJECT_NAME)Tests/ReferenceImages\\\"\"",
 				);
 				INFOPLIST_FILE = BabyTunes/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LINK_WITH_STANDARD_LIBRARIES = YES;
 				OTHER_LDFLAGS = (
@@ -1333,7 +1341,7 @@
 				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				"FRAMEWORK_SEARCH_PATHS[arch=*]" = "$(inherited)";
 				INFOPLIST_FILE = BabyTunes/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LINK_WITH_STANDARD_LIBRARIES = YES;
 				OTHER_LDFLAGS = (

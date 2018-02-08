@@ -12,3 +12,9 @@ extension Notification.Name {
     static let playBGMusic = Notification.Name("playBGMusic")
     static let pauseBGMusic = Notification.Name("pauseBGMusic")
 }
+
+extension UserDefaults {
+    func containsLangauge(key: String) -> Bool {
+        return UserDefaults.standard.object(forKey: key) != nil
+    }
+}

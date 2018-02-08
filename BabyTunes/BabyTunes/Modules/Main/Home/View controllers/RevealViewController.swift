@@ -1,11 +1,12 @@
 import UIKit
 import AVFoundation
 
-class RevealViewController: UIViewController, AVAudioPlayerDelegate {
+class RevealViewController: UIViewController, AVAudioPlayerDelegate, UIScrollViewDelegate {
   
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var imageView: UIImageView!
-  
+    @IBOutlet weak var scrollView: UIScrollView!
+    
     @IBOutlet weak var playPauseButton: UIButton!
     @IBOutlet weak var currentTimeLabel: UILabel!
     @IBOutlet weak var remainingTimeLabel: UILabel!
@@ -29,7 +30,19 @@ class RevealViewController: UIViewController, AVAudioPlayerDelegate {
             return
         }
         
-        imageView.image = UIImage(named: (revealSong.title)! + ".jpg")
+        scrollView.minimumZoomScale = 1.0
+        scrollView.maximumZoomScale = 5.0
+        
+        let singleTapGesture = UITapGestureRecognizer(target: self, action: #selector(self.tapSinlge(recognizer:)))
+        singleTapGesture.numberOfTapsRequired = 1
+        self.scrollView.addGestureRecognizer(singleTapGesture)
+
+        let doubleTapGesture = UITapGestureRecognizer(target: self, action: #selector(self.tapDouble(recognizer:)))
+        doubleTapGesture.numberOfTapsRequired = 2
+        doubleTapGesture.numberOfTouchesRequired = 1
+        self.scrollView.addGestureRecognizer(doubleTapGesture)
+        
+        imageView.image = UIImage(named: (revealSong.title) + ".jpg")
         view.backgroundColor = revealSong.languageEnum.languageTintColor()
         swipeInteractionController = SwipeInteractionController(viewController: self)
         
@@ -47,6 +60,31 @@ class RevealViewController: UIViewController, AVAudioPlayerDelegate {
         self.audioPlayer.stop()
         stopAudioVisualizer()
     }
+    
+    @objc func tapSinlge(recognizer: UITapGestureRecognizer) {
+        
+        if !self.audioPlayer.isPlaying{
+            self.audioPlayer.play()
+            startAudioVisualizer()
+        }
+    }
+    
+    @objc func tapDouble(recognizer: UITapGestureRecognizer) {
+    
+        if (self.scrollView!.zoomScale == self.scrollView!.minimumZoomScale) {
+            let center = recognizer.location(in: self.scrollView!)
+            let size = self.imageView!.image!.size
+            let zoomRect = CGRect(x:center.x, y:center.y, width:(size.width / 2), height:(size.height / 2))
+            self.scrollView!.zoom(to: zoomRect, animated: true)
+        } else {
+            self.scrollView!.setZoomScale(self.scrollView!.minimumZoomScale, animated: true)
+        }
+    }
+
+    func viewForZooming(in scrollView: UIScrollView) -> UIView? {
+        return imageView
+    }
+    
     @IBAction func dismissPressed(_ sender: UIButton) {
         dismiss(animated: true, completion: nil)
     }

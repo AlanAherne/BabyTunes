@@ -10,7 +10,7 @@ import Foundation
 
 enum Language : Int
 {
-    case england, germany, france, spain
+    case england = 1, germany, france, spain
     
     static let languageNames = [england : "english", germany : "german", france : "french", spain : "spanish"]
     static let languageMouseNames = [england : "MouseEN", germany : "MouseDE", france : "MouseFR", spain : "MouseSP"]

@@ -55,7 +55,7 @@ class FlipPresentAnimationController: NSObject, UIViewControllerAnimatedTransiti
     
     // 3
     snapshot.frame = originFrame
-    snapshot.layer.cornerRadius = CardViewController.cardCornerRadius
+    snapshot.layer.cornerRadius = SongCardViewController.cardCornerRadius
     snapshot.layer.masksToBounds = true
     
     // 1
