@@ -7,7 +7,8 @@
 //
 
 import UIKit
-import CoreData
+import Parse
+import Bolts
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -16,7 +17,16 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         
-        AppAssembly.install()        
+        AppAssembly.install()
+        
+        let configuration = ParseClientConfiguration {
+            $0.applicationId = "com.cyrstalcleardimensions.BabyTunes.babytunesAppId"
+            $0.clientKey = "babytunes"
+            $0.server = "https://babytunes.herokuapp.com/parse"
+        }
+        
+        Parse.initialize(with: configuration)
+        
         return true
     }
 

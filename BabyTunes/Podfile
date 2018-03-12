@@ -10,7 +10,7 @@ target 'BabyTunes' do
 pod 'Swinject', '2.1.0'
 pod 'RealmSwift'
 pod 'RxSwift', '~> 4.0'
-pod 'InAppPurchaseButton'
+pod 'Parse'
 end
 
 post_install do |installer|

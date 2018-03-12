@@ -66,7 +66,6 @@ class PageViewController: UIPageViewController {
             }
             UserDefaults.standard.register(defaults: initialDefaults)
         }
-        
          
         if UserDefaults.standard.bool(forKey: Language.germany.languageName()){ activeLangauges.insert(Language.germany.rawValue) }
         if UserDefaults.standard.bool(forKey: Language.england.languageName()){ activeLangauges.insert(Language.england.rawValue) }
@@ -78,21 +77,14 @@ class PageViewController: UIPageViewController {
     func populateDefaultSongs() {
         
         if songs?.count == 0 {
-            let freeSongs = ["Hickory Dickory Dock",
-                             "The Animals Went In Two By Two",
-                             "Es tanzt ein Bi-Ba-Butzemann",
-                             "Haensel und Gretel",
-                             "Cu-Cu, cantaba la rana",
-                             "El patio de mi casa",
-                             "Cest Gugusse",
-                             "Le grand cerf"]
+            
             try! realm.write() {
                 
                 for song in songsArray {
                     let newSong = Song()
                     newSong.language = song[0].language.rawValue
                     newSong.title = song[0].title
-                    if  freeSongs.contains(newSong.title){
+                    if  BabyTunesProducts.freeSongs.contains(newSong.title){
                         newSong.locked = false
                     }
                     self.realm.add(newSong)
