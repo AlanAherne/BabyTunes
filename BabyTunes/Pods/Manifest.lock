@@ -1,31 +1,34 @@
 PODS:
+  - AAViewAnimator (0.1.1)
   - Bolts/Tasks (1.9.0)
   - Parse (1.16.0):
     - Parse/Core (= 1.16.0)
   - Parse/Core (1.16.0):
     - Bolts/Tasks (~> 1.9)
-  - Realm (3.1.1):
-    - Realm/Headers (= 3.1.1)
-  - Realm/Headers (3.1.1)
-  - RealmSwift (3.1.1):
-    - Realm (= 3.1.1)
+  - Realm (3.2.0):
+    - Realm/Headers (= 3.2.0)
+  - Realm/Headers (3.2.0)
+  - RealmSwift (3.2.0):
+    - Realm (= 3.2.0)
   - RxSwift (4.1.2)
   - Swinject (2.1.0)
 
 DEPENDENCIES:
+  - AAViewAnimator
   - Parse
   - RealmSwift
   - RxSwift (~> 4.0)
   - Swinject (= 2.1.0)
 
 SPEC CHECKSUMS:
+  AAViewAnimator: e9e3095db16f89e76dc4ad9b42f45e47155df1a5
   Bolts: ac6567323eac61e203f6a9763667d0f711be34c8
   Parse: 5b36dc2c2f0a2fd82a257ae018bc3d68cf2c24e7
-  Realm: 42d1c38a5b1bbcc828b48a7ce702cb86fc68adf4
-  RealmSwift: d31937ca6a6ee54acde64ec839523c0a3c04924b
+  Realm: ae552b9b9eca3a12374a589fa842f220e286a80a
+  RealmSwift: 05727129547dcab3fe828bd87bc30be903736b9c
   RxSwift: e49536837d9901277638493ea537394d4b55f570
   Swinject: 85e468ac75c5c2d234076f98c591d57d56bc64bc
 
-PODFILE CHECKSUM: dc8634b072f830b725f610e6343dbc1478da8074
+PODFILE CHECKSUM: 84b2679ad2601918b79b49085088b30bf75fcf67
 
 COCOAPODS: 1.3.1

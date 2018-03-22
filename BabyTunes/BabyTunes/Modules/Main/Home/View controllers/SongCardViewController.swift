@@ -6,6 +6,7 @@
 //  Copyright © 2018 CCDimensions. All rights reserved.
 //
 
+import AAViewAnimator
 
 class SongCardViewController: UIViewController {
     
@@ -16,6 +17,10 @@ class SongCardViewController: UIViewController {
     @IBOutlet weak var languageLabel: UILabel!
     @IBOutlet weak var imageView: UIImageView!
     @IBOutlet weak var languageImage: UIImageView!
+    @IBOutlet weak var shoppingView: UIView!
+    
+    let animationSelection: [AAViewAnimators] = [.fromTop, .fromBottom, .fromLeft, .fromRight, .fromFade]
+    let animationTransition: [AAViewAnimators] = [.scale(rate:1.2), .vibrateX(rate: 5), .vibrateY(rate: 5), .rotateLeft, .rotateRight, .rotateRound]
     
     var pageIndex: Int?
     var song: Song?
@@ -45,6 +50,12 @@ class SongCardViewController: UIViewController {
         imageView.layer.shadowOffset = CGSize(width: 5, height: 5)
         imageView.layer.shadowRadius = 5
         imageView.layer.shadowOpacity = 0.8
+    
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewDidLoad()
+        shoppingView.aa_animate(duration: 0.1, springDamping: .none, animation: .toFade)
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
@@ -54,17 +65,47 @@ class SongCardViewController: UIViewController {
             
             destinationViewController.transitioningDelegate = self
         }
+        else if segueIdentifier(for: segue) == .login,
+            let destinationViewController = segue.destination as? LoginViewController {
+            destinationViewController.transitioningDelegate = self
+        }
+ 
     }
     
     @IBAction func handleTap() {
-        performSegue(withIdentifier: .reveal, sender: nil)
+        if (song?.locked)!{
+          animateWithTransition(animationSelection.randomElement()!, animationTransition.randomElement()!)
+        }else{
+            performSegue(withIdentifier: .reveal, sender: nil)
+        }
     }
     
+    func animateWithTransition(_ animator: AAViewAnimators, _ transition: AAViewAnimators) {
+        shoppingView.aa_animate(duration: 1.0, springDamping: .slight, animation: animator) { [weak self, shoppingView, transition] inAnimating in
+            if inAnimating {
+                print("Animating .... with : \(animator)")
+            }
+            else {
+                shoppingView?.aa_animate(duration: 1.5, springDamping: .heavy, animation: transition) { [weak self] inAnimating in
+                    let strongSelf = self
+                    if inAnimating {
+                        print("Animating .... with : \(animator)")
+                    }
+                    else {
+                        strongSelf?.performSegue(withIdentifier: .login, sender: nil)
+                    }
+                }
+            }
+        }
+        
+    }
 }
 
 extension SongCardViewController: SegueHandlerType {
     enum SegueIdentifier: String {
         case reveal
+        case shop
+        case login
     }
 }
 
@@ -77,13 +118,17 @@ extension SongCardViewController: UIViewControllerTransitioningDelegate {
             return FlipPresentAnimationController(originFrame: cardView.frame)
     }
     
+    
     func animationController(forDismissed dismissed: UIViewController)
         -> UIViewControllerAnimatedTransitioning? {
-            guard let revealVC = dismissed as? RevealViewController else {
-                return nil
+            if let revealVC = dismissed as? RevealViewController {
+                return FlipDismissAnimationController(destinationFrame: cardView.frame,
+                                                      interactionController: revealVC.swipeInteractionController)
+            }else if let loginVC = dismissed as? LoginViewController{
+                return FlipDismissAnimationController(destinationFrame: cardView.frame,
+                                                      interactionController: loginVC.swipeInteractionController)
             }
-            return FlipDismissAnimationController(destinationFrame: cardView.frame,
-                                                  interactionController: revealVC.swipeInteractionController)
+            return nil
     }
 }
 

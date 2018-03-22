@@ -20,6 +20,8 @@ class LoginViewController: UIViewController {
     @IBOutlet weak var btnLogin: UIButton!
     @IBOutlet weak var btnSignUp: UIButton!
     
+    var swipeInteractionController: SwipeInteractionController?
+    
     // MARK: - View Life Cycle
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -30,6 +32,8 @@ class LoginViewController: UIViewController {
             performSegue(withIdentifier: showDetailSegueIdentifier, sender: self)
         }
         self.initEmitter()
+        
+        swipeInteractionController = SwipeInteractionController(viewController: self)
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -110,6 +114,10 @@ class LoginViewController: UIViewController {
             self.btnLogin.isEnabled = true
             self.btnSignUp.isEnabled = true
         }
+    }
+    
+    @IBAction func dismissPressed(_ sender: UIButton) {
+        dismiss(animated: true, completion: nil)
     }
 }
 

@@ -18,3 +18,16 @@ extension UserDefaults {
         return UserDefaults.standard.object(forKey: key) != nil
     }
 }
+
+extension Collection where Index == Int {
+    
+    /**
+     Picks a random element of the collection.
+     
+     - returns: A random element of the collection.
+     */
+    func randomElement() -> Iterator.Element? {
+        return isEmpty ? nil : self[Int(arc4random_uniform(UInt32(endIndex)))]
+    }
+    
+}

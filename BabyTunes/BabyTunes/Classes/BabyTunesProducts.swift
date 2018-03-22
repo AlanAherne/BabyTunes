@@ -28,8 +28,6 @@ public struct BabyTunesProducts {
   // MARK: - Properties
   static let PurchaseNotification = "BabyTunesProductsPurchaseNotification"
   
-  static let randomProductID = "com.cyrstalcleardimensions.BabyTunes.RandomOwls"
-  static let productIDsConsumables: Set<ProductIdentifier> = [randomProductID]
   static let productIDsNonRenewing: Set<ProductIdentifier> = ["com.cyrstalcleardimensions.BabyTunes.3monthsOfEverything",
                                                               "com.cyrstalcleardimensions.BabyTunes.6monthsOfEverything",
                                                               "com.cyrstalcleardimensions.BabyTunes.12monthsOfEverything"]
@@ -42,21 +40,7 @@ public struct BabyTunesProducts {
                      "Cest Gugusse",
                      "Le grand cerf"]
   
-  static let productIDsNonConsumables: Set<ProductIdentifier> = [
-    "com.cyrstalcleardimensions.BabyTunes.GoodJobOwl",
-    "com.cyrstalcleardimensions.BabyTunes.CouchOwl",
-    "com.cyrstalcleardimensions.BabyTunes.CarefreeOwl",
-    "com.cyrstalcleardimensions.BabyTunes.NightOwl",
-    "com.cyrstalcleardimensions.BabyTunes.LonelyOwl",
-    "com.cyrstalcleardimensions.BabyTunes.ShyOwl",
-    "com.cyrstalcleardimensions.BabyTunes.CryingOwl",
-    "com.cyrstalcleardimensions.BabyTunes.GoodNightOwl",
-    "com.cyrstalcleardimensions.BabyTunes.InLoveOwl"
-  ]
-  
-  public static let store = IAPHelper(productIds: BabyTunesProducts.productIDsConsumables
-    .union(BabyTunesProducts.productIDsNonConsumables)
-    .union(BabyTunesProducts.productIDsNonRenewing))
+  public static let store = IAPHelper(productIds: BabyTunesProducts.productIDsNonRenewing)
   
   public static func resourceName(for productIdentifier: String) -> String? {
     return productIdentifier.components(separatedBy: ".").last
@@ -73,22 +57,6 @@ public struct BabyTunesProducts {
       handleMonthlySubscription(months: 6)
     } else if productIDsNonRenewing.contains(productID), productID.contains("12months") {
         handleMonthlySubscription(months: 12)
-    }else if productIDsNonConsumables.contains(productID) {
-      UserDefaults.standard.set(true, forKey: productID)
-      store.purchasedProducts.insert(productID)
-      
-      NotificationCenter.default.post(name: NSNotification.Name(rawValue: PurchaseNotification),
-                                      object: nil)
-    }
-  }
-  
-  public static func setRandomProduct(with paidUp: Bool) {
-    if paidUp {
-      UserDefaults.standard.set(true, forKey: BabyTunesProducts.randomProductID)
-      store.purchasedProducts.insert(BabyTunesProducts.randomProductID)
-    } else {
-      UserDefaults.standard.set(false, forKey: BabyTunesProducts.randomProductID)
-      store.purchasedProducts.remove(BabyTunesProducts.randomProductID)
     }
   }
   
@@ -113,10 +81,7 @@ public struct BabyTunesProducts {
     var paidUp = false
     if BabyTunesProducts.daysRemainingOnSubscription() > 0 {
       paidUp = true
-    } else if UserSettings.shared.randomRemaining > 0 {
-      paidUp = true
     }
-    setRandomProduct(with: paidUp)
     return paidUp
   }
   
@@ -150,11 +115,6 @@ public struct BabyTunesProducts {
       if let latestDate = latestDate {
         // Update local
         UserSettings.shared.expirationDate = latestDate
-        
-        // See if subscription valid
-        if latestDate.compare(Date()) == .orderedDescending {
-          setRandomProduct(with: true)
-        }
       }
       
       completion(object)
@@ -169,7 +129,6 @@ public struct BabyTunesProducts {
       
       // Increase local
       UserSettings.shared.increaseRandomExpirationDate(by: months)
-      setRandomProduct(with: true)
       
       // Update Parse with extended purchase
       object?[expirationDateKey] = UserSettings.shared.expirationDate
