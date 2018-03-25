@@ -137,6 +137,8 @@
 		1467E5CC1FD6C8AF001F65C6 /* La Tarara.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 1467E5BD1FD6C8AE001F65C6 /* La Tarara.mp3 */; };
 		1467E5CD1FD6C8AF001F65C6 /* Tanto vestido blanco.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 1467E5BE1FD6C8AE001F65C6 /* Tanto vestido blanco.mp3 */; };
 		146F13661F825B78005EE206 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 146F13641F825B77005EE206 /* LaunchScreen.storyboard */; };
+		147CEBB92067930800BE7786 /* SongPurchaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 147CEBB82067930800BE7786 /* SongPurchaseView.swift */; };
+		147CEBBB2067968800BE7786 /* ShopStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 147CEBBA2067968800BE7786 /* ShopStoryboard.storyboard */; };
 		1490C30F1FE7EC0900E97616 /* bgmusic.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 1490C30E1FE7EC0900E97616 /* bgmusic.mp3 */; };
 		14949B27204D463700B17FAB /* RecordingStage.png in Resources */ = {isa = PBXBuildFile; fileRef = 14949B26204D463700B17FAB /* RecordingStage.png */; };
 		14949B29204D472B00B17FAB /* SideCurtainsOnly new darker.png in Resources */ = {isa = PBXBuildFile; fileRef = 14949B28204D472B00B17FAB /* SideCurtainsOnly new darker.png */; };
@@ -328,6 +330,8 @@
 		1467E5BD1FD6C8AE001F65C6 /* La Tarara.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "La Tarara.mp3"; sourceTree = "<group>"; };
 		1467E5BE1FD6C8AE001F65C6 /* Tanto vestido blanco.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Tanto vestido blanco.mp3"; sourceTree = "<group>"; };
 		146F13651F825B77005EE206 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		147CEBB82067930800BE7786 /* SongPurchaseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SongPurchaseView.swift; sourceTree = "<group>"; };
+		147CEBBA2067968800BE7786 /* ShopStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ShopStoryboard.storyboard; sourceTree = "<group>"; };
 		1490C30E1FE7EC0900E97616 /* bgmusic.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = bgmusic.mp3; sourceTree = "<group>"; };
 		14949B26204D463700B17FAB /* RecordingStage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = RecordingStage.png; sourceTree = "<group>"; };
 		14949B28204D472B00B17FAB /* SideCurtainsOnly new darker.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "SideCurtainsOnly new darker.png"; sourceTree = "<group>"; };
@@ -527,6 +531,7 @@
 				1431E55F2014BAB300A042F9 /* Checkbox.swift */,
 				143BC91D1FE0271200D02BDB /* AnimationHelper.swift */,
 				143BC91E1FE0271200D02BDB /* StoryboardSupport.swift */,
+				147CEBB82067930800BE7786 /* SongPurchaseView.swift */,
 			);
 			name = Helpers;
 			path = "New Group3";
@@ -883,6 +888,7 @@
 				588073E91A754A9B0006A6C8 /* Images.xcassets */,
 				146F13641F825B77005EE206 /* LaunchScreen.storyboard */,
 				588073DD1A754A9A0006A6C8 /* Supporting Files */,
+				147CEBBA2067968800BE7786 /* ShopStoryboard.storyboard */,
 			);
 			path = BabyTunes;
 			sourceTree = "<group>";
@@ -1037,6 +1043,7 @@
 				1467E5CA1FD6C8AF001F65C6 /* Tres hojitas, Madre.mp3 in Resources */,
 				1420A0CD1FCC4FBB00A367DD /* Savez - vous planter les choux.jpg in Resources */,
 				1467E58B1FD6C836001F65C6 /* Oranges And Lemons.mp3 in Resources */,
+				147CEBBB2067968800BE7786 /* ShopStoryboard.storyboard in Resources */,
 				14D89A471FD6C922001F2FC1 /* Au claire de la lune.mp3 in Resources */,
 				14949B27204D463700B17FAB /* RecordingStage.png in Resources */,
 				14D89A3A1FD6C922001F2FC1 /* A la claire fontaine.mp3 in Resources */,
@@ -1148,6 +1155,7 @@
 				"${SRCROOT}/Pods/Target Support Files/Pods-BabyTunes/Pods-BabyTunes-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/AAViewAnimator/AAViewAnimator.framework",
 				"${BUILT_PRODUCTS_DIR}/Bolts/Bolts.framework",
+				"${BUILT_PRODUCTS_DIR}/InAppPurchaseButton/InAppPurchaseButton.framework",
 				"${BUILT_PRODUCTS_DIR}/Parse/Parse.framework",
 				"${BUILT_PRODUCTS_DIR}/Realm/Realm.framework",
 				"${BUILT_PRODUCTS_DIR}/RealmSwift/RealmSwift.framework",
@@ -1158,6 +1166,7 @@
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AAViewAnimator.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Bolts.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/InAppPurchaseButton.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Parse.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Realm.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RealmSwift.framework",
@@ -1224,6 +1233,7 @@
 				143EF5031F7F828600E25F7B /* WindowHandler.swift in Sources */,
 				143EF4F61F7F759F00E25F7B /* AppAssemblyProtocol.swift in Sources */,
 				143EF4FF1F7F81F600E25F7B /* WindowHandlerProtocol.swift in Sources */,
+				147CEBB92067930800BE7786 /* SongPurchaseView.swift in Sources */,
 				143BC9291FE0279300D02BDB /* RevealViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

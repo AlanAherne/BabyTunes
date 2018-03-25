@@ -18,6 +18,7 @@ class SongCardViewController: UIViewController {
     @IBOutlet weak var imageView: UIImageView!
     @IBOutlet weak var languageImage: UIImageView!
     @IBOutlet weak var shoppingView: UIView!
+    @IBOutlet weak var appStoreView: UIView!
     
     let animationSelection: [AAViewAnimators] = [.fromTop, .fromBottom, .fromLeft, .fromRight, .fromFade]
     let animationTransition: [AAViewAnimators] = [.scale(rate:1.2), .vibrateX(rate: 5), .vibrateY(rate: 5), .rotateLeft, .rotateRight, .rotateRound]
@@ -35,27 +36,27 @@ class SongCardViewController: UIViewController {
         
         titleLabel.text = cardSong.title
         titleLabel.font = UIFont.songTitleFont()
+        
         cardView.layer.cornerRadius = 15
         cardView.layer.masksToBounds = true
-        cardView.backgroundColor = cardSong.languageEnum.languageTintColor()
         
         imageView.image = UIImage(named: cardSong.title + ".jpg")
         imageView.layer.cornerRadius = 15
+        
         languageImage.image = cardSong.languageEnum.languageMouseCharacterIconImage()
         languageLabel.text = cardSong.languageEnum.languageName()
         languageLabel.textColor = UIColor.orange
         
         imageView.layer.masksToBounds = false;
         imageView.layer.cornerRadius = 15
-        imageView.layer.shadowOffset = CGSize(width: 5, height: 5)
-        imageView.layer.shadowRadius = 5
-        imageView.layer.shadowOpacity = 0.8
-    
+        
+        shoppingView.layer.cornerRadius = 10
     }
     
     override func viewWillAppear(_ animated: Bool) {
-        super.viewDidLoad()
+        super.viewWillAppear(animated)
         shoppingView.aa_animate(duration: 0.1, springDamping: .none, animation: .toFade)
+        appStoreView.aa_animate(duration: 0.1, springDamping: .none, animation: .toFade)
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
@@ -81,23 +82,18 @@ class SongCardViewController: UIViewController {
     }
     
     func animateWithTransition(_ animator: AAViewAnimators, _ transition: AAViewAnimators) {
-        shoppingView.aa_animate(duration: 1.0, springDamping: .slight, animation: animator) { [weak self, shoppingView, transition] inAnimating in
+        shoppingView.aa_animate(duration: 1.0, springDamping: .slight, animation: animator) { [appStoreView] inAnimating in
             if inAnimating {
                 print("Animating .... with : \(animator)")
             }
             else {
-                shoppingView?.aa_animate(duration: 1.5, springDamping: .heavy, animation: transition) { [weak self] inAnimating in
-                    let strongSelf = self
+                appStoreView?.aa_animate(duration: 1.5, springDamping: .heavy, animation: .fromTop) { inAnimating in
                     if inAnimating {
                         print("Animating .... with : \(animator)")
-                    }
-                    else {
-                        strongSelf?.performSegue(withIdentifier: .login, sender: nil)
                     }
                 }
             }
         }
-        
     }
 }
 

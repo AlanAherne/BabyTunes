@@ -20,7 +20,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         AppAssembly.install()
         
         let configuration = ParseClientConfiguration {
-            $0.applicationId = "com.cyrstalcleardimensions.BabyTunes.babytunesAppId"
+            $0.applicationId = "babytunesAppId"
             $0.clientKey = "babytunes"
             $0.server = "https://babytunes.herokuapp.com/parse"
         }

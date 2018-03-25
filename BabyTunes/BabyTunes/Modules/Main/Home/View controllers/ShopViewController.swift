@@ -84,18 +84,22 @@ class ShopViewController: UIViewController {
 // MARK: - UITableViewDataSource
 extension ShopViewController: UITableViewDataSource {
 
-  func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-    return products.count
-  }
-
-  func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-    let cell = tableView.dequeueReusableCell(withIdentifier: "cellProduct", for: indexPath) as! ProductCell
-
-    let product = products[(indexPath as NSIndexPath).row]
-    cell.product = product
-    cell.buyButtonHandler = { product in
-      BabyTunesProducts.store.buyProduct(product)
+    override func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
+        return "Section \(section)"
     }
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return products.count
+    }
+
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "cellProduct", for: indexPath) as! ProductCell
+
+        let product = products[(indexPath as NSIndexPath).row]
+        cell.product = product
+        cell.buyButtonHandler = { product in
+            BabyTunesProducts.store.buyProduct(product)
+        }
 
     return cell
   }

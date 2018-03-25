@@ -48,6 +48,9 @@ public:
 
     using ReconnectMode = Client::ReconnectMode;
 
+    static constexpr std::uint_fast64_t default_idle_timeout_ms = 180000; // 3 minutes
+    static constexpr std::uint_fast64_t default_drop_period_ms  =  60000; // 1 minute
+
     struct Config {
         Config() {}
 
@@ -118,10 +121,10 @@ public:
 
         // A connection which has not been sending any messages or pings for
         // `idle_timeout_ms` is considered dead and will be dropped by the server.
-        uint_fast64_t idle_timeout_ms = 1800000; // 30 minutes
+        uint_fast64_t idle_timeout_ms = default_idle_timeout_ms;
 
         // How often the server scans through the connection list to drop idle ones.
-        uint_fast64_t drop_period_ms = 60000; // 1 minute
+        uint_fast64_t drop_period_ms = default_drop_period_ms;
 
         /// \brief The backup mode of the Sync worker.
         ///
@@ -256,6 +259,11 @@ public:
 
         /// For testing purposes only.
         ReconnectMode upstream_reconnect_mode = ReconnectMode::normal;
+
+        /// Same as Client::Config::connect_timeout_ms, and applies to upstream
+        /// connection.
+        std::uint_fast64_t upstream_connect_timeout_ms =
+            Client::default_connect_timeout_ms;
 
         /// Same as Client::Config::connection_linger_time_ms, and applies to
         /// upstream connection.
