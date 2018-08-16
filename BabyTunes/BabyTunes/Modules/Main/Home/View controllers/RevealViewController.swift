@@ -3,7 +3,6 @@ import AVFoundation
 
 class RevealViewController: UIViewController, AVAudioPlayerDelegate, UIScrollViewDelegate {
   
-    @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var imageView: UIImageView!
     @IBOutlet weak var scrollView: UIScrollView!
     
@@ -124,7 +123,7 @@ class RevealViewController: UIViewController, AVAudioPlayerDelegate, UIScrollVie
             visualizerTimer = nil
             
         }
-        visualizerTimer = Timer.scheduledTimer(timeInterval: visualizerAnimationDuration, target: self, selector: #selector(visualizerTimerChanged), userInfo: nil, repeats: true)
+        Timer.scheduledTimer(timeInterval: visualizerAnimationDuration, target: self, selector: #selector(visualizerTimerChanged), userInfo: nil, repeats: true)
     }
     
     func stopAudioVisualizer()

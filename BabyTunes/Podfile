@@ -13,6 +13,7 @@ pod 'RxSwift', '~> 4.0'
 pod 'Parse'
 pod 'AAViewAnimator'
 pod 'InAppPurchaseButton'
+pod 'SCLAlertView'
 end
 
 post_install do |installer|

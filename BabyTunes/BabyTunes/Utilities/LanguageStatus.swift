@@ -19,6 +19,8 @@ enum Language : Int
                                      france : UIColor(red: 0.96, green: 0.61, blue: 0.58, alpha: 1.00),
                                      spain : UIColor(red: 1.00, green: 0.61, blue: 0.16, alpha: 1.00)]
     
+    static let expirationDateKeys = [england : englishExpirationDateKey, germany : germanExpirationDateKey, france : frenchExpirationDateKey, spain : spanishExpirationDateKey]
+    
     func languageTintColor() -> UIColor
     {
         if let languageTintColor = Language.languageTintColors[self]
@@ -49,5 +51,14 @@ enum Language : Int
     func languageMouseCharacterIconImage() -> UIImage!
     {
         return UIImage(named: "\(languageMouseName())")
+    }
+    
+    func expirationDateKey() -> String
+    {
+        if let expirationDateKey = Language.expirationDateKeys[self]
+        {
+            return expirationDateKey
+        }
+        return Language.expirationDateKeys[.england]!
     }
 }

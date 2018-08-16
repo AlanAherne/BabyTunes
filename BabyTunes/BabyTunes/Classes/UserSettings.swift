@@ -22,51 +22,103 @@
 
 import Foundation
 
-let expirationDateKey = "ExpirationDate"
+let englishExpirationDateKey = "EnglishExpirationDate"
+let germanExpirationDateKey = "GermanExpirationDate"
+let frenchExpirationDateKey = "FrenchExpirationDate"
+let spanishExpirationDateKey = "SpanishExpirationDate"
+let everythingExpirationDateKey = "EverythingExpirationDate"
 
 class UserSettings {
 
-  // MARK: - Properties
-  static let shared = UserSettings()
+    // MARK: - Properties
+    static let shared = UserSettings()
 
-  init() {
-  }
+    init() {
+    }
+    
+    public var englishExpirationDate: Date? {
+        set {
+            UserDefaults.standard.set(newValue, forKey: englishExpirationDateKey)
+        }
+        get {
+            return UserDefaults.standard.object(forKey: englishExpirationDateKey) as? Date
+        }
+    }
+    
+    public var germanExpirationDate: Date? {
+        set {
+            UserDefaults.standard.set(newValue, forKey: germanExpirationDateKey)
+        }
+        get {
+            return UserDefaults.standard.object(forKey: germanExpirationDateKey) as? Date
+        }
+    }
+    
+    public var frenchExpirationDate: Date? {
+        set {
+            UserDefaults.standard.set(newValue, forKey: frenchExpirationDateKey)
+        }
+        get {
+            return UserDefaults.standard.object(forKey: frenchExpirationDateKey) as? Date
+        }
+    }
+    
+    public var spanishExpirationDate: Date? {
+        set {
+            UserDefaults.standard.set(newValue, forKey: spanishExpirationDateKey)
+        }
+        get {
+            return UserDefaults.standard.object(forKey: spanishExpirationDateKey) as? Date
+        }
+    }
 
-  public var expirationDate: Date? {
-    set {
-      UserDefaults.standard.set(newValue, forKey: expirationDateKey)
+    public var everythingExpirationDate: Date? {
+        set {
+            UserDefaults.standard.set(newValue, forKey: spanishExpirationDateKey)
+        }
+        get {
+            return UserDefaults.standard.object(forKey: spanishExpirationDateKey) as? Date
+        }
     }
-    get {
-      return UserDefaults.standard.object(forKey: expirationDateKey) as? Date
+    
+    public func expirationDate(language : Language?) -> Date?{
+        if language != nil{
+            return UserDefaults.standard.object(forKey: language!.expirationDateKey()) as? Date
+        }else{
+            return UserDefaults.standard.object(forKey: "EverythingExpirationDate") as? Date
+        }
     }
-  }
 
-  public var randomRemaining: Int {
-    set {
-      UserDefaults.standard.set(newValue, forKey: "remaining")
+    public func setExpirationDate(newValue: Date?, language : Language?){
+        if language != nil{
+            UserDefaults.standard.set(newValue, forKey: (language?.expirationDateKey())!)
+            
+        }else{
+            UserDefaults.standard.set(newValue, forKey: everythingExpirationDateKey)
+        }
     }
-    get {
-      return UserDefaults.standard.integer(forKey: "remaining")
+    
+    public func increaseEnglishExpirationDate(by months: Int) {
+        let lastDate = englishExpirationDate ?? Date()
+        let newDate = Calendar.current.date(byAdding: .month, value: months, to: lastDate)
+        englishExpirationDate = newDate
     }
-  }
-
-  public var lastRandomIndex: Int {
-    set {
-      UserDefaults.standard.set(newValue, forKey: "lastRandomIndex")
+    
+    public func increaseGermanExpirationDate(by months: Int) {
+        let lastDate = germanExpirationDate ?? Date()
+        let newDate = Calendar.current.date(byAdding: .month, value: months, to: lastDate)
+        germanExpirationDate = newDate
     }
-    get {
-      return UserDefaults.standard.integer(forKey: "lastRandomIndex")
+    
+    public func increaseSpanishExpirationDate(by months: Int) {
+        let lastDate = spanishExpirationDate ?? Date()
+        let newDate = Calendar.current.date(byAdding: .month, value: months, to: lastDate)
+        spanishExpirationDate = newDate
     }
-  }
-
-  public func increaseRandomExpirationDate(by months: Int) {
-    let lastDate = expirationDate ?? Date()
-    let newDate = Calendar.current.date(byAdding: .month, value: months, to: lastDate)
-    expirationDate = newDate
-  }
-
-  public func increaseRandomRemaining(by times: Int) {
-    let lastTimes = (randomRemaining < 0) ? 0 : randomRemaining
-    randomRemaining = lastTimes + times
-  }
+    
+    public func increaseFrenchExpirationDate(by months: Int) {
+        let lastDate = frenchExpirationDate ?? Date()
+        let newDate = Calendar.current.date(byAdding: .month, value: months, to: lastDate)
+        frenchExpirationDate = newDate
+    }
 }

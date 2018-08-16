@@ -67,8 +67,6 @@
 		1420A0F61FCC4FE000A367DD /* Los pollitos.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1420A0E71FCC4FDF00A367DD /* Los pollitos.jpg */; };
 		1420A0F71FCC4FE000A367DD /* Debajo de un boton.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1420A0E81FCC4FDF00A367DD /* Debajo de un boton.jpg */; };
 		1420A0F81FCC4FE000A367DD /* La Tarara.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1420A0E91FCC4FE000A367DD /* La Tarara.jpg */; };
-		1426DD2B205E8848003D3D08 /* ShopViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1426DD2A205E8847003D3D08 /* ShopViewController.swift */; };
-		1426DD2D205E9836003D3D08 /* ProductCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1426DD2C205E9835003D3D08 /* ProductCell.swift */; };
 		14280C3E1FE7F6D500CFB8F7 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14280C3D1FE7F6D500CFB8F7 /* Extensions.swift */; };
 		142933AA204BFF7600B032D9 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 142933A9204BFF7600B032D9 /* LoginViewController.swift */; };
 		1431E5602014BAB300A042F9 /* Checkbox.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1431E55F2014BAB300A042F9 /* Checkbox.swift */; };
@@ -91,6 +89,8 @@
 		143EF5011F7F821A00E25F7B /* WindowHandlerState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 143EF5001F7F821A00E25F7B /* WindowHandlerState.swift */; };
 		143EF5031F7F828600E25F7B /* WindowHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 143EF5021F7F828600E25F7B /* WindowHandler.swift */; };
 		143EF5051F7F84DF00E25F7B /* Assemblies.swift in Sources */ = {isa = PBXBuildFile; fileRef = 143EF5041F7F84DF00E25F7B /* Assemblies.swift */; };
+		145615F520874C210014112A /* ProductForSaleView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 145615F420874C210014112A /* ProductForSaleView.xib */; };
+		145615F9208750290014112A /* ProductForSaleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 145615F8208750290014112A /* ProductForSaleView.swift */; };
 		1467E5811FD6C836001F65C6 /* Sing A Song Of Sixpence.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 1467E5721FD6C830001F65C6 /* Sing A Song Of Sixpence.mp3 */; };
 		1467E5821FD6C836001F65C6 /* Humpty Dumpty.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 1467E5731FD6C831001F65C6 /* Humpty Dumpty.mp3 */; };
 		1467E5831FD6C836001F65C6 /* Old Mac Donald Had A Farm.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 1467E5741FD6C831001F65C6 /* Old Mac Donald Had A Farm.mp3 */; };
@@ -137,11 +137,7 @@
 		1467E5CC1FD6C8AF001F65C6 /* La Tarara.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 1467E5BD1FD6C8AE001F65C6 /* La Tarara.mp3 */; };
 		1467E5CD1FD6C8AF001F65C6 /* Tanto vestido blanco.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 1467E5BE1FD6C8AE001F65C6 /* Tanto vestido blanco.mp3 */; };
 		146F13661F825B78005EE206 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 146F13641F825B77005EE206 /* LaunchScreen.storyboard */; };
-		147CEBB92067930800BE7786 /* SongPurchaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 147CEBB82067930800BE7786 /* SongPurchaseView.swift */; };
-		147CEBBB2067968800BE7786 /* ShopStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 147CEBBA2067968800BE7786 /* ShopStoryboard.storyboard */; };
 		1490C30F1FE7EC0900E97616 /* bgmusic.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 1490C30E1FE7EC0900E97616 /* bgmusic.mp3 */; };
-		14949B27204D463700B17FAB /* RecordingStage.png in Resources */ = {isa = PBXBuildFile; fileRef = 14949B26204D463700B17FAB /* RecordingStage.png */; };
-		14949B29204D472B00B17FAB /* SideCurtainsOnly new darker.png in Resources */ = {isa = PBXBuildFile; fileRef = 14949B28204D472B00B17FAB /* SideCurtainsOnly new darker.png */; };
 		14949B2B204E79A000B17FAB /* BabyTunesProducts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14949B2A204E79A000B17FAB /* BabyTunesProducts.swift */; };
 		14949B2E204E806C00B17FAB /* UserSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14949B2C204E806A00B17FAB /* UserSettings.swift */; };
 		14949B2F204E806C00B17FAB /* IAPHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14949B2D204E806A00B17FAB /* IAPHelper.swift */; };
@@ -260,8 +256,6 @@
 		1420A0E81FCC4FDF00A367DD /* Debajo de un boton.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Debajo de un boton.jpg"; sourceTree = "<group>"; };
 		1420A0E91FCC4FE000A367DD /* La Tarara.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "La Tarara.jpg"; sourceTree = "<group>"; };
 		142273051FD403DA009ED7AF /* BabyTunes-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "BabyTunes-Bridging-Header.h"; path = "BabyTunes/Classes/BabyTunes-Bridging-Header.h"; sourceTree = SOURCE_ROOT; };
-		1426DD2A205E8847003D3D08 /* ShopViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ShopViewController.swift; path = "BabyTunes/Modules/Main/Home/View controllers/ShopViewController.swift"; sourceTree = SOURCE_ROOT; };
-		1426DD2C205E9835003D3D08 /* ProductCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductCell.swift; sourceTree = "<group>"; };
 		14280C3D1FE7F6D500CFB8F7 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		142933A9204BFF7600B032D9 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = LoginViewController.swift; path = BabyTunes/Modules/Main/Home/LoginViewController.swift; sourceTree = SOURCE_ROOT; };
 		1431E55F2014BAB300A042F9 /* Checkbox.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Checkbox.swift; sourceTree = "<group>"; };
@@ -284,6 +278,8 @@
 		143EF5001F7F821A00E25F7B /* WindowHandlerState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WindowHandlerState.swift; sourceTree = "<group>"; };
 		143EF5021F7F828600E25F7B /* WindowHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WindowHandler.swift; sourceTree = "<group>"; };
 		143EF5041F7F84DF00E25F7B /* Assemblies.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Assemblies.swift; sourceTree = "<group>"; };
+		145615F420874C210014112A /* ProductForSaleView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProductForSaleView.xib; sourceTree = "<group>"; };
+		145615F8208750290014112A /* ProductForSaleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductForSaleView.swift; sourceTree = "<group>"; };
 		1467E5721FD6C830001F65C6 /* Sing A Song Of Sixpence.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Sing A Song Of Sixpence.mp3"; sourceTree = "<group>"; };
 		1467E5731FD6C831001F65C6 /* Humpty Dumpty.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Humpty Dumpty.mp3"; sourceTree = "<group>"; };
 		1467E5741FD6C831001F65C6 /* Old Mac Donald Had A Farm.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Old Mac Donald Had A Farm.mp3"; sourceTree = "<group>"; };
@@ -330,8 +326,6 @@
 		1467E5BD1FD6C8AE001F65C6 /* La Tarara.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "La Tarara.mp3"; sourceTree = "<group>"; };
 		1467E5BE1FD6C8AE001F65C6 /* Tanto vestido blanco.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Tanto vestido blanco.mp3"; sourceTree = "<group>"; };
 		146F13651F825B77005EE206 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		147CEBB82067930800BE7786 /* SongPurchaseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SongPurchaseView.swift; sourceTree = "<group>"; };
-		147CEBBA2067968800BE7786 /* ShopStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ShopStoryboard.storyboard; sourceTree = "<group>"; };
 		1490C30E1FE7EC0900E97616 /* bgmusic.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = bgmusic.mp3; sourceTree = "<group>"; };
 		14949B26204D463700B17FAB /* RecordingStage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = RecordingStage.png; sourceTree = "<group>"; };
 		14949B28204D472B00B17FAB /* SideCurtainsOnly new darker.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "SideCurtainsOnly new darker.png"; sourceTree = "<group>"; };
@@ -527,11 +521,11 @@
 		143BC91C1FE0270300D02BDB /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
-				1426DD2C205E9835003D3D08 /* ProductCell.swift */,
 				1431E55F2014BAB300A042F9 /* Checkbox.swift */,
 				143BC91D1FE0271200D02BDB /* AnimationHelper.swift */,
 				143BC91E1FE0271200D02BDB /* StoryboardSupport.swift */,
-				147CEBB82067930800BE7786 /* SongPurchaseView.swift */,
+				145615F420874C210014112A /* ProductForSaleView.xib */,
+				145615F8208750290014112A /* ProductForSaleView.swift */,
 			);
 			name = Helpers;
 			path = "New Group3";
@@ -549,7 +543,6 @@
 		143BC9241FE0278200D02BDB /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				1426DD2A205E8847003D3D08 /* ShopViewController.swift */,
 				143BC9271FE0279300D02BDB /* MainViewController.swift */,
 				143BC9251FE0279300D02BDB /* PageViewController.swift */,
 				143BC9261FE0279300D02BDB /* RevealViewController.swift */,
@@ -579,7 +572,6 @@
 		143EF4F21F7F752200E25F7B /* Components */ = {
 			isa = PBXGroup;
 			children = (
-				146F13551F7FD032005EE206 /* UIComponents */,
 				143EF4FB1F7F80AD00E25F7B /* WindowHandler */,
 				143EF4F31F7F753700E25F7B /* AppAssembly */,
 			);
@@ -728,20 +720,6 @@
 			path = Home;
 			sourceTree = "<group>";
 		};
-		146F13551F7FD032005EE206 /* UIComponents */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = UIComponents;
-			sourceTree = "<group>";
-		};
-		1490C3091FE6921100E97616 /* temp */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = temp;
-			sourceTree = "<group>";
-		};
 		14949B25204D461600B17FAB /* LoginImages */ = {
 			isa = PBXGroup;
 			children = (
@@ -888,7 +866,6 @@
 				588073E91A754A9B0006A6C8 /* Images.xcassets */,
 				146F13641F825B77005EE206 /* LaunchScreen.storyboard */,
 				588073DD1A754A9A0006A6C8 /* Supporting Files */,
-				147CEBBA2067968800BE7786 /* ShopStoryboard.storyboard */,
 			);
 			path = BabyTunes;
 			sourceTree = "<group>";
@@ -905,7 +882,6 @@
 			isa = PBXGroup;
 			children = (
 				14949B25204D461600B17FAB /* LoginImages */,
-				1490C3091FE6921100E97616 /* temp */,
 				1467E5701FD6B483001F65C6 /* AudioSongs */,
 				14F73A271FD3FD8B00CCC67A /* AudioControls */,
 				14CE96791FBE27B7001E4710 /* SongImage */,
@@ -960,6 +936,11 @@
 						CreatedOnToolsVersion = 6.1.1;
 						DevelopmentTeam = Y4R8N4N5G7;
 						LastSwiftMigration = 0900;
+						SystemCapabilities = {
+							com.apple.InAppPurchase = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -1035,6 +1016,7 @@
 				1420A0B51FCC4F8D00A367DD /* Mary Had A Little Lamb.jpg in Resources */,
 				14F73A361FD3FDAD00CCC67A /* play@2x.png in Resources */,
 				1467E58A1FD6C836001F65C6 /* Three Blind Mice.mp3 in Resources */,
+				145615F520874C210014112A /* ProductForSaleView.xib in Resources */,
 				1420A0D41FCC4FBB00A367DD /* Jean petit qui danse.jpg in Resources */,
 				1467E5831FD6C836001F65C6 /* Old Mac Donald Had A Farm.mp3 in Resources */,
 				1467E58F1FD6C836001F65C6 /* Im A Little Teapot.mp3 in Resources */,
@@ -1043,9 +1025,7 @@
 				1467E5CA1FD6C8AF001F65C6 /* Tres hojitas, Madre.mp3 in Resources */,
 				1420A0CD1FCC4FBB00A367DD /* Savez - vous planter les choux.jpg in Resources */,
 				1467E58B1FD6C836001F65C6 /* Oranges And Lemons.mp3 in Resources */,
-				147CEBBB2067968800BE7786 /* ShopStoryboard.storyboard in Resources */,
 				14D89A471FD6C922001F2FC1 /* Au claire de la lune.mp3 in Resources */,
-				14949B27204D463700B17FAB /* RecordingStage.png in Resources */,
 				14D89A3A1FD6C922001F2FC1 /* A la claire fontaine.mp3 in Resources */,
 				1420A0D31FCC4FBB00A367DD /* Au claire de la lune.jpg in Resources */,
 				1467E5AD1FD6C87F001F65C6 /* Die Gedanken sind frei.mp3 in Resources */,
@@ -1108,7 +1088,6 @@
 				1420A0CF1FCC4FBB00A367DD /* Il etait un petit navire.jpg in Resources */,
 				1467E5AE1FD6C87F001F65C6 /* Oh du lieber Augustin.mp3 in Resources */,
 				1467E5851FD6C836001F65C6 /* The Grand Old Duke Of York.mp3 in Resources */,
-				14949B29204D472B00B17FAB /* SideCurtainsOnly new darker.png in Resources */,
 				1420A0D01FCC4FBB00A367DD /* Compere Guilleri.jpg in Resources */,
 				1420A0911FCC4F3D00A367DD /* Der Mond ist aufgegangen.jpg in Resources */,
 				1420A0B91FCC4F8D00A367DD /* Im A Little Teapot.jpg in Resources */,
@@ -1160,6 +1139,7 @@
 				"${BUILT_PRODUCTS_DIR}/Realm/Realm.framework",
 				"${BUILT_PRODUCTS_DIR}/RealmSwift/RealmSwift.framework",
 				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/SCLAlertView/SCLAlertView.framework",
 				"${BUILT_PRODUCTS_DIR}/Swinject/Swinject.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
@@ -1171,6 +1151,7 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Realm.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RealmSwift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SCLAlertView.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Swinject.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1205,7 +1186,6 @@
 			files = (
 				58E652221C095EDF0036F820 /* Song.swift in Sources */,
 				143EF5011F7F821A00E25F7B /* WindowHandlerState.swift in Sources */,
-				1426DD2B205E8848003D3D08 /* ShopViewController.swift in Sources */,
 				143EF5051F7F84DF00E25F7B /* Assemblies.swift in Sources */,
 				143BC9131FE0265100D02BDB /* FlipPresentAnimationController.swift in Sources */,
 				149BFA5D1FACAC0A004CF826 /* UIFont+Zeplin.swift in Sources */,
@@ -1213,7 +1193,6 @@
 				143B0E7F2050890D00B3E0AB /* UIViewController+Emmitter.swift in Sources */,
 				143BC9281FE0279300D02BDB /* PageViewController.swift in Sources */,
 				1432E9C2201A740700754855 /* SongCardViewController.swift in Sources */,
-				1426DD2D205E9836003D3D08 /* ProductCell.swift in Sources */,
 				1431E5602014BAB300A042F9 /* Checkbox.swift in Sources */,
 				143BC91F1FE0271200D02BDB /* AnimationHelper.swift in Sources */,
 				588073E01A754A9A0006A6C8 /* AppDelegate.swift in Sources */,
@@ -1223,6 +1202,7 @@
 				14949B2E204E806C00B17FAB /* UserSettings.swift in Sources */,
 				14949B2B204E79A000B17FAB /* BabyTunesProducts.swift in Sources */,
 				142933AA204BFF7600B032D9 /* LoginViewController.swift in Sources */,
+				145615F9208750290014112A /* ProductForSaleView.swift in Sources */,
 				143BC9201FE0271200D02BDB /* StoryboardSupport.swift in Sources */,
 				143BC9231FE0276F00D02BDB /* SwipeInteractionController.swift in Sources */,
 				143BC9121FE0265100D02BDB /* FlipDismissAnimationController.swift in Sources */,
@@ -1233,7 +1213,6 @@
 				143EF5031F7F828600E25F7B /* WindowHandler.swift in Sources */,
 				143EF4F61F7F759F00E25F7B /* AppAssemblyProtocol.swift in Sources */,
 				143EF4FF1F7F81F600E25F7B /* WindowHandlerProtocol.swift in Sources */,
-				147CEBB92067930800BE7786 /* SongPurchaseView.swift in Sources */,
 				143BC9291FE0279300D02BDB /* RevealViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1377,7 +1356,7 @@
 					"$(inherited)",
 					"-ObjC",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = cyrstalcleardimensions.BabyTunes;
+				PRODUCT_BUNDLE_IDENTIFIER = com.cyrstalcleardimensions.BabyTunes;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				REEXPORTED_LIBRARY_NAMES = "";
@@ -1408,7 +1387,7 @@
 					"$(inherited)",
 					"-ObjC",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = cyrstalcleardimensions.BabyTunes;
+				PRODUCT_BUNDLE_IDENTIFIER = com.cyrstalcleardimensions.BabyTunes;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "BabyTunes/Classes/BabyTunes-Bridging-Header.h";

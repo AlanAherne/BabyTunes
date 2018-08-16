@@ -2,16 +2,7 @@
   "images" : [
     {
       "idiom" : "universal",
-      "scale" : "1x"
-    },
-    {
-      "idiom" : "universal",
-      "filename" : "ButtonRoundedEdges.pdf",
-      "scale" : "2x"
-    },
-    {
-      "idiom" : "universal",
-      "scale" : "3x"
+      "filename" : "ButtonRoundedEdges.pdf"
     }
   ],
   "info" : {
