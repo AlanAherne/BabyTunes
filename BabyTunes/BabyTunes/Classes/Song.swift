@@ -6,23 +6,20 @@
 //  Copyright (c) 2015 CCDimensions. All rights reserved.
 //
 import UIKit
-import Parse
+import RealmSwift
 
-public class Song: PFObject, PFSubclassing {
+open class Song: Object {
     
-    override public class func initialize() {
-        registerSubclass()
+    @objc dynamic var title: String = ""
+    @objc dynamic var locked = true
+    
+    @objc dynamic var language = Language.england.rawValue
+    var languageEnum: Language {
+        get {
+            return Language(rawValue: language)!
+        }
+        set {
+            language = newValue.rawValue
+        }
     }
-    
-    public class func parseClassName() -> String {
-        return "Song"
-    }
-    
-    @NSManaged public var title: String!
-    @NSManaged public var language: String!
-    @NSManaged public var length: Int
-    @NSManaged public var imageFile: PFFile!
-    @NSManaged public var imageThumbNailFile: PFFile!
-    @NSManaged public var songData: PFFile!
-    @NSManaged public var Lyrics: PFFile!
 }
